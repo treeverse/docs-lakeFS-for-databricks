@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
   
   <style type="text/css">
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(1) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(4) > .nav-list > .nav-list-item:nth-child(11) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
 
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list-expander svg { transform: rotate(-90deg); }
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list { display: block; }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(4) > .nav-list-expander svg, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(4) > .nav-list > .nav-list-item:not(.passive):nth-child(11) > .nav-list-expander svg { transform: rotate(-90deg); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(4) > .nav-list, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(4) > .nav-list > .nav-list-item:not(.passive):nth-child(11) > .nav-list { display: block; }
 
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list-expander svg { transform: rotate(-90deg); }
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list { display: block; }
@@ -38,21 +38,21 @@
 
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Welcome to lakeFS | lakeFS Documentation</title>
+<title>Delta Lake | lakeFS Documentation</title>
 <meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Welcome to lakeFS" />
+<meta property="og:title" content="Delta Lake" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes." />
-<meta property="og:description" content="The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes." />
+<meta name="description" content="This section explains how to use Delta Lake with lakeFS." />
+<meta property="og:description" content="This section explains how to use Delta Lake with lakeFS." />
 <meta property="og:site_name" content="lakeFS Documentation" />
 <meta property="og:image" content="https://docs.lakefs.io/assets/img/docs_logo.png" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:image" content="https://docs.lakefs.io/assets/img/docs_logo.png" />
-<meta property="twitter:title" content="Welcome to lakeFS" />
+<meta property="twitter:title" content="Delta Lake" />
 <meta name="twitter:site" content="@lakeFS" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes.","headline":"Welcome to lakeFS","image":"https://docs.lakefs.io/assets/img/docs_logo.png","name":"lakeFS","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/logo.svg"}},"sameAs":["https://www.linkedin.com/company/treeverse/","https://twitter.com/lakeFS","https://github.com/treeverse/lakeFS","https://data-folks.masto.host/@lakeFS"],"url":"/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"This section explains how to use Delta Lake with lakeFS.","headline":"Delta Lake","image":"https://docs.lakefs.io/assets/img/docs_logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/logo.svg"}},"url":"/integrations/delta.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -212,8 +212,8 @@
             </script>
 
             <ul class="nav-list"><li
-            class="nav-list-item active"><a href="/"
-           class="nav-list-link active">Welcome to lakeFS</a></li><li
+            class="nav-list-item"><a href="/"
+           class="nav-list-link">Welcome to lakeFS</a></li><li
             class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/quickstart/"
@@ -281,7 +281,7 @@
                    class="nav-list-link">Sizing Guide</a></li><li class="nav-list-item "><a href="/howto/scim.html"
                    class="nav-list-link">System for Cross-domain Identity Management (SCIM)</a></li><li class="nav-list-item "><a href="/howto/local-checkouts.html"
                    class="nav-list-link">Work with lakeFS data locally</a></li></ul></li><li
-            class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
+            class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/integrations/"
            class="nav-list-link">Integrations</a><ul class="nav-list "><li class="nav-list-item "><a href="/integrations/aws_cli.html"
@@ -294,8 +294,8 @@
                    class="nav-list-link">Apache Iceberg</a></li><li class="nav-list-item "><a href="/integrations/kafka.html"
                    class="nav-list-link">Apache Kafka</a></li><li class="nav-list-item "><a href="/integrations/spark.html"
                    class="nav-list-link">Apache Spark</a></li><li class="nav-list-item "><a href="/integrations/cloudera.html"
-                   class="nav-list-link">Cloudera</a></li><li class="nav-list-item "><a href="/integrations/delta.html"
-                   class="nav-list-link">Delta Lake</a></li><li class="nav-list-item "><a href="/integrations/dremio.html"
+                   class="nav-list-link">Cloudera</a></li><li class="nav-list-item  active"><a href="/integrations/delta.html"
+                   class="nav-list-link active">Delta Lake</a></li><li class="nav-list-item "><a href="/integrations/dremio.html"
                    class="nav-list-link">Dremio</a></li><li class="nav-list-item "><a href="/integrations/duckdb.html"
                    class="nav-list-link">DuckDB</a></li><li class="nav-list-item "><a href="/integrations/git.html"
                    class="nav-list-link">Git</a></li><li class="nav-list-item "><a href="/integrations/glue_hive_metastore.html"
@@ -530,291 +530,265 @@
         </div>
         <div id="main-content-wrap" class="main-content-wrap">
             
+            
+            <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+                <ol class="breadcrumb-nav-list">
+                    
+                    <li class="breadcrumb-nav-list-item"><a href="/integrations/">Integrations</a>
+                    </li>
+                    
+                    <li class="breadcrumb-nav-list-item"><span>Delta Lake</span></li>
+                </ol>
+            </nav>
+            
+            
             <div id="main-content" class="main-content" role="main">
                 
-                    <h1 id="temporary-placeholder-for-lakefs-databricks-docs">
+                    <h1 id="using-lakefs-with-delta-lake">
   
   
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-1">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-1" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-2">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-2" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-3">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-3" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-4">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-4" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-5">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-5" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-6">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-6" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
+    <a href="#using-lakefs-with-delta-lake" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Using lakeFS with Delta Lake
   
   
 </h1>
     
 
-<p><img src="/assets/img/waving-axolotl-transparent.gif" width="90" /></p>
+<p><a href="https://delta.io/">Delta Lake</a> Delta Lake is an open-source storage framework designed to improve performance and provide transactional guarantees to data lake tables.</p>
 
-<p><strong>lakeFS brings software engineering best practices and applies them to data engineering.</strong></p>
-
-<p>lakeFS provides version control over the data lake, and uses Git-like semantics to create and access those versions. If you know git, you’ll be right at home with lakeFS.</p>
-
-<p>With lakeFS, you can use concepts on your data lake such as <strong>branch</strong> to create an isolated version of the data, <strong>commit</strong> to create a reproducible point in time, and <strong>merge</strong> in order to incorporate your changes in one atomic action.</p>
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/GTxsyeoLccw"></iframe>
-<h2 id="how-do-i-get-started">
-  
-  
-    <a href="#how-do-i-get-started" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Do I Get Started?
-  
-  
-</h2>
-    
-
-<p><strong><a href="./quickstart">The hands-on quickstart</a> guides you through some core features of lakeFS</strong>.</p>
-
-<p>These include <a href="./quickstart/branch.html">branching</a>, <a href="quickstart/commit-and-merge.html">merging</a>, and <a href="quickstart/rollback.html">rolling back changes</a> to data.</p>
-
-<p class="note">You can use the <a href="https://lakefs.cloud/register">30-day free trial of lakeFS Cloud</a> if you want to try out lakeFS without installing anything.</p>
-<h2 id="key-lakefs-features">
-  
-  
-    <a href="#key-lakefs-features" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Key lakeFS Features
-  
-  
-</h2>
-    
-
-<ul>
-  <li>It is format-agnostic.</li>
-  <li>It works with numerous data tools and platforms.</li>
-  <li>Your data stays in place.</li>
-  <li>It eliminates the need for data duplication using <a href="/understand/model.html#zero-copy-branching">zero-copy branching</a>.</li>
-  <li>It maintains high performance over data lakes of any size.</li>
-  <li>It includes configurable garbage collection capabilities.</li>
-  <li>It is proven in production and has an active community.</li>
-</ul>
-
-<p><img src="/assets/img/lakeFS_integration.png" alt="lakeFS integration into data lake" width="60%" height="60%" /></p>
-<h2 id="how-does-lakefs-work-with-other-tools">
-  
-  
-    <a href="#how-does-lakefs-work-with-other-tools" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Does lakeFS Work With Other Tools?
-  
-  
-</h2>
-    
-
-<p>lakeFS is an open source project that supports managing data in AWS S3, Azure Blob Storage, Google Cloud Storage (GCS) and any other object storage with an S3 interface. It integrates seamlessly with popular data frameworks such as Spark, Hive Metastore, dbt, Trino, Presto, and many others and includes an S3 compatibility layer.</p>
-
-<p class="note">For more details and a full list see <a href="./integrations/">the integrations pages</a>.</p>
-
-<p class="center">
-    <img src="/assets/img/lakeFSArchitecture.png" />
-</p>
-
-<p class="pb-5">lakeFS maintains compatibility with the S3 API to minimize adoption
-friction. You can use it as a drop-in replacement for S3 from the perspective of
-any tool interacting with a data lake.</p>
-
-<p>For example, take the common operation of reading a collection of data from an object storage into a Spark DataFrame. For data outside a lakeFS repo, the code will look like this:</p>
-
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">parquet</span><span class="p">(</span><span class="s">"s3a://my-bucket/collections/foo/"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>After adding the data collections into my-bucket to a repository, the same operation becomes:</p>
-
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">parquet</span><span class="p">(</span><span class="s">"s3a://my-repo/main-branch/collections/foo/"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>You can use the same methods and syntax you are already using to read and write data when using a lakeFS repository. This simplifies the adoption of lakeFS - minimal changes are needed to get started, making further changes an incremental process.</p>
-<h2 id="lakefs-is-git-for-data">
-  
-  
-    <a href="#lakefs-is-git-for-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> lakeFS is Git for Data
-  
-  
-</h2>
-    
-
-<p>Git conquered the world of code because it had best supported engineering best practices required by developers, in particular:</p>
-
-<ul>
-  <li>Collaborate during development.</li>
-  <li>Develop and Test in isolation</li>
-  <li>Revert code repository to a sable version in case of an error</li>
-  <li>Reproduce and troubleshoot issues with a given version of the code</li>
-  <li>Continuously integrate and deploy new code (CI/CD)</li>
-</ul>
-
-<p>lakeFS provides these exact benefits, that are data practitioners are missing today, and enables them a clear intuitive Git-like interface to easily manage their data like they manage code. Through its versioning engine, lakeFS enables the following built-in operations familiar from Git:</p>
-
-<ul>
-  <li><strong>branch:</strong> a consistent copy of a repository, isolated from other branches and their changes. Initial creation of a branch is a metadata operation that does not duplicate objects.</li>
-  <li><strong>commit:</strong> an immutable checkpoint containing a complete snapshot of a repository.</li>
-  <li><strong>merge:</strong> performed between two branches — merges atomically update one branch with the changes from another.</li>
-  <li><strong>revert:</strong> returns a repo to the exact state of a previous commit.</li>
-  <li><strong>tag:</strong> a pointer to a single immutable commit with a readable, meaningful name.</li>
-</ul>
-
-<p><em>See the <a href="/understand/model.html">object model</a> for an in-depth
-definition of these, and the <a href="/reference/cli.html">CLI reference</a> for the
-full list of commands.</em></p>
-
-<p>Incorporating these operations into your data lake pipelines provides the same collaboration and organizational benefits you get when managing application code with source control.</p>
-<h3 id="the-lakefs-promotion-workflow">
-  
-  
-    <a href="#the-lakefs-promotion-workflow" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> The lakeFS Promotion Workflow
-  
-  
-</h3>
-    
-
-<p>Here’s how lakeFS <em>branches</em> and <em>merges</em> improve the universal process of updating collections with the latest data.</p>
-
-<p><img src="/assets/img/promotion_workflow.png" alt="lakeFS promotion workflow" width="60%" height="60%" /></p>
+<p>Because lakeFS is format-agnostic, you can save data in Delta format within a lakeFS repository and benefit from the advantages of both technologies. Specifically:</p>
 
 <ol>
-  <li>First, create a new <strong>branch</strong> from <code class="language-plaintext highlighter-rouge">main</code> to instantly generate a complete “copy” of your production data.</li>
-  <li>Apply changes or make updates on the isolated branch to understand their impact prior to exposure.</li>
-  <li>And finally, perform a <strong>merge</strong> from the feature branch back to main to atomically promote the updates into production.</li>
+  <li>ACID operations can span across multiple Delta tables.</li>
+  <li><a href="/understand/use_cases/cicd_for_data.html#using-hooks-as-data-quality-gates">CI/CD hooks</a> can validate Delta table contents, schema, or even referential integrity.</li>
+  <li>lakeFS supports zero-copy branching for quick experimentation with full isolation.</li>
 </ol>
 
-<p>Following this pattern, lakeFS facilitates a streamlined data deployment workflow that consistently produces data assets you can have total confidence in.</p>
-<h2 id="how-can-lakefs-help-me">
+<div class="toc-block">
+<h2 class="no_toc text-delta" id="table-of-contents">
   
   
-    <a href="#how-can-lakefs-help-me" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Can lakeFS Help Me?
+    <a href="#table-of-contents" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
   
   
 </h2>
     
 
-<p>lakeFS helps you maintain a tidy data lake in several ways, including:</p>
-<h3 id="isolated-devtest-environments-with-zero-copy-branching">
+<ol id="markdown-toc">
+  <li><a href="#delta-lake-tables-from-the-lakefs-perspective" id="markdown-toc-delta-lake-tables-from-the-lakefs-perspective">Delta Lake Tables from the lakeFS Perspective</a></li>
+  <li><a href="#using-delta-lake-with-lakefs-from-apache-spark" id="markdown-toc-using-delta-lake-with-lakefs-from-apache-spark">Using Delta Lake with lakeFS from Apache Spark</a></li>
+  <li><a href="#using-delta-lake-with-lakefs-from-python" id="markdown-toc-using-delta-lake-with-lakefs-from-python">Using Delta Lake with lakeFS from Python</a></li>
+  <li><a href="#exporting-delta-lake-tables-from-lakefs-into-unity-catalog" id="markdown-toc-exporting-delta-lake-tables-from-lakefs-into-unity-catalog">Exporting Delta Lake tables from lakeFS into Unity Catalog</a></li>
+  <li><a href="#limitations" id="markdown-toc-limitations">Limitations</a></li>
+  <li><a href="#best-practices" id="markdown-toc-best-practices">Best Practices</a></li>
+  <li><a href="#further-reading" id="markdown-toc-further-reading">Further Reading</a></li>
+</ol>
+
+</div>
+<h2 id="delta-lake-tables-from-the-lakefs-perspective">
   
   
-    <a href="#isolated-devtest-environments-with-zero-copy-branching" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Isolated Dev/Test Environments with zero-copy branching
+    <a href="#delta-lake-tables-from-the-lakefs-perspective" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Delta Lake Tables from the lakeFS Perspective
+  
+  
+</h2>
+    
+
+<p>lakeFS is a data versioning tool, functioning at the <strong>object</strong> level. This implies that, by default, lakeFS remains agnostic 
+to whether the objects within a Delta table location represent a table, table metadata, or data. As per the Delta Lake <a href="https://github.com/delta-io/delta/blob/master/PROTOCOL.md">protocol</a>, 
+any modification to a table—whether it involves adding data or altering table metadata—results in the creation of a new object 
+in the table’s <a href="https://www.databricks.com/blog/2019/08/21/diving-into-delta-lake-unpacking-the-transaction-log.html">transaction log</a>. 
+Typically, residing under the <code class="language-plaintext highlighter-rouge">_delta_log</code> path, relative to the root of the table’s directory. This new object has an incremented version compared to its predecessor.</p>
+
+<p>Consequently, when making changes to a Delta table within the lakeFS environment, these changes are reflected as changes 
+to objects within the table location. For instance, inserting a record into a table named “my-table,” which is partitioned 
+by ‘category’ and ‘country,’ is represented in lakeFS as added objects within the table prefix (i.e., the table data) and the table transaction log.
+<img src="/assets/img/delta-record-addition.png" alt="Record addition" /></p>
+
+<p>Similarly, when performing a metadata operation such as renaming a table column, new objects are appended to the table transaction log, 
+indicating the schema change.
+<img src="/assets/img/delta-schema-change.png" alt="Record addition" /></p>
+<h2 id="using-delta-lake-with-lakefs-from-apache-spark">
+  
+  
+    <a href="#using-delta-lake-with-lakefs-from-apache-spark" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Using Delta Lake with lakeFS from Apache Spark
+  
+  
+</h2>
+    
+
+<p><em>Given the native integration between Delta Lake and Spark, it’s most common that you’ll interact with Delta tables in a Spark environment.</em></p>
+
+<p>To configure a Spark environment to read from and write to a Delta table within a lakeFS repository, you need to set the proper credentials and endpoint in the S3 Hadoop configuration, like you’d do with any <a href="/integrations/spark.html">Spark</a> environment.</p>
+
+<p>Once set, you can interact with Delta tables using regular Spark path URIs. Make sure that you include the lakeFS repository and branch name:</p>
+
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">df</span><span class="o">.</span><span class="py">write</span><span class="o">.</span><span class="py">format</span><span class="o">(</span><span class="s">"delta"</span><span class="o">).</span><span class="py">save</span><span class="o">(</span><span class="s">"s3a://&lt;repo-name&gt;/&lt;branch-name&gt;/path/to/delta-table"</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>Note: If using the Databricks Analytics Platform, see the <a href="/integrations/spark.html#installation">integration guide</a> for configuring a Databricks cluster to use lakeFS.</p>
+
+<p>To see the integration in action see <a href="https://github.com/treeverse/lakeFS-samples/blob/main/00_notebooks/delta-lake.ipynb">this notebook</a> in the <a href="https://github.com/treeverse/lakeFS-samples/">lakeFS Samples Repository</a>.</p>
+<h2 id="using-delta-lake-with-lakefs-from-python">
+  
+  
+    <a href="#using-delta-lake-with-lakefs-from-python" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Using Delta Lake with lakeFS from Python
+  
+  
+</h2>
+    
+
+<p>The <a href="https://github.com/delta-io/delta-rs">delta-rs</a> library provides bindings for Python. This means that you can use Delta Lake and lakeFS directly from Python without needing Spark. Integration is done through the <a href="/understand/architecture.html#s3-gateway">lakeFS S3 Gateway</a></p>
+
+<p>The documentation for the <code class="language-plaintext highlighter-rouge">deltalake</code> Python module details how to <a href="https://delta-io.github.io/delta-rs/python/usage.html#loading-a-delta-table">read</a>, <a href="https://delta-io.github.io/delta-rs/python/usage.html#writing-delta-tables">write</a>, and <a href="https://delta-io.github.io/delta-rs/python/usage.html#querying-delta-tables">query</a> Delta Lake tables. To use it with lakeFS use an <code class="language-plaintext highlighter-rouge">s3a</code> path for the table based on your repository and branch (for example, <code class="language-plaintext highlighter-rouge">s3a://delta-lake-demo/main/my_table/</code>) and specify the following <code class="language-plaintext highlighter-rouge">storage_options</code>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">storage_options</span> <span class="o">=</span> <span class="p">{</span><span class="s">"AWS_ENDPOINT"</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">your</span> <span class="n">lakeFS</span> <span class="n">endpoint</span><span class="o">&gt;</span><span class="p">,</span>
+                   <span class="s">"AWS_ACCESS_KEY_ID"</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">your</span> <span class="n">lakeFS</span> <span class="n">access</span> <span class="n">key</span><span class="o">&gt;</span><span class="p">,</span>
+                   <span class="s">"AWS_SECRET_ACCESS_KEY"</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">your</span> <span class="n">lakeFS</span> <span class="n">secret</span> <span class="n">key</span><span class="o">&gt;</span><span class="p">,</span>
+                   <span class="s">"AWS_REGION"</span><span class="p">:</span> <span class="s">"us-east-1"</span><span class="p">,</span>
+                   <span class="s">"AWS_S3_ALLOW_UNSAFE_RENAME"</span><span class="p">:</span> <span class="s">"true"</span>
+                  <span class="p">}</span>
+</code></pre></div></div>
+
+<p>If your lakeFS is not using HTTPS (for example, you’re just running it locally) then add the option</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                   <span class="s">"AWS_STORAGE_ALLOW_HTTP"</span><span class="p">:</span> <span class="s">"true"</span>
+</code></pre></div></div>
+
+<p>To see the integration in action see <a href="https://github.com/treeverse/lakeFS-samples/blob/main/00_notebooks/delta-lake-python.ipynb">this notebook</a> in the <a href="https://github.com/treeverse/lakeFS-samples/">lakeFS Samples Repository</a>.</p>
+<h2 id="exporting-delta-lake-tables-from-lakefs-into-unity-catalog">
+  
+  
+    <a href="#exporting-delta-lake-tables-from-lakefs-into-unity-catalog" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Exporting Delta Lake tables from lakeFS into Unity Catalog
+  
+  
+</h2>
+    
+
+<p>This option is for users who are managing Delta Lake tables with lakeFS and access them through Databricks <a href="https://www.databricks.com/product/unity-catalog">Unity Catalog</a>. lakeFS offers 
+a <a href="/howto/catalog_exports.html">Data Catalog Export</a> functionality that provides read-only access to your Delta tables from within Unity catalog. Using the data catalog exporters,<br />
+you can work on Delta tables in isolation and easily explore them within the Unity Catalog.</p>
+
+<p>Once exported, you can query the versioned table data with:</p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">my_catalog</span><span class="p">.</span><span class="n">main</span><span class="p">.</span><span class="n">my_delta_table</span>
+</code></pre></div></div>
+<p>Here, ‘main’ is the name of the lakeFS branch from which the delta table was exported.</p>
+
+<p>To enable Delta table exports to Unity catalog use the Unity <a href="/integrations/unity-catalog.html">catalog integration guide</a>.</p>
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/rMDsnh7S2O0"></iframe>
+<h2 id="limitations">
+  
+  
+    <a href="#limitations" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Limitations
+  
+  
+</h2>
+    
+<h3 class="no_toc" id="multi-writer-support-in-lakefs-for-delta-lake-tables">
+  
+  
+    <a href="#multi-writer-support-in-lakefs-for-delta-lake-tables" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Multi-Writer Support in lakeFS for Delta Lake Tables
   
   
 </h3>
     
 
-<p>lakeFS makes creating isolated dev/test environments for ETL testing instantaneous, and through its use of zero-copy branching, cheap. This enables you to test and validate code changes on production data without impacting it, as well as run analysis and experiments on production data in an isolated clone.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/etl_testing.html">Read more</a></p>
-<h3 id="reproducibility-what-did-my-data-look-like-at-a-point-in-time">
-  
-  
-    <a href="#reproducibility-what-did-my-data-look-like-at-a-point-in-time" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Reproducibility: What Did My Data Look Like at a Point In Time?
-  
-  
-</h3>
-    
-
-<p>Being able to look at data as it was at a given point is particularly useful in at least two scenarios:</p>
-
+<p>lakeFS currently supports a single writer for Delta Lake tables. Attempting to utilize multiple writers for writing to a Delta table may result in two types of issues:</p>
 <ol>
-  <li>
-    <p>Reproducibility of ML experiments</p>
-
-    <p>ML experimentation is iterative, requiring the ability to reproduce specific results. With lakeFS, you can version all aspects of an ML experiment, including the data. This enables:</p>
-
-    <p><strong>Data Lineage</strong>: Track the transformation of data from raw datasets to the final version used in experiments, ensuring transparency and traceability.</p>
-
-    <p><strong>Zero-Copy Branching</strong>: Minimize storage use by creating lightweight branches of your data, allowing for easy experimentation across different versions.</p>
-
-    <p><strong>Easy Integration</strong>: Seamlessly integrate with ML tools like MLFlow, linking experiments directly to the exact data versions used, making reproducibility straightforward.</p>
-
-    <p>lakeFS enhances your ML workflow by ensuring that all versions of data are easily accessible, traceable, and reproducible.</p>
-  </li>
-  <li>
-    <p>Troubleshooting production problems</p>
-
-    <p>Data engineers are often asked to validate the data. A user might report inconsistencies, question the accuracy, or simply report it to be incorrect.</p>
-
-    <p>Since the data continuously changes, it is challenging to understand its state at the time of the error.</p>
-
-    <p>With lakeFS you can create a branch from a commit to debug an issue in isolation.</p>
-  </li>
+  <li>Merge Conflicts: These conflicts arise when multiple writers modify a Delta table on different branches, and an attempt is made to merge these branches.
+<img src="/assets/img/delta-lake/merge-conflict.png" alt="Merge conflicts" /></li>
+  <li>Concurrent File Overwrite: This issue occurs when multiple writers concurrently modify a Delta table on the same branch.
+<img src="/assets/img/delta-lake/concurrent-file-overwrite.png" alt="Concurrent file overwrite" /></li>
 </ol>
 
-<p>👉🏻 <a href="./understand/use_cases/reproducibility.html">Read More</a></p>
-<h3 id="rollback-of-data-changes-and-recovery-from-data-errors">
+<p class="note">Note: lakeFS currently lacks its own implementation for a LogStore, and the default Log store used does not control concurrency.</p>
+<p>To address these limitations, consider following <a href="#use-lakefs-branches-and-merges-to-support-multi-writers">best practices for implementing multi-writer support</a>.</p>
+<h2 id="best-practices">
   
   
-    <a href="#rollback-of-data-changes-and-recovery-from-data-errors" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Rollback of Data Changes and Recovery from Data Errors
+    <a href="#best-practices" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Best Practices
+  
+  
+</h2>
+    
+<h3 id="implementing-multi-writer-support-through-lakefs-branches-and-merges">
+  
+  
+    <a href="#implementing-multi-writer-support-through-lakefs-branches-and-merges" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Implementing Multi-Writer Support through lakeFS Branches and Merges
   
   
 </h3>
     
 
-<p>Human error or misconfigurations can lead to erroneous data making its way into production or critical data being accidentally deleted. Traditional backups are often inadequate for recovery in these situations, as they may be outdated and require time-consuming object-level sifting.</p>
+<p>To achieve safe multi-writes to a Delta Lake table on lakeFS, we recommend following these best practices:</p>
+<ol>
+  <li><strong>Isolate Changes:</strong> Make modifications to your table in isolation. Each set of changes should be associated with a dedicated lakeFS branch, branching off from the main branch.</li>
+  <li><strong>Merge Atomically:</strong> After making changes in isolation, try to merge them back into the main branch. This approach guarantees that the integration of changes is cohesive.</li>
+</ol>
 
-<p>With lakeFS, you can avoid these inefficiencies by committing snapshots of data at well-defined times. This allows for instant recovery: simply identify a good historical commit and restore or copy from it with a single operation.</p>
+<p>The workflow involves:</p>
+<ul>
+  <li>Creating a new lakeFS branch from the main branch for any table change.</li>
+  <li>Making modifications in isolation.</li>
+  <li>Attempting to merge the changes back into the main branch.</li>
+  <li>Iterating the process in case of a merge failure due to conflicts.</li>
+</ul>
 
-<p>👉🏻 <a href="./understand/use_cases/rollback.html">Read more</a></p>
-<h3 id="establishing-data-quality-guarantees---cicd-for-data">
+<p>The diagram below provides a visual representation of how branches and merges can be utilized to manage concurrency effectively:
+<img src="/assets/img/delta-lake/multi-writers-with-lakefs-branches-merges.png" alt="Multi writers workaround" /></p>
+<h3 id="follow-vacuum-by-garbage-collection">
   
   
-    <a href="#establishing-data-quality-guarantees---cicd-for-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Establishing data quality guarantees - CI/CD for data
+    <a href="#follow-vacuum-by-garbage-collection" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Follow Vacuum by Garbage Collection
   
   
 </h3>
     
 
-<p>The best way to deal with mistakes is to avoid them. A data source that is ingested into the lake introducing low-quality data should be blocked before exposure if possible.</p>
+<p>To delete unused files from a table directory while working with Delta Lake over lakeFS you need to first use Delta lake
+<a href="https://docs.databricks.com/en/sql/language-manual/delta-vacuum.html">Vacuum</a> to soft-delete the files, and then use
+<a href="../howto/garbage-collection">lakeFS Garbage Collection</a> to hard-delete them from the storage.</p>
 
-<p>With lakeFS, you can achieve this by tying data quality tests to commit and merge operations via lakeFS <a href="/understand/use_cases/cicd_for_data.html#using-hooks-as-data-quality-gates">hooks</a>.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/cicd_for_data.html">Read more</a></p>
-<h2 id="next-step">
+<p class="note"><strong>Note:</strong> lakeFS enables you to recover from undesired vacuum runs by reverting the changes done by a vacuum run before running Garbage Collection.</p>
+<h3 id="when-running-lakefs-inside-your-vpc-on-aws">
   
   
-    <a href="#next-step" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Next Step
+    <a href="#when-running-lakefs-inside-your-vpc-on-aws" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> When running lakeFS inside your VPC (on AWS)
+  
+  
+</h3>
+    
+
+<p>When lakeFS runs inside your private network, your Databricks cluster needs to be able to access it. 
+This can be done by setting up a VPC peering between the two VPCs 
+(the one where lakeFS runs and the one where Databricks runs). For this to work on Delta Lake tables, you would also have to disable multi-cluster writes with:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark.databricks.delta.multiClusterWrites.enabled false
+</code></pre></div></div>
+<h3 id="using-multi-cluster-writes-on-aws">
+  
+  
+    <a href="#using-multi-cluster-writes-on-aws" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Using multi cluster writes (on AWS)
+  
+  
+</h3>
+    
+
+<p>When using multi-cluster writes, Databricks overrides Delta’s S3-commit action. 
+The new action tries to contact lakeFS from servers on Databricks’ own AWS account, which of course won’t be able to access your private network. 
+So, if you must use multi-cluster writes, you’ll have to allow access from Databricks’ AWS account to lakeFS. 
+If you are trying to achieve that, please reach out on Slack and the community will try to assist.</p>
+<h2 id="further-reading">
+  
+  
+    <a href="#further-reading" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Further Reading
   
   
 </h2>
     
 
-<p>Try lakeFS on the <a href="https://lakefs.cloud/">cloud</a> or <a href="https://docs.lakefs.io/quickstart/">run it locally</a></p>
+<p>See <a href="https://lakefs.io/blog/guarantee-consistency-in-your-delta-lake-tables-with-lakefs/">Guaranteeing Consistency in Your Delta Lake Tables With lakeFS</a> post on the lakeFS blog to learn how to 
+guarantee data quality in a Delta table by utilizing lakeFS branches.</p>
 
                 
 

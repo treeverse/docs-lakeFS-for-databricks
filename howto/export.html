@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
   
   <style type="text/css">
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(1) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(3) > .nav-list > .nav-list-item:nth-child(6) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
 
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list-expander svg { transform: rotate(-90deg); }
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list { display: block; }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(3) > .nav-list-expander svg, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(3) > .nav-list > .nav-list-item:not(.passive):nth-child(6) > .nav-list-expander svg { transform: rotate(-90deg); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(3) > .nav-list, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(3) > .nav-list > .nav-list-item:not(.passive):nth-child(6) > .nav-list { display: block; }
 
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list-expander svg { transform: rotate(-90deg); }
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list { display: block; }
@@ -38,21 +38,21 @@
 
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Welcome to lakeFS | lakeFS Documentation</title>
+<title>Export Data | lakeFS Documentation</title>
 <meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Welcome to lakeFS" />
+<meta property="og:title" content="Export Data" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes." />
-<meta property="og:description" content="The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes." />
+<meta name="description" content="Use the lakeFS Spark client or RClone inside Docker to export a lakeFS commit to the object store." />
+<meta property="og:description" content="Use the lakeFS Spark client or RClone inside Docker to export a lakeFS commit to the object store." />
 <meta property="og:site_name" content="lakeFS Documentation" />
 <meta property="og:image" content="https://docs.lakefs.io/assets/img/docs_logo.png" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:image" content="https://docs.lakefs.io/assets/img/docs_logo.png" />
-<meta property="twitter:title" content="Welcome to lakeFS" />
+<meta property="twitter:title" content="Export Data" />
 <meta name="twitter:site" content="@lakeFS" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes.","headline":"Welcome to lakeFS","image":"https://docs.lakefs.io/assets/img/docs_logo.png","name":"lakeFS","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/logo.svg"}},"sameAs":["https://www.linkedin.com/company/treeverse/","https://twitter.com/lakeFS","https://github.com/treeverse/lakeFS","https://data-folks.masto.host/@lakeFS"],"url":"/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Use the lakeFS Spark client or RClone inside Docker to export a lakeFS commit to the object store.","headline":"Export Data","image":"https://docs.lakefs.io/assets/img/docs_logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/logo.svg"}},"url":"/howto/export.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -212,8 +212,8 @@
             </script>
 
             <ul class="nav-list"><li
-            class="nav-list-item active"><a href="/"
-           class="nav-list-link active">Welcome to lakeFS</a></li><li
+            class="nav-list-item"><a href="/"
+           class="nav-list-link">Welcome to lakeFS</a></li><li
             class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/quickstart/"
@@ -226,7 +226,7 @@
                    class="nav-list-link">6️⃣ Using Actions and Hooks in lakeFS</a></li><li class="nav-list-item "><a href="/quickstart/work-with-data-locally.html"
                    class="nav-list-link">7️⃣ Work with lakeFS data locally</a></li><li class="nav-list-item "><a href="/quickstart/learning-more-lakefs.html"
                    class="nav-list-link">Learn more about lakeFS</a></li></ul></li><li
-            class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
+            class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/howto/"
            class="nav-list-link">How-To</a><ul class="nav-list "><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
@@ -262,8 +262,8 @@
                     </li></ul></li><li class="nav-list-item "><a href="/howto/protect-branches.html"
                    class="nav-list-link">Branch Protection</a></li><li class="nav-list-item "><a href="/howto/copying.html"
                    class="nav-list-link">Copying data to/from lakeFS</a></li><li class="nav-list-item "><a href="/howto/catalog_exports.html"
-                   class="nav-list-link">Data Catalogs Export</a></li><li class="nav-list-item "><a href="/howto/export.html"
-                   class="nav-list-link">Export Data</a></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
+                   class="nav-list-link">Data Catalogs Export</a></li><li class="nav-list-item  active"><a href="/howto/export.html"
+                   class="nav-list-link active">Export Data</a></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                         <use xlink:href="#svg-arrow-right"></use>
                     </svg></a><a href="/howto/garbage-collection/"
                    class="nav-list-link">Garbage Collection</a><ul class="nav-list"><li class="nav-list-item ">
@@ -530,291 +530,337 @@
         </div>
         <div id="main-content-wrap" class="main-content-wrap">
             
+            
+            <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+                <ol class="breadcrumb-nav-list">
+                    
+                    <li class="breadcrumb-nav-list-item"><a href="/howto/">How-To</a>
+                    </li>
+                    
+                    <li class="breadcrumb-nav-list-item"><span>Export Data</span></li>
+                </ol>
+            </nav>
+            
+            
             <div id="main-content" class="main-content" role="main">
                 
-                    <h1 id="temporary-placeholder-for-lakefs-databricks-docs">
+                    <h1 id="exporting-data">
   
   
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-1">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-1" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
+    <a href="#exporting-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Exporting Data
   
   
 </h1>
     
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-2">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-2" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-3">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-3" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-4">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-4" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-5">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-5" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-6">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-6" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
+<p>The export operation copies all data from a given lakeFS commit to
+a designated object store location.</p>
 
-<p><img src="/assets/img/waving-axolotl-transparent.gif" width="90" /></p>
+<p>For instance, the contents <code class="language-plaintext highlighter-rouge">lakefs://example/main</code> might be exported on
+<code class="language-plaintext highlighter-rouge">s3://company-bucket/example/latest</code>. Clients entirely unaware of lakeFS could use that
+base URL to access latest files on <code class="language-plaintext highlighter-rouge">main</code>. Clients aware of lakeFS can continue to use
+the lakeFS S3 endpoint to access repository files on <code class="language-plaintext highlighter-rouge">s3://example/main</code>, as well as
+other versions and uncommitted versions.</p>
 
-<p><strong>lakeFS brings software engineering best practices and applies them to data engineering.</strong></p>
-
-<p>lakeFS provides version control over the data lake, and uses Git-like semantics to create and access those versions. If you know git, you’ll be right at home with lakeFS.</p>
-
-<p>With lakeFS, you can use concepts on your data lake such as <strong>branch</strong> to create an isolated version of the data, <strong>commit</strong> to create a reproducible point in time, and <strong>merge</strong> in order to incorporate your changes in one atomic action.</p>
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/GTxsyeoLccw"></iframe>
-<h2 id="how-do-i-get-started">
-  
-  
-    <a href="#how-do-i-get-started" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Do I Get Started?
-  
-  
-</h2>
-    
-
-<p><strong><a href="./quickstart">The hands-on quickstart</a> guides you through some core features of lakeFS</strong>.</p>
-
-<p>These include <a href="./quickstart/branch.html">branching</a>, <a href="quickstart/commit-and-merge.html">merging</a>, and <a href="quickstart/rollback.html">rolling back changes</a> to data.</p>
-
-<p class="note">You can use the <a href="https://lakefs.cloud/register">30-day free trial of lakeFS Cloud</a> if you want to try out lakeFS without installing anything.</p>
-<h2 id="key-lakefs-features">
-  
-  
-    <a href="#key-lakefs-features" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Key lakeFS Features
-  
-  
-</h2>
-    
-
-<ul>
-  <li>It is format-agnostic.</li>
-  <li>It works with numerous data tools and platforms.</li>
-  <li>Your data stays in place.</li>
-  <li>It eliminates the need for data duplication using <a href="/understand/model.html#zero-copy-branching">zero-copy branching</a>.</li>
-  <li>It maintains high performance over data lakes of any size.</li>
-  <li>It includes configurable garbage collection capabilities.</li>
-  <li>It is proven in production and has an active community.</li>
-</ul>
-
-<p><img src="/assets/img/lakeFS_integration.png" alt="lakeFS integration into data lake" width="60%" height="60%" /></p>
-<h2 id="how-does-lakefs-work-with-other-tools">
-  
-  
-    <a href="#how-does-lakefs-work-with-other-tools" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Does lakeFS Work With Other Tools?
-  
-  
-</h2>
-    
-
-<p>lakeFS is an open source project that supports managing data in AWS S3, Azure Blob Storage, Google Cloud Storage (GCS) and any other object storage with an S3 interface. It integrates seamlessly with popular data frameworks such as Spark, Hive Metastore, dbt, Trino, Presto, and many others and includes an S3 compatibility layer.</p>
-
-<p class="note">For more details and a full list see <a href="./integrations/">the integrations pages</a>.</p>
-
-<p class="center">
-    <img src="/assets/img/lakeFSArchitecture.png" />
-</p>
-
-<p class="pb-5">lakeFS maintains compatibility with the S3 API to minimize adoption
-friction. You can use it as a drop-in replacement for S3 from the perspective of
-any tool interacting with a data lake.</p>
-
-<p>For example, take the common operation of reading a collection of data from an object storage into a Spark DataFrame. For data outside a lakeFS repo, the code will look like this:</p>
-
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">parquet</span><span class="p">(</span><span class="s">"s3a://my-bucket/collections/foo/"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>After adding the data collections into my-bucket to a repository, the same operation becomes:</p>
-
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">parquet</span><span class="p">(</span><span class="s">"s3a://my-repo/main-branch/collections/foo/"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>You can use the same methods and syntax you are already using to read and write data when using a lakeFS repository. This simplifies the adoption of lakeFS - minimal changes are needed to get started, making further changes an incremental process.</p>
-<h2 id="lakefs-is-git-for-data">
-  
-  
-    <a href="#lakefs-is-git-for-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> lakeFS is Git for Data
-  
-  
-</h2>
-    
-
-<p>Git conquered the world of code because it had best supported engineering best practices required by developers, in particular:</p>
-
-<ul>
-  <li>Collaborate during development.</li>
-  <li>Develop and Test in isolation</li>
-  <li>Revert code repository to a sable version in case of an error</li>
-  <li>Reproduce and troubleshoot issues with a given version of the code</li>
-  <li>Continuously integrate and deploy new code (CI/CD)</li>
-</ul>
-
-<p>lakeFS provides these exact benefits, that are data practitioners are missing today, and enables them a clear intuitive Git-like interface to easily manage their data like they manage code. Through its versioning engine, lakeFS enables the following built-in operations familiar from Git:</p>
-
-<ul>
-  <li><strong>branch:</strong> a consistent copy of a repository, isolated from other branches and their changes. Initial creation of a branch is a metadata operation that does not duplicate objects.</li>
-  <li><strong>commit:</strong> an immutable checkpoint containing a complete snapshot of a repository.</li>
-  <li><strong>merge:</strong> performed between two branches — merges atomically update one branch with the changes from another.</li>
-  <li><strong>revert:</strong> returns a repo to the exact state of a previous commit.</li>
-  <li><strong>tag:</strong> a pointer to a single immutable commit with a readable, meaningful name.</li>
-</ul>
-
-<p><em>See the <a href="/understand/model.html">object model</a> for an in-depth
-definition of these, and the <a href="/reference/cli.html">CLI reference</a> for the
-full list of commands.</em></p>
-
-<p>Incorporating these operations into your data lake pipelines provides the same collaboration and organizational benefits you get when managing application code with source control.</p>
-<h3 id="the-lakefs-promotion-workflow">
-  
-  
-    <a href="#the-lakefs-promotion-workflow" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> The lakeFS Promotion Workflow
-  
-  
-</h3>
-    
-
-<p>Here’s how lakeFS <em>branches</em> and <em>merges</em> improve the universal process of updating collections with the latest data.</p>
-
-<p><img src="/assets/img/promotion_workflow.png" alt="lakeFS promotion workflow" width="60%" height="60%" /></p>
-
+<p>Possible use-cases:</p>
 <ol>
-  <li>First, create a new <strong>branch</strong> from <code class="language-plaintext highlighter-rouge">main</code> to instantly generate a complete “copy” of your production data.</li>
-  <li>Apply changes or make updates on the isolated branch to understand their impact prior to exposure.</li>
-  <li>And finally, perform a <strong>merge</strong> from the feature branch back to main to atomically promote the updates into production.</li>
+  <li>External consumers of data don’t have access to your lakeFS installation.</li>
+  <li>Some data pipelines in the organization are not fully migrated to lakeFS.</li>
+  <li>You want to experiment with lakeFS as a side-by-side installation first.</li>
+  <li>Create copies of your data lake in other regions (taking into account read pricing).</li>
 </ol>
 
-<p>Following this pattern, lakeFS facilitates a streamlined data deployment workflow that consistently produces data assets you can have total confidence in.</p>
-<h2 id="how-can-lakefs-help-me">
+<div class="toc-block">
+<h2 class="no_toc text-delta" id="table-of-contents">
   
   
-    <a href="#how-can-lakefs-help-me" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Can lakeFS Help Me?
+    <a href="#table-of-contents" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
   
   
 </h2>
     
 
-<p>lakeFS helps you maintain a tidy data lake in several ways, including:</p>
-<h3 id="isolated-devtest-environments-with-zero-copy-branching">
+<ol id="markdown-toc">
+  <li><a href="#exporting-data-with-spark" id="markdown-toc-exporting-data-with-spark">Exporting Data With Spark</a></li>
+  <li><a href="#successfailure-indications" id="markdown-toc-successfailure-indications">Success/Failure Indications</a></li>
+  <li><a href="#export-rounds-spark-success-files" id="markdown-toc-export-rounds-spark-success-files">Export Rounds (Spark success files)</a></li>
+  <li><a href="#example" id="markdown-toc-example">Example</a></li>
+  <li><a href="#exporting-data-with-docker" id="markdown-toc-exporting-data-with-docker">Exporting Data with Docker</a></li>
+</ol>
+
+</div>
+<h2 id="exporting-data-with-spark">
   
   
-    <a href="#isolated-devtest-environments-with-zero-copy-branching" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Isolated Dev/Test Environments with zero-copy branching
+    <a href="#exporting-data-with-spark" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Exporting Data With Spark
+  
+  
+</h2>
+    
+<h3 id="using-spark-submit">
+  
+  
+    <a href="#using-spark-submit" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Using spark-submit
   
   
 </h3>
     
-
-<p>lakeFS makes creating isolated dev/test environments for ETL testing instantaneous, and through its use of zero-copy branching, cheap. This enables you to test and validate code changes on production data without impacting it, as well as run analysis and experiments on production data in an isolated clone.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/etl_testing.html">Read more</a></p>
-<h3 id="reproducibility-what-did-my-data-look-like-at-a-point-in-time">
-  
-  
-    <a href="#reproducibility-what-did-my-data-look-like-at-a-point-in-time" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Reproducibility: What Did My Data Look Like at a Point In Time?
-  
-  
-</h3>
-    
-
-<p>Being able to look at data as it was at a given point is particularly useful in at least two scenarios:</p>
+<p>You can use the export main in three different modes:</p>
 
 <ol>
   <li>
-    <p>Reproducibility of ML experiments</p>
+    <p>Export all the objects from branch <code class="language-plaintext highlighter-rouge">example-branch</code> on <code class="language-plaintext highlighter-rouge">example-repo</code> repository to S3 location <code class="language-plaintext highlighter-rouge">s3://example-bucket/prefix/</code>:</p>
 
-    <p>ML experimentation is iterative, requiring the ability to reproduce specific results. With lakeFS, you can version all aspects of an ML experiment, including the data. This enables:</p>
-
-    <p><strong>Data Lineage</strong>: Track the transformation of data from raw datasets to the final version used in experiments, ensuring transparency and traceability.</p>
-
-    <p><strong>Zero-Copy Branching</strong>: Minimize storage use by creating lightweight branches of your data, allowing for easy experimentation across different versions.</p>
-
-    <p><strong>Easy Integration</strong>: Seamlessly integrate with ML tools like MLFlow, linking experiments directly to the exact data versions used, making reproducibility straightforward.</p>
-
-    <p>lakeFS enhances your ML workflow by ensuring that all versions of data are easily accessible, traceable, and reproducible.</p>
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.... example-repo s3://example-bucket/prefix/ <span class="nt">--branch</span><span class="o">=</span>example-branch
+</code></pre></div>    </div>
   </li>
   <li>
-    <p>Troubleshooting production problems</p>
+    <p>Export all the objects from a commit <code class="language-plaintext highlighter-rouge">c805e49bafb841a0875f49cd555b397340bbd9b8</code> on <code class="language-plaintext highlighter-rouge">example-repo</code> repository to S3 location <code class="language-plaintext highlighter-rouge">s3://example-bucket/prefix/</code>:</p>
 
-    <p>Data engineers are often asked to validate the data. A user might report inconsistencies, question the accuracy, or simply report it to be incorrect.</p>
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.... example-repo s3://example-bucket/prefix/ <span class="nt">--commit_id</span><span class="o">=</span>c805e49bafb841a0875f49cd555b397340bbd9b8
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Export only the diff between branch <code class="language-plaintext highlighter-rouge">example-branch</code> and commit <code class="language-plaintext highlighter-rouge">c805e49bafb841a0875f49cd555b397340bbd9b8</code>
+on <code class="language-plaintext highlighter-rouge">example-repo</code> repository to S3 location <code class="language-plaintext highlighter-rouge">s3://example-bucket/prefix/</code>:</p>
 
-    <p>Since the data continuously changes, it is challenging to understand its state at the time of the error.</p>
-
-    <p>With lakeFS you can create a branch from a commit to debug an issue in isolation.</p>
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.... example-repo s3://example-bucket/prefix/ <span class="nt">--branch</span><span class="o">=</span>example-branch <span class="nt">--prev_commit_id</span><span class="o">=</span>c805e49bafb841a0875f49cd555b397340bbd9b8
+</code></pre></div>    </div>
   </li>
 </ol>
 
-<p>👉🏻 <a href="./understand/use_cases/reproducibility.html">Read More</a></p>
-<h3 id="rollback-of-data-changes-and-recovery-from-data-errors">
+<p>The complete <code class="language-plaintext highlighter-rouge">spark-submit</code> command would look as follows:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit <span class="nt">--conf</span> spark.hadoop.lakefs.api.url<span class="o">=</span>https://&lt;LAKEFS_ENDPOINT&gt;/api/v1 <span class="se">\</span>
+  <span class="nt">--conf</span> spark.hadoop.lakefs.api.access_key<span class="o">=</span>&lt;LAKEFS_ACCESS_KEY_ID&gt; <span class="se">\</span>
+  <span class="nt">--conf</span> spark.hadoop.lakefs.api.secret_key<span class="o">=</span>&lt;LAKEFS_SECRET_ACCESS_KEY&gt; <span class="se">\</span>
+  <span class="nt">--packages</span> io.lakefs:lakefs-spark-client_2.12:0.14.1 <span class="se">\</span>
+  <span class="nt">--class</span> io.treeverse.clients.Main export-app example-repo s3://example-bucket/prefix <span class="se">\</span>
+  <span class="nt">--branch</span><span class="o">=</span>example-branch
+</code></pre></div></div>
+
+<p class="note">The command assumes that the Spark cluster has permissions to write to <code class="language-plaintext highlighter-rouge">s3://example-bucket/prefix</code>.
+Otherwise, add <code class="language-plaintext highlighter-rouge">spark.hadoop.fs.s3a.access.key</code> and <code class="language-plaintext highlighter-rouge">spark.hadoop.fs.s3a.secret.key</code> with the proper credentials.</p>
+<h4 id="networking">
   
   
-    <a href="#rollback-of-data-changes-and-recovery-from-data-errors" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Rollback of Data Changes and Recovery from Data Errors
+    <a href="#networking" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Networking
+  
+  
+</h4>
+    
+
+<p>Spark export communicates with the lakeFS server.  Very large repositories
+may require increasing a read timeout.  If you run into timeout errors
+during communication from the Spark job to lakeFS consider increasing these
+timeouts:</p>
+
+<ul>
+  <li>Add <code class="language-plaintext highlighter-rouge">-c spark.hadoop.lakefs.api.read.timeout_seconds=TIMEOUT_IN_SECONDS</code>
+(default 10) to allow lakeFS more time to respond to requests.</li>
+  <li>Add <code class="language-plaintext highlighter-rouge">-c
+spark.hadoop.lakefs.api.connection.timeout_seconds=TIMEOUT_IN_SECONDS</code>
+(default 10) to wait longer for lakeFS to accept connections.</li>
+</ul>
+<h3 id="using-custom-code-notebookspark">
+  
+  
+    <a href="#using-custom-code-notebookspark" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Using custom code (Notebook/Spark)
   
   
 </h3>
     
 
-<p>Human error or misconfigurations can lead to erroneous data making its way into production or critical data being accidentally deleted. Traditional backups are often inadequate for recovery in these situations, as they may be outdated and require time-consuming object-level sifting.</p>
+<p>Set up lakeFS Spark metadata client with the endpoint and credentials as instructed in the previous <a href="/reference/spark-client.html">page</a>.</p>
 
-<p>With lakeFS, you can avoid these inefficiencies by committing snapshots of data at well-defined times. This allows for instant recovery: simply identify a good historical commit and restore or copy from it with a single operation.</p>
+<p>The client exposes the <code class="language-plaintext highlighter-rouge">Exporter</code> object with three export options:</p>
 
-<p>👉🏻 <a href="./understand/use_cases/rollback.html">Read more</a></p>
-<h3 id="establishing-data-quality-guarantees---cicd-for-data">
-  
-  
-    <a href="#establishing-data-quality-guarantees---cicd-for-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Establishing data quality guarantees - CI/CD for data
-  
-  
-</h3>
-    
+<ol><li>
+Export *all* the objects at the HEAD of a given branch. Does not include
+files that were added to that branch but were not committed.
 
-<p>The best way to deal with mistakes is to avoid them. A data source that is ingested into the lake introducing low-quality data should be blocked before exposure if possible.</p>
+<div class="tabs">
+  <ul>
+  <li><a href="#export-head-scala">Scala</a></li>
+  </ul>
+  <div id="export-head-scala">
+        <div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">exportAllFromBranch</span><span class="o">(</span><span class="n">branch</span><span class="k">:</span> <span class="kt">String</span><span class="o">)</span>
+</code></pre></div>        </div>
+      </div>
+</div>
+</li>
+<li>Export ALL objects from a commit:
 
-<p>With lakeFS, you can achieve this by tying data quality tests to commit and merge operations via lakeFS <a href="/understand/use_cases/cicd_for_data.html#using-hooks-as-data-quality-gates">hooks</a>.</p>
+<div class="tabs">
+  <ul>
+  <li><a href="#export-commit-scala">Scala</a></li>
+  </ul>
+  <div id="export-commit-scala">
+        <div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">exportAllFromCommit</span><span class="o">(</span><span class="n">commitID</span><span class="k">:</span> <span class="kt">String</span><span class="o">)</span>
+</code></pre></div>        </div>
+      </div>
+</div>
+</li>
+<li>Export just the diff between a commit and the HEAD of a branch.
 
-<p>👉🏻 <a href="./understand/use_cases/cicd_for_data.html">Read more</a></p>
-<h2 id="next-step">
+   This is an ideal option for continuous exports of a branch since it will change only the files
+   that have been changed since the previous commit.
+
+<div class="tabs">
+  <ul>
+  <li><a href="#export-diffs-scala">Scala</a></li>
+  </ul>
+  <div id="export-diffs-scala">
+        <div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">exportFrom</span><span class="o">(</span><span class="n">branch</span><span class="k">:</span> <span class="kt">String</span><span class="o">,</span> <span class="n">prevCommitID</span><span class="k">:</span> <span class="kt">String</span><span class="o">)</span>
+</code></pre></div>        </div>
+      </div>
+</div>
+</li>
+</ol>
+<h2 id="successfailure-indications">
   
   
-    <a href="#next-step" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Next Step
+    <a href="#successfailure-indications" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Success/Failure Indications
   
   
 </h2>
     
 
-<p>Try lakeFS on the <a href="https://lakefs.cloud/">cloud</a> or <a href="https://docs.lakefs.io/quickstart/">run it locally</a></p>
+<p>When the Spark export operation ends, an additional status file will be added to the root
+object storage destination.
+If all files were exported successfully, the file path will be of the form: <code class="language-plaintext highlighter-rouge">EXPORT_&lt;commitID&gt;_&lt;ISO-8601-time-UTC&gt;_SUCCESS</code>.
+For failures: the form will be<code class="language-plaintext highlighter-rouge">EXPORT_&lt;commitID&gt;_&lt;ISO-8601-time-UTC&gt;_FAILURE</code>, and the file will include a log of the failed files operations.</p>
+<h2 id="export-rounds-spark-success-files">
+  
+  
+    <a href="#export-rounds-spark-success-files" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Export Rounds (Spark success files)
+  
+  
+</h2>
+    
+<p>Some files should be exported before others, e.g., a Spark <code class="language-plaintext highlighter-rouge">_SUCCESS</code> file exported before other files under
+the same prefix might send the wrong indication.</p>
+
+<p>The export operation may contain several <em>rounds</em> within the same export.
+A failing round will stop the export of all the files of the next rounds.</p>
+
+<p>By default, lakeFS will use the <code class="language-plaintext highlighter-rouge">SparkFilter</code> and have 2 rounds for each export.
+The first round will export any non-Spark <code class="language-plaintext highlighter-rouge">_SUCCESS</code> files. Second round will export all Spark’s <code class="language-plaintext highlighter-rouge">_SUCCESS</code> files.
+You may override the default behavior by passing a custom <code class="language-plaintext highlighter-rouge">filter</code> to the Exporter.</p>
+<h2 id="example">
+  
+  
+    <a href="#example" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Example
+  
+  
+</h2>
+    
+
+<ol><li>First configure the `Exporter` instance:
+
+<div class="tabs">
+  <ul>
+    <li><a href="#export-custom-setup-scala">Scala</a></li>
+  </ul>
+  <div id="export-custom-setup-scala">
+        <div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nn">io.treeverse.clients.</span><span class="o">{</span><span class="nc">ApiClient</span><span class="o">,</span> <span class="nc">Exporter</span><span class="o">}</span>
+<span class="k">import</span> <span class="nn">org.apache.spark.sql.SparkSession</span>
+
+<span class="k">val</span> <span class="nv">endpoint</span> <span class="k">=</span> <span class="s">"http://&lt;LAKEFS_ENDPOINT&gt;/api/v1"</span>
+<span class="k">val</span> <span class="nv">accessKey</span> <span class="k">=</span> <span class="s">"&lt;LAKEFS_ACCESS_KEY_ID&gt;"</span>
+<span class="k">val</span> <span class="nv">secretKey</span> <span class="k">=</span> <span class="s">"&lt;LAKEFS_SECRET_ACCESS_KEY&gt;"</span>
+
+<span class="k">val</span> <span class="nv">repo</span> <span class="k">=</span> <span class="s">"example-repo"</span>
+
+<span class="k">val</span> <span class="nv">spark</span> <span class="k">=</span> <span class="nv">SparkSession</span><span class="o">.</span><span class="py">builder</span><span class="o">().</span><span class="py">appName</span><span class="o">(</span><span class="s">"I can export"</span><span class="o">).</span><span class="py">master</span><span class="o">(</span><span class="s">"local"</span><span class="o">).</span><span class="py">getOrCreate</span><span class="o">()</span>
+<span class="k">val</span> <span class="nv">sc</span> <span class="k">=</span> <span class="nv">spark</span><span class="o">.</span><span class="py">sparkContext</span>
+<span class="nv">sc</span><span class="o">.</span><span class="py">hadoopConfiguration</span><span class="o">.</span><span class="py">set</span><span class="o">(</span><span class="s">"lakefs.api.url"</span><span class="o">,</span> <span class="n">endpoint</span><span class="o">)</span>
+<span class="nv">sc</span><span class="o">.</span><span class="py">hadoopConfiguration</span><span class="o">.</span><span class="py">set</span><span class="o">(</span><span class="s">"lakefs.api.access_key"</span><span class="o">,</span> <span class="n">accessKey</span><span class="o">)</span>
+<span class="nv">sc</span><span class="o">.</span><span class="py">hadoopConfiguration</span><span class="o">.</span><span class="py">set</span><span class="o">(</span><span class="s">"lakefs.api.secret_key"</span><span class="o">,</span> <span class="n">secretKey</span><span class="o">)</span>
+
+<span class="c1">// Add any required spark context configuration for s3</span>
+<span class="k">val</span> <span class="nv">rootLocation</span> <span class="k">=</span> <span class="s">"s3://company-bucket/example/latest"</span>
+
+<span class="k">val</span> <span class="nv">apiClient</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">ApiClient</span><span class="o">(</span><span class="n">endpoint</span><span class="o">,</span> <span class="n">accessKey</span><span class="o">,</span> <span class="n">secretKey</span><span class="o">)</span>
+<span class="k">val</span> <span class="nv">exporter</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Exporter</span><span class="o">(</span><span class="n">spark</span><span class="o">,</span> <span class="n">apiClient</span><span class="o">,</span> <span class="n">repo</span><span class="o">,</span> <span class="n">rootLocation</span><span class="o">)</span>
+</code></pre></div>        </div>
+      </div>
+</div></li>
+<li>Now you can export all objects from `main` branch to `s3://company-bucket/example/latest`:
+
+<div class="tabs">
+  <ul>
+  <li><a href="#export-custom-branch-scala">Scala</a></li>
+  </ul>
+  <div id="export-custom-branch-scala">
+        <div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">val</span> <span class="nv">branch</span> <span class="k">=</span> <span class="s">"main"</span>
+<span class="nv">exporter</span><span class="o">.</span><span class="py">exportAllFromBranch</span><span class="o">(</span><span class="n">branch</span><span class="o">)</span>
+</code></pre></div>        </div>
+      </div>
+</div></li>
+<li>Assuming a previous successful export on commit `f3c450d8cd0e84ac67e7bc1c5dcde9bef82d8ba7`,
+you can alternatively export just the difference between `main` branch and the commit:
+
+<div class="tabs">
+  <ul>
+    <li><a href="#export-custom-diffs-scala">Scala</a></li>
+  </ul>
+  <div id="export-custom-diffs-scala">
+        <div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">val</span> <span class="nv">branch</span> <span class="k">=</span> <span class="s">"main"</span>
+<span class="k">val</span> <span class="nv">commit</span> <span class="k">=</span> <span class="s">"f3c450d8cd0e84ac67e7bc1c5dcde9bef82d8ba7"</span>
+<span class="nv">exporter</span><span class="o">.</span><span class="py">exportFrom</span><span class="o">(</span><span class="n">branch</span><span class="o">,</span> <span class="n">commit</span><span class="o">)</span>
+</code></pre></div>        </div>
+      </div>
+</div></li></ol>
+<h2 id="exporting-data-with-docker">
+  
+  
+    <a href="#exporting-data-with-docker" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Exporting Data with Docker
+  
+  
+</h2>
+    
+
+<p>This option is recommended if you don’t have Spark at your tool-set.
+It doesn’t support distribution across machines, therefore may have a lower performance. 
+Using this method, you can export data from lakeFS to S3 using the export options (in a similar way to the Spark export):</p>
+
+<ol>
+  <li>
+    <p>Export all objects from a branch <code class="language-plaintext highlighter-rouge">example-branch</code> on <code class="language-plaintext highlighter-rouge">example-repo</code> repository to S3 location <code class="language-plaintext highlighter-rouge">s3://destination-bucket/prefix/</code>:</p>
+
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.... example-repo s3://destination-bucket/prefix/ <span class="nt">--branch</span><span class="o">=</span><span class="s2">"example-branch"</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Export all objects from a commit <code class="language-plaintext highlighter-rouge">c805e49bafb841a0875f49cd555b397340bbd9b8</code> on <code class="language-plaintext highlighter-rouge">example-repo</code> repository to S3 location <code class="language-plaintext highlighter-rouge">s3://destination-bucket/prefix/</code>:</p>
+
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.... example-repo s3://destination-bucket/prefix/ <span class="nt">--commit_id</span><span class="o">=</span>c805e49bafb841a0875f49cd555b397340bbd9b8
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Export only the diff between branch <code class="language-plaintext highlighter-rouge">example-branch</code> and commit <code class="language-plaintext highlighter-rouge">c805e49bafb841a0875f49cd555b397340bbd9b8</code>
+on <code class="language-plaintext highlighter-rouge">example-repo</code> repository to S3 location <code class="language-plaintext highlighter-rouge">s3://destination-bucket/prefix/</code>:</p>
+
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.... example-repo s3://destination-bucket/prefix/ <span class="nt">--branch</span><span class="o">=</span><span class="s2">"example-branch"</span> <span class="nt">--prev_commit_id</span><span class="o">=</span>c805e49bafb841a0875f49cd555b397340bbd9b8
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>You will need to add the relevant environment variables.
+The complete <code class="language-plaintext highlighter-rouge">docker run</code> command would look like:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="se">\</span>
+    <span class="nt">-e</span> <span class="nv">LAKEFS_ACCESS_KEY_ID</span><span class="o">=</span>XXX <span class="nt">-e</span> <span class="nv">LAKEFS_SECRET_ACCESS_KEY</span><span class="o">=</span>YYY <span class="se">\</span>
+   <span class="nt">-e</span> <span class="nv">LAKEFS_ENDPOINT</span><span class="o">=</span>https://&lt;LAKEFS_ENDPOINT&gt;/ <span class="se">\</span>
+   <span class="nt">-e</span> <span class="nv">AWS_ACCESS_KEY_ID</span><span class="o">=</span>XXX <span class="nt">-e</span> <span class="nv">AWS_SECRET_ACCESS_KEY</span><span class="o">=</span>YYY <span class="se">\</span>
+   treeverse/lakefs-rclone-export:latest <span class="se">\</span>
+      example-repo <span class="se">\</span>
+      s3://destination-bucket/prefix/ <span class="se">\</span>
+      <span class="nt">--branch</span><span class="o">=</span><span class="s2">"example-branch"</span>
+</code></pre></div></div>
+
+<p class="note"><strong>Note:</strong> This feature uses <a href="https://rclone.org/" target="_blank">rclone</a>,
+and specifically <a href="https://rclone.org/commands/rclone_sync/" target="_blank">rclone sync</a>. This can change the destination path, therefore the s3 destination location must be designated to lakeFS export.</p>
 
                 
 

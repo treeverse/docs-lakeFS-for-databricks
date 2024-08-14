@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
   
   <style type="text/css">
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(1) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(4) > .nav-list > .nav-list-item:nth-child(16) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
 
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list-expander svg { transform: rotate(-90deg); }
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list { display: block; }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(4) > .nav-list-expander svg, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(4) > .nav-list > .nav-list-item:not(.passive):nth-child(16) > .nav-list-expander svg { transform: rotate(-90deg); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(4) > .nav-list, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(4) > .nav-list > .nav-list-item:not(.passive):nth-child(16) > .nav-list { display: block; }
 
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list-expander svg { transform: rotate(-90deg); }
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list { display: block; }
@@ -38,21 +38,21 @@
 
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Welcome to lakeFS | lakeFS Documentation</title>
+<title>Glue Data Catalog | lakeFS Documentation</title>
 <meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Welcome to lakeFS" />
+<meta property="og:title" content="Glue Data Catalog" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes." />
-<meta property="og:description" content="The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes." />
+<meta name="description" content="Query data from lakeFS branches in AWS Athena or other services backed by Glue Data Catalog." />
+<meta property="og:description" content="Query data from lakeFS branches in AWS Athena or other services backed by Glue Data Catalog." />
 <meta property="og:site_name" content="lakeFS Documentation" />
 <meta property="og:image" content="https://docs.lakefs.io/assets/img/docs_logo.png" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:image" content="https://docs.lakefs.io/assets/img/docs_logo.png" />
-<meta property="twitter:title" content="Welcome to lakeFS" />
+<meta property="twitter:title" content="Glue Data Catalog" />
 <meta name="twitter:site" content="@lakeFS" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes.","headline":"Welcome to lakeFS","image":"https://docs.lakefs.io/assets/img/docs_logo.png","name":"lakeFS","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/logo.svg"}},"sameAs":["https://www.linkedin.com/company/treeverse/","https://twitter.com/lakeFS","https://github.com/treeverse/lakeFS","https://data-folks.masto.host/@lakeFS"],"url":"/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Query data from lakeFS branches in AWS Athena or other services backed by Glue Data Catalog.","headline":"Glue Data Catalog","image":"https://docs.lakefs.io/assets/img/docs_logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/logo.svg"}},"url":"/integrations/glue_metastore.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -212,8 +212,8 @@
             </script>
 
             <ul class="nav-list"><li
-            class="nav-list-item active"><a href="/"
-           class="nav-list-link active">Welcome to lakeFS</a></li><li
+            class="nav-list-item"><a href="/"
+           class="nav-list-link">Welcome to lakeFS</a></li><li
             class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/quickstart/"
@@ -281,7 +281,7 @@
                    class="nav-list-link">Sizing Guide</a></li><li class="nav-list-item "><a href="/howto/scim.html"
                    class="nav-list-link">System for Cross-domain Identity Management (SCIM)</a></li><li class="nav-list-item "><a href="/howto/local-checkouts.html"
                    class="nav-list-link">Work with lakeFS data locally</a></li></ul></li><li
-            class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
+            class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/integrations/"
            class="nav-list-link">Integrations</a><ul class="nav-list "><li class="nav-list-item "><a href="/integrations/aws_cli.html"
@@ -299,8 +299,8 @@
                    class="nav-list-link">Dremio</a></li><li class="nav-list-item "><a href="/integrations/duckdb.html"
                    class="nav-list-link">DuckDB</a></li><li class="nav-list-item "><a href="/integrations/git.html"
                    class="nav-list-link">Git</a></li><li class="nav-list-item "><a href="/integrations/glue_hive_metastore.html"
-                   class="nav-list-link">Glue / Hive metastore</a></li><li class="nav-list-item "><a href="/integrations/glue_metastore.html"
-                   class="nav-list-link">Glue Data Catalog</a></li><li class="nav-list-item "><a href="/integrations/huggingface_datasets.html"
+                   class="nav-list-link">Glue / Hive metastore</a></li><li class="nav-list-item  active"><a href="/integrations/glue_metastore.html"
+                   class="nav-list-link active">Glue Data Catalog</a></li><li class="nav-list-item "><a href="/integrations/huggingface_datasets.html"
                    class="nav-list-link">HuggingFace Datasets</a></li><li class="nav-list-item "><a href="/integrations/kubeflow.html"
                    class="nav-list-link">Kubeflow</a></li><li class="nav-list-item "><a href="/integrations/presto_trino.html"
                    class="nav-list-link">Presto / Trino</a></li><li class="nav-list-item "><a href="/integrations/python.html"
@@ -530,291 +530,392 @@
         </div>
         <div id="main-content-wrap" class="main-content-wrap">
             
+            
+            <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+                <ol class="breadcrumb-nav-list">
+                    
+                    <li class="breadcrumb-nav-list-item"><a href="/integrations/">Integrations</a>
+                    </li>
+                    
+                    <li class="breadcrumb-nav-list-item"><span>Glue Data Catalog</span></li>
+                </ol>
+            </nav>
+            
+            
             <div id="main-content" class="main-content" role="main">
                 
-                    <h1 id="temporary-placeholder-for-lakefs-databricks-docs">
+                    <h1 id="using-lakefs-with-the-glue-catalog">
   
   
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-1">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-1" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-2">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-2" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-3">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-3" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-4">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-4" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-5">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-5" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-6">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-6" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
+    <a href="#using-lakefs-with-the-glue-catalog" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Using lakeFS with the Glue Catalog
   
   
 </h1>
     
 
-<p><img src="/assets/img/waving-axolotl-transparent.gif" width="90" /></p>
-
-<p><strong>lakeFS brings software engineering best practices and applies them to data engineering.</strong></p>
-
-<p>lakeFS provides version control over the data lake, and uses Git-like semantics to create and access those versions. If you know git, you’ll be right at home with lakeFS.</p>
-
-<p>With lakeFS, you can use concepts on your data lake such as <strong>branch</strong> to create an isolated version of the data, <strong>commit</strong> to create a reproducible point in time, and <strong>merge</strong> in order to incorporate your changes in one atomic action.</p>
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/GTxsyeoLccw"></iframe>
-<h2 id="how-do-i-get-started">
+<div class="toc-block">
+<h2 class="no_toc text-delta" id="table-of-contents">
   
   
-    <a href="#how-do-i-get-started" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Do I Get Started?
+    <a href="#table-of-contents" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
   
   
 </h2>
     
 
-<p><strong><a href="./quickstart">The hands-on quickstart</a> guides you through some core features of lakeFS</strong>.</p>
-
-<p>These include <a href="./quickstart/branch.html">branching</a>, <a href="quickstart/commit-and-merge.html">merging</a>, and <a href="quickstart/rollback.html">rolling back changes</a> to data.</p>
-
-<p class="note">You can use the <a href="https://lakefs.cloud/register">30-day free trial of lakeFS Cloud</a> if you want to try out lakeFS without installing anything.</p>
-<h2 id="key-lakefs-features">
-  
-  
-    <a href="#key-lakefs-features" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Key lakeFS Features
-  
-  
-</h2>
-    
-
-<ul>
-  <li>It is format-agnostic.</li>
-  <li>It works with numerous data tools and platforms.</li>
-  <li>Your data stays in place.</li>
-  <li>It eliminates the need for data duplication using <a href="/understand/model.html#zero-copy-branching">zero-copy branching</a>.</li>
-  <li>It maintains high performance over data lakes of any size.</li>
-  <li>It includes configurable garbage collection capabilities.</li>
-  <li>It is proven in production and has an active community.</li>
-</ul>
-
-<p><img src="/assets/img/lakeFS_integration.png" alt="lakeFS integration into data lake" width="60%" height="60%" /></p>
-<h2 id="how-does-lakefs-work-with-other-tools">
-  
-  
-    <a href="#how-does-lakefs-work-with-other-tools" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Does lakeFS Work With Other Tools?
-  
-  
-</h2>
-    
-
-<p>lakeFS is an open source project that supports managing data in AWS S3, Azure Blob Storage, Google Cloud Storage (GCS) and any other object storage with an S3 interface. It integrates seamlessly with popular data frameworks such as Spark, Hive Metastore, dbt, Trino, Presto, and many others and includes an S3 compatibility layer.</p>
-
-<p class="note">For more details and a full list see <a href="./integrations/">the integrations pages</a>.</p>
-
-<p class="center">
-    <img src="/assets/img/lakeFSArchitecture.png" />
-</p>
-
-<p class="pb-5">lakeFS maintains compatibility with the S3 API to minimize adoption
-friction. You can use it as a drop-in replacement for S3 from the perspective of
-any tool interacting with a data lake.</p>
-
-<p>For example, take the common operation of reading a collection of data from an object storage into a Spark DataFrame. For data outside a lakeFS repo, the code will look like this:</p>
-
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">parquet</span><span class="p">(</span><span class="s">"s3a://my-bucket/collections/foo/"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>After adding the data collections into my-bucket to a repository, the same operation becomes:</p>
-
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">parquet</span><span class="p">(</span><span class="s">"s3a://my-repo/main-branch/collections/foo/"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>You can use the same methods and syntax you are already using to read and write data when using a lakeFS repository. This simplifies the adoption of lakeFS - minimal changes are needed to get started, making further changes an incremental process.</p>
-<h2 id="lakefs-is-git-for-data">
-  
-  
-    <a href="#lakefs-is-git-for-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> lakeFS is Git for Data
-  
-  
-</h2>
-    
-
-<p>Git conquered the world of code because it had best supported engineering best practices required by developers, in particular:</p>
-
-<ul>
-  <li>Collaborate during development.</li>
-  <li>Develop and Test in isolation</li>
-  <li>Revert code repository to a sable version in case of an error</li>
-  <li>Reproduce and troubleshoot issues with a given version of the code</li>
-  <li>Continuously integrate and deploy new code (CI/CD)</li>
-</ul>
-
-<p>lakeFS provides these exact benefits, that are data practitioners are missing today, and enables them a clear intuitive Git-like interface to easily manage their data like they manage code. Through its versioning engine, lakeFS enables the following built-in operations familiar from Git:</p>
-
-<ul>
-  <li><strong>branch:</strong> a consistent copy of a repository, isolated from other branches and their changes. Initial creation of a branch is a metadata operation that does not duplicate objects.</li>
-  <li><strong>commit:</strong> an immutable checkpoint containing a complete snapshot of a repository.</li>
-  <li><strong>merge:</strong> performed between two branches — merges atomically update one branch with the changes from another.</li>
-  <li><strong>revert:</strong> returns a repo to the exact state of a previous commit.</li>
-  <li><strong>tag:</strong> a pointer to a single immutable commit with a readable, meaningful name.</li>
-</ul>
-
-<p><em>See the <a href="/understand/model.html">object model</a> for an in-depth
-definition of these, and the <a href="/reference/cli.html">CLI reference</a> for the
-full list of commands.</em></p>
-
-<p>Incorporating these operations into your data lake pipelines provides the same collaboration and organizational benefits you get when managing application code with source control.</p>
-<h3 id="the-lakefs-promotion-workflow">
-  
-  
-    <a href="#the-lakefs-promotion-workflow" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> The lakeFS Promotion Workflow
-  
-  
-</h3>
-    
-
-<p>Here’s how lakeFS <em>branches</em> and <em>merges</em> improve the universal process of updating collections with the latest data.</p>
-
-<p><img src="/assets/img/promotion_workflow.png" alt="lakeFS promotion workflow" width="60%" height="60%" /></p>
-
-<ol>
-  <li>First, create a new <strong>branch</strong> from <code class="language-plaintext highlighter-rouge">main</code> to instantly generate a complete “copy” of your production data.</li>
-  <li>Apply changes or make updates on the isolated branch to understand their impact prior to exposure.</li>
-  <li>And finally, perform a <strong>merge</strong> from the feature branch back to main to atomically promote the updates into production.</li>
-</ol>
-
-<p>Following this pattern, lakeFS facilitates a streamlined data deployment workflow that consistently produces data assets you can have total confidence in.</p>
-<h2 id="how-can-lakefs-help-me">
-  
-  
-    <a href="#how-can-lakefs-help-me" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Can lakeFS Help Me?
-  
-  
-</h2>
-    
-
-<p>lakeFS helps you maintain a tidy data lake in several ways, including:</p>
-<h3 id="isolated-devtest-environments-with-zero-copy-branching">
-  
-  
-    <a href="#isolated-devtest-environments-with-zero-copy-branching" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Isolated Dev/Test Environments with zero-copy branching
-  
-  
-</h3>
-    
-
-<p>lakeFS makes creating isolated dev/test environments for ETL testing instantaneous, and through its use of zero-copy branching, cheap. This enables you to test and validate code changes on production data without impacting it, as well as run analysis and experiments on production data in an isolated clone.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/etl_testing.html">Read more</a></p>
-<h3 id="reproducibility-what-did-my-data-look-like-at-a-point-in-time">
-  
-  
-    <a href="#reproducibility-what-did-my-data-look-like-at-a-point-in-time" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Reproducibility: What Did My Data Look Like at a Point In Time?
-  
-  
-</h3>
-    
-
-<p>Being able to look at data as it was at a given point is particularly useful in at least two scenarios:</p>
-
-<ol>
-  <li>
-    <p>Reproducibility of ML experiments</p>
-
-    <p>ML experimentation is iterative, requiring the ability to reproduce specific results. With lakeFS, you can version all aspects of an ML experiment, including the data. This enables:</p>
-
-    <p><strong>Data Lineage</strong>: Track the transformation of data from raw datasets to the final version used in experiments, ensuring transparency and traceability.</p>
-
-    <p><strong>Zero-Copy Branching</strong>: Minimize storage use by creating lightweight branches of your data, allowing for easy experimentation across different versions.</p>
-
-    <p><strong>Easy Integration</strong>: Seamlessly integrate with ML tools like MLFlow, linking experiments directly to the exact data versions used, making reproducibility straightforward.</p>
-
-    <p>lakeFS enhances your ML workflow by ensuring that all versions of data are easily accessible, traceable, and reproducible.</p>
-  </li>
-  <li>
-    <p>Troubleshooting production problems</p>
-
-    <p>Data engineers are often asked to validate the data. A user might report inconsistencies, question the accuracy, or simply report it to be incorrect.</p>
-
-    <p>Since the data continuously changes, it is challenging to understand its state at the time of the error.</p>
-
-    <p>With lakeFS you can create a branch from a commit to debug an issue in isolation.</p>
+<ol id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#example-using-athena-to-query-lakefs-data" id="markdown-toc-example-using-athena-to-query-lakefs-data">Example: Using Athena to query lakeFS data</a>    <ol>
+      <li><a href="#prerequisites" id="markdown-toc-prerequisites">Prerequisites</a></li>
+      <li><a href="#add-table-descriptor" id="markdown-toc-add-table-descriptor">Add table descriptor</a></li>
+      <li><a href="#write-some-table-data" id="markdown-toc-write-some-table-data">Write some table data</a></li>
+      <li><a href="#the-exporter-script" id="markdown-toc-the-exporter-script">The exporter script</a></li>
+      <li><a href="#configure-action-hooks" id="markdown-toc-configure-action-hooks">Configure Action Hooks</a></li>
+      <li><a href="#use-athena" id="markdown-toc-use-athena">Use Athena</a></li>
+      <li><a href="#cleanup" id="markdown-toc-cleanup">Cleanup</a></li>
+    </ol>
   </li>
 </ol>
 
-<p>👉🏻 <a href="./understand/use_cases/reproducibility.html">Read More</a></p>
-<h3 id="rollback-of-data-changes-and-recovery-from-data-errors">
+</div>
+<h2 id="overview">
   
   
-    <a href="#rollback-of-data-changes-and-recovery-from-data-errors" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Rollback of Data Changes and Recovery from Data Errors
-  
-  
-</h3>
-    
-
-<p>Human error or misconfigurations can lead to erroneous data making its way into production or critical data being accidentally deleted. Traditional backups are often inadequate for recovery in these situations, as they may be outdated and require time-consuming object-level sifting.</p>
-
-<p>With lakeFS, you can avoid these inefficiencies by committing snapshots of data at well-defined times. This allows for instant recovery: simply identify a good historical commit and restore or copy from it with a single operation.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/rollback.html">Read more</a></p>
-<h3 id="establishing-data-quality-guarantees---cicd-for-data">
-  
-  
-    <a href="#establishing-data-quality-guarantees---cicd-for-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Establishing data quality guarantees - CI/CD for data
-  
-  
-</h3>
-    
-
-<p>The best way to deal with mistakes is to avoid them. A data source that is ingested into the lake introducing low-quality data should be blocked before exposure if possible.</p>
-
-<p>With lakeFS, you can achieve this by tying data quality tests to commit and merge operations via lakeFS <a href="/understand/use_cases/cicd_for_data.html#using-hooks-as-data-quality-gates">hooks</a>.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/cicd_for_data.html">Read more</a></p>
-<h2 id="next-step">
-  
-  
-    <a href="#next-step" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Next Step
+    <a href="#overview" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Overview
   
   
 </h2>
     
 
-<p>Try lakeFS on the <a href="https://lakefs.cloud/">cloud</a> or <a href="https://docs.lakefs.io/quickstart/">run it locally</a></p>
+<p>The integration between Glue and lakeFS is based on <a href="/howto/catalog_exports.html">Data Catalog Exports</a>.</p>
+
+<p>This guide describes how to use lakeFS with the Glue Data Catalog.
+You’ll be able to query your lakeFS data by specifying the repository, branch and commit in your SQL query.
+Currently, only read operations are supported on the tables.
+You will set up the automation required to work with lakeFS on top of the Glue Data Catalog, including:</p>
+<ol>
+  <li>Create a table descriptor under <code class="language-plaintext highlighter-rouge">_lakefs_tables/&lt;your-table&gt;.yaml</code>. This will represent your table schema.</li>
+  <li>Write an exporter script that will:
+    <ul>
+      <li>Mirror your branch’s state into <a href="https://svn.apache.org/repos/infra/websites/production/hive/content/javadocs/r2.1.1/api/org/apache/hadoop/hive/ql/io/SymlinkTextInputFormat.html">Hive Symlink</a> files readable by Athena.</li>
+      <li>Export the table descriptors from your branch to the Glue Catalog.</li>
+    </ul>
+  </li>
+  <li>Set up lakeFS <a href="/howto/catalog_exports.html#running-an-exporter">hooks</a> to trigger the above script when specific events occur.</li>
+</ol>
+<h2 id="example-using-athena-to-query-lakefs-data">
+  
+  
+    <a href="#example-using-athena-to-query-lakefs-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Example: Using Athena to query lakeFS data
+  
+  
+</h2>
+    
+<h3 id="prerequisites">
+  
+  
+    <a href="#prerequisites" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Prerequisites
+  
+  
+</h3>
+    
+
+<p>Before starting, make sure you have:</p>
+<ol>
+  <li>An active lakeFS installation with S3 as the backing storage, and a repository in this installation.</li>
+  <li>A database in Glue Data Catalog (lakeFS does not create one).</li>
+  <li>AWS Credentials with permission to manage Glue, Athena Query and S3 access.</li>
+</ol>
+<h3 id="add-table-descriptor">
+  
+  
+    <a href="#add-table-descriptor" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Add table descriptor
+  
+  
+</h3>
+    
+
+<p>Let’s define a table, and commit it to lakeFS. 
+Save the YAML below as <code class="language-plaintext highlighter-rouge">animals.yaml</code> and upload it to lakeFS.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakectl fs upload lakefs://catalogs/main/_lakefs_tables/animals.yaml <span class="nt">-s</span> ./animals.yaml <span class="o">&amp;&amp;</span> <span class="se">\</span>
+lakectl commit lakefs://catalogs/main <span class="nt">-m</span> <span class="s2">"added table"</span>
+</code></pre></div></div>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">animals</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">hive</span>
+<span class="c1"># data location root in lakeFS</span>
+<span class="na">path</span><span class="pi">:</span> <span class="s">tables/animals</span>
+<span class="c1"># partitions order</span>
+<span class="na">partition_columns</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">type'</span><span class="pi">,</span> <span class="s1">'</span><span class="s">weight'</span><span class="pi">]</span>
+<span class="na">schema</span><span class="pi">:</span>
+  <span class="na">type</span><span class="pi">:</span> <span class="s">struct</span>
+  <span class="c1"># all the columns spec</span>
+  <span class="na">fields</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">type</span>
+      <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+      <span class="na">nullable</span><span class="pi">:</span> <span class="no">true</span>
+      <span class="na">metadata</span><span class="pi">:</span>
+        <span class="na">comment</span><span class="pi">:</span> <span class="s">axolotl, cat, dog, fish etc</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">weight</span>
+      <span class="na">type</span><span class="pi">:</span> <span class="s">integer</span>
+      <span class="na">nullable</span><span class="pi">:</span> <span class="no">false</span>
+      <span class="na">metadata</span><span class="pi">:</span> <span class="pi">{}</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">name</span>
+      <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+      <span class="na">nullable</span><span class="pi">:</span> <span class="no">false</span>
+      <span class="na">metadata</span><span class="pi">:</span> <span class="pi">{}</span>
+</code></pre></div></div>
+<h3 id="write-some-table-data">
+  
+  
+    <a href="#write-some-table-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Write some table data
+  
+  
+</h3>
+    
+
+<p>Insert data into the table path, using your preferred method (e.g. <a href="/integrations/spark.html">Spark</a>), and commit upon completion.
+This example uses CSV files, and the files added to lakeFS should look like this:</p>
+
+<p><img src="/assets/img/csv_export_hooks_data.png" alt="lakeFS Uploaded CSV Files" /></p>
+<h3 id="the-exporter-script">
+  
+  
+    <a href="#the-exporter-script" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> The exporter script
+  
+  
+</h3>
+    
+
+<p>Upload the following script to your main branch under <code class="language-plaintext highlighter-rouge">scripts/animals_exporter.lua</code> (or a path of your choice).</p>
+
+<blockquote class="note">
+  <p>For code references check <a href="/howto/hooks/lua.html#lakefscatalogexportsymlink_exporter">symlink_exporter</a> and <a href="/howto/hooks/lua.html#lakefscatalogexportglue_exporter">glue_exporter</a> docs.</p>
+</blockquote>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="n">aws</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">"aws"</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">symlink_exporter</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">"lakefs/catalogexport/symlink_exporter"</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">glue_exporter</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">"lakefs/catalogexport/glue_exporter"</span><span class="p">)</span>
+<span class="c1">-- settings </span>
+<span class="kd">local</span> <span class="n">access_key</span> <span class="o">=</span> <span class="n">args</span><span class="p">.</span><span class="n">aws</span><span class="p">.</span><span class="n">aws_access_key_id</span>
+<span class="kd">local</span> <span class="n">secret_key</span> <span class="o">=</span> <span class="n">args</span><span class="p">.</span><span class="n">aws</span><span class="p">.</span><span class="n">aws_secret_access_key</span>
+<span class="kd">local</span> <span class="n">region</span> <span class="o">=</span> <span class="n">args</span><span class="p">.</span><span class="n">aws</span><span class="p">.</span><span class="n">aws_region</span>
+<span class="kd">local</span> <span class="n">table_path</span> <span class="o">=</span> <span class="n">args</span><span class="p">.</span><span class="n">table_source</span> <span class="c1">-- table descriptor </span>
+<span class="kd">local</span> <span class="n">db</span> <span class="o">=</span> <span class="n">args</span><span class="p">.</span><span class="n">catalog</span><span class="p">.</span><span class="n">db_name</span> <span class="c1">-- glue db</span>
+<span class="kd">local</span> <span class="n">table_input</span> <span class="o">=</span> <span class="n">args</span><span class="p">.</span><span class="n">catalog</span><span class="p">.</span><span class="n">table_input</span> <span class="c1">-- table input (AWS input spec) for Glue</span>
+<span class="c1">-- export symlinks </span>
+<span class="kd">local</span> <span class="n">s3</span> <span class="o">=</span> <span class="n">aws</span><span class="p">.</span><span class="n">s3_client</span><span class="p">(</span><span class="n">access_key</span><span class="p">,</span> <span class="n">secret_key</span><span class="p">,</span> <span class="n">region</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">result</span> <span class="o">=</span> <span class="n">symlink_exporter</span><span class="p">.</span><span class="n">export_s3</span><span class="p">(</span><span class="n">s3</span><span class="p">,</span> <span class="n">table_path</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="p">{</span><span class="n">debug</span><span class="o">=</span><span class="kc">true</span><span class="p">})</span>
+<span class="c1">-- register glue table</span>
+<span class="kd">local</span> <span class="n">glue</span> <span class="o">=</span> <span class="n">aws</span><span class="p">.</span><span class="n">glue_client</span><span class="p">(</span><span class="n">access_key</span><span class="p">,</span> <span class="n">secret_key</span><span class="p">,</span> <span class="n">region</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">res</span> <span class="o">=</span> <span class="n">glue_exporter</span><span class="p">.</span><span class="n">export_glue</span><span class="p">(</span><span class="n">glue</span><span class="p">,</span> <span class="n">db</span><span class="p">,</span> <span class="n">table_path</span><span class="p">,</span> <span class="n">table_input</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="p">{</span><span class="n">debug</span><span class="o">=</span><span class="kc">true</span><span class="p">})</span>
+</code></pre></div></div>
+<h3 id="configure-action-hooks">
+  
+  
+    <a href="#configure-action-hooks" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Configure Action Hooks
+  
+  
+</h3>
+    
+
+<p>Hooks serve as the mechanism that triggers the execution of the exporter.
+For more detailed information on how to configure exporter hooks, you can refer to <a href="/howto/catalog_exports.html#running-an-exporter">Running an Exporter</a>.</p>
+
+<blockquote class="note">
+  <p>The <code class="language-plaintext highlighter-rouge">args.catalog.table_input</code> argument in the Lua script is assumed to be passed from the action arguments, that way the same script can be reused for different tables. Check the <a href="/howto/hooks/lua.html#lakefscatalogexportglue_exporterexport_glueglue-db-table_src_path-create_table_input-action_info-options">example</a> to construct the table input in the lua code.</p>
+</blockquote>
+
+<div class="tabs">
+  <ul>
+    <li><a href="#single-hook-csv">Hook CSV Glue Table</a></li>
+    <li><a href="#single-hook">Hook Parquet Glue Table</a></li>
+    <li><a href="#multiple-hooks">Multiple Hooks / Inline script</a></li>
+  </ul>
+  <div id="single-hook-csv">
+<h4 id="single-hook-with-csv-table">
+  
+  
+    <a href="#single-hook-with-csv-table" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Single hook with CSV Table
+  
+  
+</h4>
+    
+
+    <p>Upload to <code class="language-plaintext highlighter-rouge">_lakefs_actions/animals_glue.yaml</code>:</p>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">Glue Exporter</span>
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">post-commit</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">main"</span><span class="pi">]</span>
+<span class="na">hooks</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">id</span><span class="pi">:</span> <span class="s">animals_table_glue_exporter</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">lua</span>
+    <span class="na">properties</span><span class="pi">:</span>
+      <span class="na">script_path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">scripts/animals_exporter.lua"</span>
+      <span class="na">args</span><span class="pi">:</span>
+        <span class="na">aws</span><span class="pi">:</span>
+          <span class="na">aws_access_key_id</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;AWS_ACCESS_KEY_ID&gt;"</span>
+          <span class="na">aws_secret_access_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;AWS_SECRET_ACCESS_KEY&gt;"</span>
+          <span class="na">aws_region</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;AWS_REGION&gt;"</span>
+        <span class="na">table_source</span><span class="pi">:</span> <span class="s1">'</span><span class="s">_lakefs_tables/animals.yaml'</span>
+        <span class="na">catalog</span><span class="pi">:</span>
+          <span class="na">db_name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">my-glue-db"</span>
+          <span class="na">table_input</span><span class="pi">:</span>
+            <span class="na">StorageDescriptor</span><span class="pi">:</span> 
+              <span class="na">InputFormat</span><span class="pi">:</span> <span class="s2">"</span><span class="s">org.apache.hadoop.hive.ql.io.SymlinkTextInputFormat"</span>
+              <span class="na">OutputFormat</span><span class="pi">:</span> <span class="s2">"</span><span class="s">org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat"</span>
+              <span class="na">SerdeInfo</span><span class="pi">:</span>
+                <span class="na">SerializationLibrary</span><span class="pi">:</span> <span class="s2">"</span><span class="s">org.apache.hadoop.hive.serde2.OpenCSVSerde"</span>
+                <span class="na">Parameters</span><span class="pi">:</span>
+                  <span class="na">separatorChar</span><span class="pi">:</span> <span class="s2">"</span><span class="s">,"</span>
+            <span class="na">Parameters</span><span class="pi">:</span> 
+              <span class="na">classification</span><span class="pi">:</span> <span class="s2">"</span><span class="s">csv"</span>
+              <span class="s2">"</span><span class="s">skip.header.line.count"</span><span class="pi">:</span> <span class="s2">"</span><span class="s">1"</span>
+</code></pre></div>    </div>
+
+  </div>
+  <div id="single-hook">
+<h4 id="spark-parquet-example">
+  
+  
+    <a href="#spark-parquet-example" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Spark Parquet Example
+  
+  
+</h4>
+    
+
+    <p>When working with Parquet files, upload the following to <code class="language-plaintext highlighter-rouge">_lakefs_actions/animals_glue.yaml</code>:</p>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">Glue Exporter</span>
+<span class="na">on</span><span class="pi">:</span>
+   <span class="na">post-commit</span><span class="pi">:</span>
+      <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">main"</span><span class="pi">]</span>
+<span class="na">hooks</span><span class="pi">:</span>
+   <span class="pi">-</span> <span class="na">id</span><span class="pi">:</span> <span class="s">animals_table_glue_exporter</span>
+     <span class="na">type</span><span class="pi">:</span> <span class="s">lua</span>
+     <span class="na">properties</span><span class="pi">:</span>
+        <span class="na">script_path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">scripts/animals_exporter.lua"</span>
+        <span class="na">args</span><span class="pi">:</span>
+           <span class="na">aws</span><span class="pi">:</span>
+              <span class="na">aws_access_key_id</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;AWS_ACCESS_KEY_ID&gt;"</span>
+              <span class="na">aws_secret_access_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;AWS_SECRET_ACCESS_KEY&gt;"</span>
+              <span class="na">aws_region</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;AWS_REGION&gt;"</span>
+           <span class="na">table_source</span><span class="pi">:</span> <span class="s1">'</span><span class="s">_lakefs_tables/animals.yaml'</span>
+           <span class="na">catalog</span><span class="pi">:</span>
+              <span class="na">db_name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">my-glue-db"</span>
+              <span class="na">table_input</span><span class="pi">:</span>
+                 <span class="na">StorageDescriptor</span><span class="pi">:</span>
+                   <span class="na">InputFormat</span><span class="pi">:</span> <span class="s2">"</span><span class="s">org.apache.hadoop.hive.ql.io.SymlinkTextInputFormat"</span>
+                   <span class="na">OutputFormat</span><span class="pi">:</span> <span class="s2">"</span><span class="s">org.apache.hadoop.hive.ql.io.IgnoreKeyTextOutputFormat"</span>
+                   <span class="na">SerdeInfo</span><span class="pi">:</span>
+                       <span class="na">SerializationLibrary</span><span class="pi">:</span> <span class="s2">"</span><span class="s">org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe"</span>
+                 <span class="na">Parameters</span><span class="pi">:</span>
+                   <span class="na">classification</span><span class="pi">:</span> <span class="s2">"</span><span class="s">parquet"</span>
+                   <span class="na">EXTERNAL</span><span class="pi">:</span> <span class="s2">"</span><span class="s">TRUE"</span>
+                   <span class="s2">"</span><span class="s">parquet.compression"</span><span class="pi">:</span> <span class="s2">"</span><span class="s">SNAPPY"</span>
+</code></pre></div>    </div>
+
+  </div>
+  <div id="multiple-hooks">
+<h4 id="multiple-hooks--inline-script">
+  
+  
+    <a href="#multiple-hooks--inline-script" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Multiple Hooks / Inline script
+  
+  
+</h4>
+    
+
+    <p>The following example demonstrates how to separate the symlink and glue exporter into building blocks running in separate hooks.
+It also shows how to run the lua script inline instead of a file, depending on user preference.</p>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">Animal Table Exporter</span>
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">post-commit</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">main"</span><span class="pi">]</span>
+<span class="na">hooks</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">id</span><span class="pi">:</span> <span class="s">symlink_exporter</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">lua</span>
+    <span class="na">properties</span><span class="pi">:</span>
+      <span class="na">args</span><span class="pi">:</span>
+        <span class="na">aws</span><span class="pi">:</span>
+          <span class="na">aws_access_key_id</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;AWS_ACCESS_KEY_ID&gt;"</span>
+          <span class="na">aws_secret_access_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;AWS_SECRET_ACCESS_KEY&gt;"</span>
+          <span class="na">aws_region</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;AWS_REGION&gt;"</span>
+        <span class="na">table_source</span><span class="pi">:</span> <span class="s1">'</span><span class="s">_lakefs_tables/animals.yaml'</span>
+      <span class="na">script</span><span class="pi">:</span> <span class="pi">|</span>
+        <span class="s">local exporter = require("lakefs/catalogexport/symlink_exporter")</span>
+        <span class="s">local aws = require("aws")</span>
+        <span class="s">local table_path = args.table_source</span>
+        <span class="s">local s3 = aws.s3_client(args.aws.aws_access_key_id, args.aws.aws_secret_access_key, args.aws.aws_region)</span>
+        <span class="s">exporter.export_s3(s3, table_path, action, {debug=true})</span>
+  <span class="pi">-</span> <span class="na">id</span><span class="pi">:</span> <span class="s">glue_exporter</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">lua</span>
+    <span class="na">properties</span><span class="pi">:</span>
+      <span class="na">args</span><span class="pi">:</span>
+        <span class="na">aws</span><span class="pi">:</span>
+          <span class="na">aws_access_key_id</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;AWS_ACCESS_KEY_ID&gt;"</span>
+          <span class="na">aws_secret_access_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;AWS_SECRET_ACCESS_KEY&gt;"</span>
+          <span class="na">aws_region</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;AWS_REGION&gt;"</span>
+        <span class="na">table_source</span><span class="pi">:</span> <span class="s1">'</span><span class="s">_lakefs_tables/animals.yaml'</span>
+        <span class="na">catalog</span><span class="pi">:</span>
+          <span class="na">db_name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">my-glue-db"</span>
+          <span class="na">table_input</span><span class="pi">:</span> <span class="c1"># add glue table input here </span>
+      <span class="na">script</span><span class="pi">:</span> <span class="pi">|</span>
+        <span class="s">local aws = require("aws")</span>
+        <span class="s">local exporter = require("lakefs/catalogexport/glue_exporter")</span>
+        <span class="s">local glue = aws.glue_client(args.aws.aws_access_key_id, args.aws.aws_secret_access_key, args.aws.aws_region)</span>
+        <span class="s">exporter.export_glue(glue, args.catalog.db_name, args.table_source, args.catalog.table_input, action, {debug=true})  </span>
+</code></pre></div>    </div>
+
+  </div>
+</div>
+
+<p>Adding the script and the action files to the repository and commit it. This is a post-commit action, meaning it will be executed after the commit operation has taken place.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakectl fs upload lakefs://catalogs/main/scripts/animals_exporter.lua <span class="nt">-s</span> ./animals_exporter.lua
+lakectl fs upload lakefs://catalogs/main/_lakefs_actions/animals_glue.yaml <span class="nt">-s</span> ./animals_glue.yaml
+lakectl commit lakefs://catalogs/main <span class="nt">-m</span> <span class="s2">"trigger first export hook"</span>
+</code></pre></div></div>
+
+<p>Once the action has completed its execution, you can review the results in the action logs.</p>
+
+<p><img src="/assets/img/glue_export_hook_result_log.png" alt="Hooks log result in lakeFS UI" /></p>
+<h3 id="use-athena">
+  
+  
+    <a href="#use-athena" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Use Athena
+  
+  
+</h3>
+    
+
+<p>We can use the exported Glue table with any tool that supports Glue Catalog (or Hive compatible) such as Athena, Trino, Spark and others.
+To use Athena we can simply run <code class="language-plaintext highlighter-rouge">MSCK REPAIR TABLE</code> and then query the tables.</p>
+
+<p>In Athena, make sure that the correct database (<code class="language-plaintext highlighter-rouge">my-glue-db</code> in the example above) is configured, then run:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MSCK</span> <span class="n">REPAIR</span> <span class="k">TABLE</span> <span class="nv">`animals_catalogs_main_9255e5`</span><span class="p">;</span> <span class="c1">-- load partitions for the first time </span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="nv">`animals_catalogs_main_9255e5`</span> <span class="k">limit</span> <span class="mi">50</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><img src="/assets/img/catalog_export_athena_aws_ui_sql.png" alt="Athena SQL Result" /></p>
+<h3 id="cleanup">
+  
+  
+    <a href="#cleanup" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Cleanup
+  
+  
+</h3>
+    
+
+<p>Users can use additional hooks / actions to implement a custom cleanup logic to delete the symlink in S3 and Glue Tables.</p>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">glue</span><span class="p">.</span><span class="n">delete_table</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="s1">'&lt;glue table name&gt;'</span><span class="p">)</span>
+<span class="n">s3</span><span class="p">.</span><span class="n">delete_recursive</span><span class="p">(</span><span class="s1">'bucket'</span><span class="p">,</span> <span class="s1">'path/to/symlinks/of/a/commit/'</span><span class="p">)</span>
+</code></pre></div></div>
 
                 
 

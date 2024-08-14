@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
   
   <style type="text/css">
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(1) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(7) > .nav-list > .nav-list-item:nth-child(3) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
 
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list-expander svg { transform: rotate(-90deg); }
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list { display: block; }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(7) > .nav-list-expander svg, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(7) > .nav-list > .nav-list-item:not(.passive):nth-child(3) > .nav-list-expander svg { transform: rotate(-90deg); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(7) > .nav-list, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(7) > .nav-list > .nav-list-item:not(.passive):nth-child(3) > .nav-list { display: block; }
 
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list-expander svg { transform: rotate(-90deg); }
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list { display: block; }
@@ -38,21 +38,21 @@
 
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Welcome to lakeFS | lakeFS Documentation</title>
+<title>Migrating to 1.0 | lakeFS Documentation</title>
 <meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Welcome to lakeFS" />
+<meta property="og:title" content="Migrating to 1.0" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes." />
-<meta property="og:description" content="The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes." />
+<meta name="description" content="Code migration guide detailing API and SDK upgrades, deprecated and new API operations, and SDK migration processes for both Java/JVM and Python with code refactoring examples for improved stability and compatibility." />
+<meta property="og:description" content="Code migration guide detailing API and SDK upgrades, deprecated and new API operations, and SDK migration processes for both Java/JVM and Python with code refactoring examples for improved stability and compatibility." />
 <meta property="og:site_name" content="lakeFS Documentation" />
 <meta property="og:image" content="https://docs.lakefs.io/assets/img/docs_logo.png" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:image" content="https://docs.lakefs.io/assets/img/docs_logo.png" />
-<meta property="twitter:title" content="Welcome to lakeFS" />
+<meta property="twitter:title" content="Migrating to 1.0" />
 <meta name="twitter:site" content="@lakeFS" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes.","headline":"Welcome to lakeFS","image":"https://docs.lakefs.io/assets/img/docs_logo.png","name":"lakeFS","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/logo.svg"}},"sameAs":["https://www.linkedin.com/company/treeverse/","https://twitter.com/lakeFS","https://github.com/treeverse/lakeFS","https://data-folks.masto.host/@lakeFS"],"url":"/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Code migration guide detailing API and SDK upgrades, deprecated and new API operations, and SDK migration processes for both Java/JVM and Python with code refactoring examples for improved stability and compatibility.","headline":"Migrating to 1.0","image":"https://docs.lakefs.io/assets/img/docs_logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/logo.svg"}},"url":"/project/code-migrate-1.0-sdk.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -212,8 +212,8 @@
             </script>
 
             <ul class="nav-list"><li
-            class="nav-list-item active"><a href="/"
-           class="nav-list-link active">Welcome to lakeFS</a></li><li
+            class="nav-list-item"><a href="/"
+           class="nav-list-link">Welcome to lakeFS</a></li><li
             class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/quickstart/"
@@ -368,7 +368,7 @@
                    class="nav-list-link">lakeFS API</a></li><li class="nav-list-item "><a href="/reference/configuration.html"
                    class="nav-list-link">lakeFS Server Configuration</a></li><li class="nav-list-item "><a href="/reference/cli.html"
                    class="nav-list-link">lakectl (lakeFS command-line tool)</a></li></ul></li><li
-            class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
+            class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/project/"
            class="nav-list-link">The lakeFS Project</a><ul class="nav-list "><li class="nav-list-item "><a href="/project/contributing.html"
@@ -378,8 +378,8 @@
                    class="nav-list-link">Documentation</a><ul class="nav-list"><li class="nav-list-item ">
                         <a href="/project/docs/callouts.html"
                            class="nav-list-link">Callouts</a>
-                    </li></ul></li><li class="nav-list-item "><a href="/project/code-migrate-1.0-sdk.html"
-                   class="nav-list-link">Migrating to 1.0</a></li></ul></li><li
+                    </li></ul></li><li class="nav-list-item  active"><a href="/project/code-migrate-1.0-sdk.html"
+                   class="nav-list-link active">Migrating to 1.0</a></li></ul></li><li
             class="nav-list-item"><a href="/cloud/"
            class="nav-list-link">lakeFS Cloud</a></li><li
             class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
@@ -530,291 +530,248 @@
         </div>
         <div id="main-content-wrap" class="main-content-wrap">
             
+            
+            <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+                <ol class="breadcrumb-nav-list">
+                    
+                    <li class="breadcrumb-nav-list-item"><a href="/project/">The lakeFS Project</a>
+                    </li>
+                    
+                    <li class="breadcrumb-nav-list-item"><span>Migrating to 1.0</span></li>
+                </ol>
+            </nav>
+            
+            
             <div id="main-content" class="main-content" role="main">
                 
-                    <h1 id="temporary-placeholder-for-lakefs-databricks-docs">
+                    <h1 id="lakefs-10---code-migration-guide">
   
   
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-1">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-1" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-2">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-2" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-3">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-3" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-4">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-4" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-5">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-5" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-6">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-6" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
+    <a href="#lakefs-10---code-migration-guide" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> lakeFS 1.0 - Code Migration Guide
   
   
 </h1>
     
 
-<p><img src="/assets/img/waving-axolotl-transparent.gif" width="90" /></p>
+<p>Version 1.0.0 promises API and SDK stability. By “API” we mean any access to a lakeFS REST endpoint. By “SDK” we mean auto-generated lakeFS clients: <code class="language-plaintext highlighter-rouge">lakefs-sdk</code> for Python and <code class="language-plaintext highlighter-rouge">io.lakefs:sdk</code> for Java. This guide details the steps to allow you to upgrade your code to enjoy this stability.</p>
 
-<p><strong>lakeFS brings software engineering best practices and applies them to data engineering.</strong></p>
+<p>Avoid using APIs and SDKs labeled as <code class="language-plaintext highlighter-rouge">experimental</code>, <code class="language-plaintext highlighter-rouge">internal</code>, or <code class="language-plaintext highlighter-rouge">deprecated</code>. If you must use them, be prepared to adjust your application to align with any lakeFS server updates.</p>
 
-<p>lakeFS provides version control over the data lake, and uses Git-like semantics to create and access those versions. If you know git, you’ll be right at home with lakeFS.</p>
+<p>Your software developed without such APIs should be compatible with all minor version updates of the lakeFS server from the version you originally developed with.</p>
 
-<p>With lakeFS, you can use concepts on your data lake such as <strong>branch</strong> to create an isolated version of the data, <strong>commit</strong> to create a reproducible point in time, and <strong>merge</strong> in order to incorporate your changes in one atomic action.</p>
+<p>If you rely on a publicly released API and SDK, it will adhere to semantic versioning. Transitioning your application to a minor SDK version update should be smooth.</p>
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/GTxsyeoLccw"></iframe>
-<h2 id="how-do-i-get-started">
+<p>The operation names and tags from the <a href="https://github.com/treeverse/lakeFS/blob/7d9feeb0211a637e2b8a63abaa629efc968d7c9e/api/swagger.yml"><code class="language-plaintext highlighter-rouge">api/swagger.yml</code></a> specification might differ based on the SDK or coding language in use.</p>
+<h3 id="deleted-api-operations">
   
   
-    <a href="#how-do-i-get-started" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Do I Get Started?
+    <a href="#deleted-api-operations" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Deleted API Operations
   
   
-</h2>
+</h3>
     
 
-<p><strong><a href="./quickstart">The hands-on quickstart</a> guides you through some core features of lakeFS</strong>.</p>
-
-<p>These include <a href="./quickstart/branch.html">branching</a>, <a href="quickstart/commit-and-merge.html">merging</a>, and <a href="quickstart/rollback.html">rolling back changes</a> to data.</p>
-
-<p class="note">You can use the <a href="https://lakefs.cloud/register">30-day free trial of lakeFS Cloud</a> if you want to try out lakeFS without installing anything.</p>
-<h2 id="key-lakefs-features">
-  
-  
-    <a href="#key-lakefs-features" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Key lakeFS Features
-  
-  
-</h2>
-    
+<p>The following API operations have been removed:</p>
 
 <ul>
-  <li>It is format-agnostic.</li>
-  <li>It works with numerous data tools and platforms.</li>
-  <li>Your data stays in place.</li>
-  <li>It eliminates the need for data duplication using <a href="/understand/model.html#zero-copy-branching">zero-copy branching</a>.</li>
-  <li>It maintains high performance over data lakes of any size.</li>
-  <li>It includes configurable garbage collection capabilities.</li>
-  <li>It is proven in production and has an active community.</li>
+  <li><code class="language-plaintext highlighter-rouge">updatePassword</code></li>
+  <li><code class="language-plaintext highlighter-rouge">forgotPassword</code></li>
+  <li><code class="language-plaintext highlighter-rouge">logBranchCommits</code></li>
+  <li><code class="language-plaintext highlighter-rouge">expandTemplate</code></li>
+  <li><code class="language-plaintext highlighter-rouge">createMetaRange</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ingestRange</code></li>
+  <li><code class="language-plaintext highlighter-rouge">updateBranchToken</code></li>
 </ul>
+<h3 id="internal-api-operations">
+  
+  
+    <a href="#internal-api-operations" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Internal API Operations
+  
+  
+</h3>
+    
 
-<p><img src="/assets/img/lakeFS_integration.png" alt="lakeFS integration into data lake" width="60%" height="60%" /></p>
-<h2 id="how-does-lakefs-work-with-other-tools">
+<p>The following operations are for <code class="language-plaintext highlighter-rouge">internal</code> use only and should not be used in your application code. Some deprecated operations have alternatives provided.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">setupCommPrefs</code></li>
+  <li><code class="language-plaintext highlighter-rouge">getSetupState</code></li>
+  <li><code class="language-plaintext highlighter-rouge">setup</code></li>
+  <li><code class="language-plaintext highlighter-rouge">getAuthCapabilities</code></li>
+  <li><code class="language-plaintext highlighter-rouge">uploadObjectPreflight</code></li>
+  <li><code class="language-plaintext highlighter-rouge">setGarbageCollectionRulesPreflight</code></li>
+  <li><code class="language-plaintext highlighter-rouge">createBranchProtectionRulePreflight</code></li>
+  <li><code class="language-plaintext highlighter-rouge">postStatsEvents</code></li>
+  <li><code class="language-plaintext highlighter-rouge">dumpRefs</code> (will be replaced with a long-running API later)</li>
+  <li><code class="language-plaintext highlighter-rouge">restoreRefs</code> (will be replaced with a long-running API later)</li>
+  <li><code class="language-plaintext highlighter-rouge">createSymlinkFile</code> (Deprecated)</li>
+  <li><code class="language-plaintext highlighter-rouge">getStorageConfig</code> (Deprecated. Alternative: <code class="language-plaintext highlighter-rouge">getConfig</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">getLakeFSVersion</code> (Deprecated. Alternative: <code class="language-plaintext highlighter-rouge">getConfig</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">stageObject</code> (Deprecated. Alternatives: <code class="language-plaintext highlighter-rouge">get/link physical address</code> or <code class="language-plaintext highlighter-rouge">import</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">internalDeleteBranchProtectionRule</code> (Deprecated. Temporary backward support. Alternative: <code class="language-plaintext highlighter-rouge">setBranchProtectionRules</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">internalCreateBranchProtectionRule</code> (Deprecated. Temporary backward support. Alternative: <code class="language-plaintext highlighter-rouge">setBranchProtectionRules</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">internalGetBranchProtectionRule</code> (Deprecated. Temporary backward support. Alternative: <code class="language-plaintext highlighter-rouge">getBranchProtectionRules</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">internalDeleteGarbageCollectionRules</code> (Deprecated. Temporary backward support. Alternative: <code class="language-plaintext highlighter-rouge">deleteGCRules</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">internalSetGarbageCollectionRules</code> (Deprecated. Temporary backward support. Alternative: <code class="language-plaintext highlighter-rouge">setGCRules</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">internalGetGarbageCollectionRules</code> (Deprecated. Temporary backward support. Alternative: <code class="language-plaintext highlighter-rouge">getGCRules</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">prepareGarbageCollectionCommits</code></li>
+  <li><code class="language-plaintext highlighter-rouge">getGarbageCollectionConfig</code></li>
+</ul>
+<h3 id="newupdated-api-operations">
   
   
-    <a href="#how-does-lakefs-work-with-other-tools" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Does lakeFS Work With Other Tools?
+    <a href="#newupdated-api-operations" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> New/Updated API Operations
+  
+  
+</h3>
+    
+
+<p>Here are the newly added or updated operations:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">getConfig</code> (Retrieve lakeFS version and storage info)</li>
+  <li><code class="language-plaintext highlighter-rouge">setBranchProtectionRules</code> (Route updated)</li>
+  <li><code class="language-plaintext highlighter-rouge">getBranchProtectionRules</code> (Route updated)</li>
+  <li><code class="language-plaintext highlighter-rouge">getGCRules</code> (New route introduced)</li>
+  <li><code class="language-plaintext highlighter-rouge">setGCRules</code> (New route introduced)</li>
+  <li><code class="language-plaintext highlighter-rouge">deleteGCRules</code> (New route introduced)</li>
+  <li><code class="language-plaintext highlighter-rouge">importStatus</code> (Response structure updated: ‘ImportStatusResp’ to ‘ImportStatus’)</li>
+  <li><code class="language-plaintext highlighter-rouge">uploadObject</code> (Parameters ‘if-none-match’ and ‘storageClass’ are now deprecated)</li>
+  <li><code class="language-plaintext highlighter-rouge">prepareGarbageCollectionCommits</code> (Request body removed)</li>
+  <li><code class="language-plaintext highlighter-rouge">getOtfDiffs</code> &amp; <code class="language-plaintext highlighter-rouge">otfDiff</code> (Removed from ‘otf diff’ tag; retained in ‘experimental’ tag)</li>
+</ul>
+<h2 id="migrating-sdk-code-for-java-and-jvm-based-languages">
+  
+  
+    <a href="#migrating-sdk-code-for-java-and-jvm-based-languages" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Migrating SDK Code for Java and JVM-based Languages
   
   
 </h2>
     
+<h3 id="introduction">
+  
+  
+    <a href="#introduction" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
+  
+  
+</h3>
+    
 
-<p>lakeFS is an open source project that supports managing data in AWS S3, Azure Blob Storage, Google Cloud Storage (GCS) and any other object storage with an S3 interface. It integrates seamlessly with popular data frameworks such as Spark, Hive Metastore, dbt, Trino, Presto, and many others and includes an S3 compatibility layer.</p>
+<p>If you are using the lakeFS client for Java or for any other JVM-based language, be aware that the current package is not stable with respect to minor version upgrades. Transitioning from <code class="language-plaintext highlighter-rouge">io.lakefs:lakefs-client</code> to <code class="language-plaintext highlighter-rouge">io.lakefs:sdk</code> will necessitate rewriting your API calls to fit the new design paradigm.</p>
+<h3 id="problem-with-the-old-style">
+  
+  
+    <a href="#problem-with-the-old-style" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Problem with the Old Style
+  
+  
+</h3>
+    
 
-<p class="note">For more details and a full list see <a href="./integrations/">the integrations pages</a>.</p>
+<p>Previously, API calls required developers to pass all parameters, including optional ones, in a single function call. As demonstrated in this older style:</p>
 
-<p class="center">
-    <img src="/assets/img/lakeFSArchitecture.png" />
-</p>
-
-<p class="pb-5">lakeFS maintains compatibility with the S3 API to minimize adoption
-friction. You can use it as a drop-in replacement for S3 from the perspective of
-any tool interacting with a data lake.</p>
-
-<p>For example, take the common operation of reading a collection of data from an object storage into a Spark DataFrame. For data outside a lakeFS repo, the code will look like this:</p>
-
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">parquet</span><span class="p">(</span><span class="s">"s3a://my-bucket/collections/foo/"</span><span class="p">)</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">ObjectStats</span> <span class="n">objectStat</span> <span class="o">=</span> <span class="n">objectsApi</span><span class="o">.</span><span class="na">statObject</span><span class="o">(</span>
+    <span class="n">objectLoc</span><span class="o">.</span><span class="na">getRepository</span><span class="o">(),</span> <span class="n">objectLoc</span><span class="o">.</span><span class="na">getRef</span><span class="o">(),</span> <span class="n">objectLoc</span><span class="o">.</span><span class="na">getPath</span><span class="o">(),</span>
+    <span class="kc">false</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
 </code></pre></div></div>
 
-<p>After adding the data collections into my-bucket to a repository, the same operation becomes:</p>
+<p>This method posed a couple of challenges:</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">parquet</span><span class="p">(</span><span class="s">"s3a://my-repo/main-branch/collections/foo/"</span><span class="p">)</span>
+<ol>
+  <li><strong>Inflexibility with Upgrades:</strong> If an optional parameter were introduced in newer versions, existing code would fail to compile.</li>
+  <li><strong>Maintenance Difficulty:</strong> Long argument lists can be challenging to manage and understand, leading to potential mistakes and readability issues.</li>
+</ol>
+
+<p>Adopting the Fluent Style</p>
+
+<p>In the revised SDK, API calls adopt a fluent style, making the code more modular and adaptive to changes.</p>
+
+<p>Here’s an example of the new style:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">ObjectStats</span> <span class="n">objectStat</span> <span class="o">=</span> <span class="n">objectsApi</span>
+    <span class="o">.</span><span class="na">statObject</span><span class="o">(</span>
+        <span class="n">objectLoc</span><span class="o">.</span><span class="na">getRepository</span><span class="o">(),</span> <span class="n">objectLoc</span><span class="o">.</span><span class="na">getRef</span><span class="o">(),</span> <span class="n">objectLoc</span><span class="o">.</span><span class="na">getPath</span><span class="o">()</span>
+    <span class="o">)</span>
+    <span class="o">.</span><span class="na">userMetadata</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">execute</span><span class="o">();</span>
 </code></pre></div></div>
-
-<p>You can use the same methods and syntax you are already using to read and write data when using a lakeFS repository. This simplifies the adoption of lakeFS - minimal changes are needed to get started, making further changes an incremental process.</p>
-<h2 id="lakefs-is-git-for-data">
+<h3 id="heres-a-breakdown-of-the-changes">
   
   
-    <a href="#lakefs-is-git-for-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> lakeFS is Git for Data
-  
-  
-</h2>
-    
-
-<p>Git conquered the world of code because it had best supported engineering best practices required by developers, in particular:</p>
-
-<ul>
-  <li>Collaborate during development.</li>
-  <li>Develop and Test in isolation</li>
-  <li>Revert code repository to a sable version in case of an error</li>
-  <li>Reproduce and troubleshoot issues with a given version of the code</li>
-  <li>Continuously integrate and deploy new code (CI/CD)</li>
-</ul>
-
-<p>lakeFS provides these exact benefits, that are data practitioners are missing today, and enables them a clear intuitive Git-like interface to easily manage their data like they manage code. Through its versioning engine, lakeFS enables the following built-in operations familiar from Git:</p>
-
-<ul>
-  <li><strong>branch:</strong> a consistent copy of a repository, isolated from other branches and their changes. Initial creation of a branch is a metadata operation that does not duplicate objects.</li>
-  <li><strong>commit:</strong> an immutable checkpoint containing a complete snapshot of a repository.</li>
-  <li><strong>merge:</strong> performed between two branches — merges atomically update one branch with the changes from another.</li>
-  <li><strong>revert:</strong> returns a repo to the exact state of a previous commit.</li>
-  <li><strong>tag:</strong> a pointer to a single immutable commit with a readable, meaningful name.</li>
-</ul>
-
-<p><em>See the <a href="/understand/model.html">object model</a> for an in-depth
-definition of these, and the <a href="/reference/cli.html">CLI reference</a> for the
-full list of commands.</em></p>
-
-<p>Incorporating these operations into your data lake pipelines provides the same collaboration and organizational benefits you get when managing application code with source control.</p>
-<h3 id="the-lakefs-promotion-workflow">
-  
-  
-    <a href="#the-lakefs-promotion-workflow" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> The lakeFS Promotion Workflow
+    <a href="#heres-a-breakdown-of-the-changes" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Here’s a breakdown of the changes:
   
   
 </h3>
     
-
-<p>Here’s how lakeFS <em>branches</em> and <em>merges</em> improve the universal process of updating collections with the latest data.</p>
-
-<p><img src="/assets/img/promotion_workflow.png" alt="lakeFS promotion workflow" width="60%" height="60%" /></p>
 
 <ol>
-  <li>First, create a new <strong>branch</strong> from <code class="language-plaintext highlighter-rouge">main</code> to instantly generate a complete “copy” of your production data.</li>
-  <li>Apply changes or make updates on the isolated branch to understand their impact prior to exposure.</li>
-  <li>And finally, perform a <strong>merge</strong> from the feature branch back to main to atomically promote the updates into production.</li>
+  <li><strong>Initial Function Call:</strong> Begin by invoking the desired function with all required parameters.</li>
+  <li><strong>Modifying Optional Parameters:</strong> Chain any modifications to optional parameters after the initial function. For instance, <code class="language-plaintext highlighter-rouge">userMetadata</code> is changed in the example above.</li>
+  <li><strong>Unused Optional Parameters</strong>: You can safely ignore these. For instance, this code ignores the <code class="language-plaintext highlighter-rouge">presign</code> optional parameter because it never uses it.</li>
+  <li><strong>Execution:</strong> Complete the call with the <code class="language-plaintext highlighter-rouge">.execute()</code> method.</li>
 </ol>
 
-<p>Following this pattern, lakeFS facilitates a streamlined data deployment workflow that consistently produces data assets you can have total confidence in.</p>
-<h2 id="how-can-lakefs-help-me">
+<p>This new design offers several advantages:</p>
+
+<ul>
+  <li><strong>Compatibility with Upgrades:</strong> When a new optional parameter is introduced, existing code will use its default value, preserving compatibility with minor server version upgrades.</li>
+  <li><strong>Improved Readability:</strong> The fluent style makes it evident which parameters are required and which ones are optional, enhancing code clarity.</li>
+</ul>
+
+<p>When migrating your code, ensure you refactor all your API calls to adopt the new fluent style. This ensures that your application remains maintainable and is safeguarded against potential issues arising from minor SDK version upgrades.</p>
+
+<p>For an illustrative example of the transition between styles, you can view the changes made in this pull request: <a href="https://github.com/treeverse/lakeFS/pull/6529/files#diff-4c50b9ac3bf6bfc05e3b6ff0fbe2fd3214f31afb5b449732d90efe5f97f67167R666">lakeFS pull request #6529</a>.</p>
+<h2 id="migrating-sdk-code-for-python">
   
   
-    <a href="#how-can-lakefs-help-me" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Can lakeFS Help Me?
+    <a href="#migrating-sdk-code-for-python" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Migrating SDK Code for Python
   
   
 </h2>
     
-
-<p>lakeFS helps you maintain a tidy data lake in several ways, including:</p>
-<h3 id="isolated-devtest-environments-with-zero-copy-branching">
+<h3 id="introduction-1">
   
   
-    <a href="#isolated-devtest-environments-with-zero-copy-branching" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Isolated Dev/Test Environments with zero-copy branching
-  
-  
-</h3>
-    
-
-<p>lakeFS makes creating isolated dev/test environments for ETL testing instantaneous, and through its use of zero-copy branching, cheap. This enables you to test and validate code changes on production data without impacting it, as well as run analysis and experiments on production data in an isolated clone.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/etl_testing.html">Read more</a></p>
-<h3 id="reproducibility-what-did-my-data-look-like-at-a-point-in-time">
-  
-  
-    <a href="#reproducibility-what-did-my-data-look-like-at-a-point-in-time" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Reproducibility: What Did My Data Look Like at a Point In Time?
+    <a href="#introduction-1" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
   
   
 </h3>
     
 
-<p>Being able to look at data as it was at a given point is particularly useful in at least two scenarios:</p>
+<p>If you are using the lakeFS client for Python, be aware that the current package is not stable with respect to minor version upgrades. Transitioning from <code class="language-plaintext highlighter-rouge">lakefs-client</code> to <code class="language-plaintext highlighter-rouge">lakefs-sdk</code> will necessitate rewriting your API calls.</p>
+<h3 id="heres-a-breakdown-of-the-changes-1">
+  
+  
+    <a href="#heres-a-breakdown-of-the-changes-1" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Here’s a breakdown of the changes:
+  
+  
+</h3>
+    
 
 <ol>
-  <li>
-    <p>Reproducibility of ML experiments</p>
-
-    <p>ML experimentation is iterative, requiring the ability to reproduce specific results. With lakeFS, you can version all aspects of an ML experiment, including the data. This enables:</p>
-
-    <p><strong>Data Lineage</strong>: Track the transformation of data from raw datasets to the final version used in experiments, ensuring transparency and traceability.</p>
-
-    <p><strong>Zero-Copy Branching</strong>: Minimize storage use by creating lightweight branches of your data, allowing for easy experimentation across different versions.</p>
-
-    <p><strong>Easy Integration</strong>: Seamlessly integrate with ML tools like MLFlow, linking experiments directly to the exact data versions used, making reproducibility straightforward.</p>
-
-    <p>lakeFS enhances your ML workflow by ensuring that all versions of data are easily accessible, traceable, and reproducible.</p>
+  <li><strong>Modules change</strong>
+    <ul>
+      <li>The previous <code class="language-plaintext highlighter-rouge">model</code> module was renamed to <code class="language-plaintext highlighter-rouge">models</code>, meaning that <code class="language-plaintext highlighter-rouge">lakefs_client.model</code> imports should be replaced with <code class="language-plaintext highlighter-rouge">lakefs_sdk.models</code> imports.</li>
+      <li>The <code class="language-plaintext highlighter-rouge">apis</code> module in <code class="language-plaintext highlighter-rouge">lakefs_client</code> is deprecated and no longer supported. To migrate to the new <code class="language-plaintext highlighter-rouge">api</code> module in <code class="language-plaintext highlighter-rouge">lakefs_sdk</code>, you should replace all imports of <code class="language-plaintext highlighter-rouge">lakefs_client.apis</code> with imports of <code class="language-plaintext highlighter-rouge">lakefs_sdk.api</code>. We still recommend using the <code class="language-plaintext highlighter-rouge">lakefs_sdk.LakeFSClient</code> class instead of using the <code class="language-plaintext highlighter-rouge">api</code> module directly. The <code class="language-plaintext highlighter-rouge">LakeFSClient</code> class provides a higher-level interface to the LakeFS API and makes it easier to use LakeFS in your applications.</li>
+    </ul>
   </li>
-  <li>
-    <p>Troubleshooting production problems</p>
-
-    <p>Data engineers are often asked to validate the data. A user might report inconsistencies, question the accuracy, or simply report it to be incorrect.</p>
-
-    <p>Since the data continuously changes, it is challenging to understand its state at the time of the error.</p>
-
-    <p>With lakeFS you can create a branch from a commit to debug an issue in isolation.</p>
-  </li>
+  <li><strong><code class="language-plaintext highlighter-rouge">upload_object</code> API call:</strong> The <code class="language-plaintext highlighter-rouge">content</code> parameter value passed to the <code class="language-plaintext highlighter-rouge">objects_api.upload_object</code> method call should be either a <code class="language-plaintext highlighter-rouge">string</code> containing the path to the uploaded file, or <code class="language-plaintext highlighter-rouge">bytes</code> of data to be uploaded.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">get_object</code></strong> <strong>API call</strong>: The return value of <code class="language-plaintext highlighter-rouge">client.get_object(...)</code> is a <code class="language-plaintext highlighter-rouge">bytearray</code> containing the content of the object.</li>
+  <li><code class="language-plaintext highlighter-rouge">**client.{operation}_api**</code><strong>:</strong> The <code class="language-plaintext highlighter-rouge">lakefs-client</code> package’s <code class="language-plaintext highlighter-rouge">LakeFSClient</code> class’s deprecation-marked operations (<code class="language-plaintext highlighter-rouge">client.{operation}</code>) will no longer be available in the <code class="language-plaintext highlighter-rouge">lakefs-sdk</code> package’s <code class="language-plaintext highlighter-rouge">LakeFSClient</code> class. In their place, the <code class="language-plaintext highlighter-rouge">client.{operation}_api</code> should be used.</li>
+  <li><strong>Minimum Python Version</strong>: 3.7</li>
+  <li><strong>Fetching results from response objects</strong>: Instead of fetching the required results properties from a dictionary using <code class="language-plaintext highlighter-rouge">response_result.get_property(prop_name)</code>, the response objects will include domain specific entities, thus referring to the properties in the <code class="language-plaintext highlighter-rouge">results</code> of the response - <code class="language-plaintext highlighter-rouge">response_result.prop_name</code>. For example, instead of:</li>
 </ol>
 
-<p>👉🏻 <a href="./understand/use_cases/reproducibility.html">Read More</a></p>
-<h3 id="rollback-of-data-changes-and-recovery-from-data-errors">
-  
-  
-    <a href="#rollback-of-data-changes-and-recovery-from-data-errors" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Rollback of Data Changes and Recovery from Data Errors
-  
-  
-</h3>
-    
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">response</span> <span class="o">=</span> <span class="n">lakefs_client</span><span class="p">.</span><span class="n">branches</span><span class="p">.</span><span class="n">diff_branch</span><span class="p">(</span><span class="n">repository</span><span class="o">=</span><span class="s">'repo'</span><span class="p">,</span> <span class="n">branch</span><span class="o">=</span><span class="s">'main'</span><span class="p">)</span>
+<span class="n">diff</span> <span class="o">=</span> <span class="n">response</span><span class="p">.</span><span class="n">results</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># 'results' is a 'DiffList' object
+</span><span class="n">path</span> <span class="o">=</span> <span class="n">diff</span><span class="p">.</span><span class="n">get_property</span><span class="p">(</span><span class="s">'path'</span><span class="p">)</span> <span class="c1"># 'diff' is a dictionary
+</span></code></pre></div></div>
 
-<p>Human error or misconfigurations can lead to erroneous data making its way into production or critical data being accidentally deleted. Traditional backups are often inadequate for recovery in these situations, as they may be outdated and require time-consuming object-level sifting.</p>
+<p>You should use:</p>
 
-<p>With lakeFS, you can avoid these inefficiencies by committing snapshots of data at well-defined times. This allows for instant recovery: simply identify a good historical commit and restore or copy from it with a single operation.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/rollback.html">Read more</a></p>
-<h3 id="establishing-data-quality-guarantees---cicd-for-data">
-  
-  
-    <a href="#establishing-data-quality-guarantees---cicd-for-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Establishing data quality guarantees - CI/CD for data
-  
-  
-</h3>
-    
-
-<p>The best way to deal with mistakes is to avoid them. A data source that is ingested into the lake introducing low-quality data should be blocked before exposure if possible.</p>
-
-<p>With lakeFS, you can achieve this by tying data quality tests to commit and merge operations via lakeFS <a href="/understand/use_cases/cicd_for_data.html#using-hooks-as-data-quality-gates">hooks</a>.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/cicd_for_data.html">Read more</a></p>
-<h2 id="next-step">
-  
-  
-    <a href="#next-step" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Next Step
-  
-  
-</h2>
-    
-
-<p>Try lakeFS on the <a href="https://lakefs.cloud/">cloud</a> or <a href="https://docs.lakefs.io/quickstart/">run it locally</a></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">response</span> <span class="o">=</span> <span class="n">lakefs_client</span><span class="p">.</span><span class="n">branches_api</span><span class="p">.</span><span class="n">diff_branch</span><span class="p">(</span><span class="n">repository</span><span class="o">=</span><span class="s">'repo'</span><span class="p">,</span> <span class="n">branch</span><span class="o">=</span><span class="s">'main'</span><span class="p">)</span>
+<span class="n">diff</span> <span class="o">=</span> <span class="n">response</span><span class="p">.</span><span class="n">results</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># 'results' is a 'DiffList' object
+</span><span class="n">path</span> <span class="o">=</span> <span class="n">diff</span><span class="p">.</span><span class="n">path</span> <span class="c1"># 'diff' is a 'Diff' object
+</span></code></pre></div></div>
 
                 
 

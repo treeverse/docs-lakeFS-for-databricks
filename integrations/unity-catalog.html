@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
   
   <style type="text/css">
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(1) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(4) > .nav-list > .nav-list-item:nth-child(22) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
 
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list-expander svg { transform: rotate(-90deg); }
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list { display: block; }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(4) > .nav-list-expander svg, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(4) > .nav-list > .nav-list-item:not(.passive):nth-child(22) > .nav-list-expander svg { transform: rotate(-90deg); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(4) > .nav-list, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(4) > .nav-list > .nav-list-item:not(.passive):nth-child(22) > .nav-list { display: block; }
 
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list-expander svg { transform: rotate(-90deg); }
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list { display: block; }
@@ -38,21 +38,21 @@
 
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Welcome to lakeFS | lakeFS Documentation</title>
+<title>Unity Catalog | lakeFS Documentation</title>
 <meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Welcome to lakeFS" />
+<meta property="og:title" content="Unity Catalog" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes." />
-<meta property="og:description" content="The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes." />
+<meta name="description" content="Accessing lakeFS-exported Delta Lake tables from Unity Catalog." />
+<meta property="og:description" content="Accessing lakeFS-exported Delta Lake tables from Unity Catalog." />
 <meta property="og:site_name" content="lakeFS Documentation" />
 <meta property="og:image" content="https://docs.lakefs.io/assets/img/docs_logo.png" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:image" content="https://docs.lakefs.io/assets/img/docs_logo.png" />
-<meta property="twitter:title" content="Welcome to lakeFS" />
+<meta property="twitter:title" content="Unity Catalog" />
 <meta name="twitter:site" content="@lakeFS" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes.","headline":"Welcome to lakeFS","image":"https://docs.lakefs.io/assets/img/docs_logo.png","name":"lakeFS","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/logo.svg"}},"sameAs":["https://www.linkedin.com/company/treeverse/","https://twitter.com/lakeFS","https://github.com/treeverse/lakeFS","https://data-folks.masto.host/@lakeFS"],"url":"/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Accessing lakeFS-exported Delta Lake tables from Unity Catalog.","headline":"Unity Catalog","image":"https://docs.lakefs.io/assets/img/docs_logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/logo.svg"}},"url":"/integrations/unity-catalog.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -212,8 +212,8 @@
             </script>
 
             <ul class="nav-list"><li
-            class="nav-list-item active"><a href="/"
-           class="nav-list-link active">Welcome to lakeFS</a></li><li
+            class="nav-list-item"><a href="/"
+           class="nav-list-link">Welcome to lakeFS</a></li><li
             class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/quickstart/"
@@ -281,7 +281,7 @@
                    class="nav-list-link">Sizing Guide</a></li><li class="nav-list-item "><a href="/howto/scim.html"
                    class="nav-list-link">System for Cross-domain Identity Management (SCIM)</a></li><li class="nav-list-item "><a href="/howto/local-checkouts.html"
                    class="nav-list-link">Work with lakeFS data locally</a></li></ul></li><li
-            class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
+            class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/integrations/"
            class="nav-list-link">Integrations</a><ul class="nav-list "><li class="nav-list-item "><a href="/integrations/aws_cli.html"
@@ -305,8 +305,8 @@
                    class="nav-list-link">Kubeflow</a></li><li class="nav-list-item "><a href="/integrations/presto_trino.html"
                    class="nav-list-link">Presto / Trino</a></li><li class="nav-list-item "><a href="/integrations/python.html"
                    class="nav-list-link">Python</a></li><li class="nav-list-item "><a href="/integrations/r.html"
-                   class="nav-list-link">R</a></li><li class="nav-list-item "><a href="/integrations/unity-catalog.html"
-                   class="nav-list-link">Unity Catalog</a></li><li class="nav-list-item "><a href="/integrations/vertex_ai.html"
+                   class="nav-list-link">R</a></li><li class="nav-list-item  active"><a href="/integrations/unity-catalog.html"
+                   class="nav-list-link active">Unity Catalog</a></li><li class="nav-list-item "><a href="/integrations/vertex_ai.html"
                    class="nav-list-link">Vertex AI</a></li></ul></li><li
             class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
@@ -530,291 +530,314 @@
         </div>
         <div id="main-content-wrap" class="main-content-wrap">
             
+            
+            <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+                <ol class="breadcrumb-nav-list">
+                    
+                    <li class="breadcrumb-nav-list-item"><a href="/integrations/">Integrations</a>
+                    </li>
+                    
+                    <li class="breadcrumb-nav-list-item"><span>Unity Catalog</span></li>
+                </ol>
+            </nav>
+            
+            
             <div id="main-content" class="main-content" role="main">
                 
-                    <h1 id="temporary-placeholder-for-lakefs-databricks-docs">
+                    <h1 id="using-lakefs-with-the-unity-catalog">
   
   
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-1">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-1" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-2">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-2" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-3">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-3" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-4">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-4" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-5">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-5" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-6">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-6" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
+    <a href="#using-lakefs-with-the-unity-catalog" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Using lakeFS with the Unity Catalog
   
   
 </h1>
     
 
-<p><img src="/assets/img/waving-axolotl-transparent.gif" width="90" /></p>
-
-<p><strong>lakeFS brings software engineering best practices and applies them to data engineering.</strong></p>
-
-<p>lakeFS provides version control over the data lake, and uses Git-like semantics to create and access those versions. If you know git, you’ll be right at home with lakeFS.</p>
-
-<p>With lakeFS, you can use concepts on your data lake such as <strong>branch</strong> to create an isolated version of the data, <strong>commit</strong> to create a reproducible point in time, and <strong>merge</strong> in order to incorporate your changes in one atomic action.</p>
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/GTxsyeoLccw"></iframe>
-<h2 id="how-do-i-get-started">
+<div class="toc-block">
+<h2 class="no_toc text-delta" id="table-of-contents">
   
   
-    <a href="#how-do-i-get-started" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Do I Get Started?
+    <a href="#table-of-contents" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
   
   
 </h2>
     
 
-<p><strong><a href="./quickstart">The hands-on quickstart</a> guides you through some core features of lakeFS</strong>.</p>
-
-<p>These include <a href="./quickstart/branch.html">branching</a>, <a href="quickstart/commit-and-merge.html">merging</a>, and <a href="quickstart/rollback.html">rolling back changes</a> to data.</p>
-
-<p class="note">You can use the <a href="https://lakefs.cloud/register">30-day free trial of lakeFS Cloud</a> if you want to try out lakeFS without installing anything.</p>
-<h2 id="key-lakefs-features">
-  
-  
-    <a href="#key-lakefs-features" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Key lakeFS Features
-  
-  
-</h2>
-    
-
-<ul>
-  <li>It is format-agnostic.</li>
-  <li>It works with numerous data tools and platforms.</li>
-  <li>Your data stays in place.</li>
-  <li>It eliminates the need for data duplication using <a href="/understand/model.html#zero-copy-branching">zero-copy branching</a>.</li>
-  <li>It maintains high performance over data lakes of any size.</li>
-  <li>It includes configurable garbage collection capabilities.</li>
-  <li>It is proven in production and has an active community.</li>
-</ul>
-
-<p><img src="/assets/img/lakeFS_integration.png" alt="lakeFS integration into data lake" width="60%" height="60%" /></p>
-<h2 id="how-does-lakefs-work-with-other-tools">
-  
-  
-    <a href="#how-does-lakefs-work-with-other-tools" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Does lakeFS Work With Other Tools?
-  
-  
-</h2>
-    
-
-<p>lakeFS is an open source project that supports managing data in AWS S3, Azure Blob Storage, Google Cloud Storage (GCS) and any other object storage with an S3 interface. It integrates seamlessly with popular data frameworks such as Spark, Hive Metastore, dbt, Trino, Presto, and many others and includes an S3 compatibility layer.</p>
-
-<p class="note">For more details and a full list see <a href="./integrations/">the integrations pages</a>.</p>
-
-<p class="center">
-    <img src="/assets/img/lakeFSArchitecture.png" />
-</p>
-
-<p class="pb-5">lakeFS maintains compatibility with the S3 API to minimize adoption
-friction. You can use it as a drop-in replacement for S3 from the perspective of
-any tool interacting with a data lake.</p>
-
-<p>For example, take the common operation of reading a collection of data from an object storage into a Spark DataFrame. For data outside a lakeFS repo, the code will look like this:</p>
-
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">parquet</span><span class="p">(</span><span class="s">"s3a://my-bucket/collections/foo/"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>After adding the data collections into my-bucket to a repository, the same operation becomes:</p>
-
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">parquet</span><span class="p">(</span><span class="s">"s3a://my-repo/main-branch/collections/foo/"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>You can use the same methods and syntax you are already using to read and write data when using a lakeFS repository. This simplifies the adoption of lakeFS - minimal changes are needed to get started, making further changes an incremental process.</p>
-<h2 id="lakefs-is-git-for-data">
-  
-  
-    <a href="#lakefs-is-git-for-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> lakeFS is Git for Data
-  
-  
-</h2>
-    
-
-<p>Git conquered the world of code because it had best supported engineering best practices required by developers, in particular:</p>
-
-<ul>
-  <li>Collaborate during development.</li>
-  <li>Develop and Test in isolation</li>
-  <li>Revert code repository to a sable version in case of an error</li>
-  <li>Reproduce and troubleshoot issues with a given version of the code</li>
-  <li>Continuously integrate and deploy new code (CI/CD)</li>
-</ul>
-
-<p>lakeFS provides these exact benefits, that are data practitioners are missing today, and enables them a clear intuitive Git-like interface to easily manage their data like they manage code. Through its versioning engine, lakeFS enables the following built-in operations familiar from Git:</p>
-
-<ul>
-  <li><strong>branch:</strong> a consistent copy of a repository, isolated from other branches and their changes. Initial creation of a branch is a metadata operation that does not duplicate objects.</li>
-  <li><strong>commit:</strong> an immutable checkpoint containing a complete snapshot of a repository.</li>
-  <li><strong>merge:</strong> performed between two branches — merges atomically update one branch with the changes from another.</li>
-  <li><strong>revert:</strong> returns a repo to the exact state of a previous commit.</li>
-  <li><strong>tag:</strong> a pointer to a single immutable commit with a readable, meaningful name.</li>
-</ul>
-
-<p><em>See the <a href="/understand/model.html">object model</a> for an in-depth
-definition of these, and the <a href="/reference/cli.html">CLI reference</a> for the
-full list of commands.</em></p>
-
-<p>Incorporating these operations into your data lake pipelines provides the same collaboration and organizational benefits you get when managing application code with source control.</p>
-<h3 id="the-lakefs-promotion-workflow">
-  
-  
-    <a href="#the-lakefs-promotion-workflow" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> The lakeFS Promotion Workflow
-  
-  
-</h3>
-    
-
-<p>Here’s how lakeFS <em>branches</em> and <em>merges</em> improve the universal process of updating collections with the latest data.</p>
-
-<p><img src="/assets/img/promotion_workflow.png" alt="lakeFS promotion workflow" width="60%" height="60%" /></p>
-
-<ol>
-  <li>First, create a new <strong>branch</strong> from <code class="language-plaintext highlighter-rouge">main</code> to instantly generate a complete “copy” of your production data.</li>
-  <li>Apply changes or make updates on the isolated branch to understand their impact prior to exposure.</li>
-  <li>And finally, perform a <strong>merge</strong> from the feature branch back to main to atomically promote the updates into production.</li>
-</ol>
-
-<p>Following this pattern, lakeFS facilitates a streamlined data deployment workflow that consistently produces data assets you can have total confidence in.</p>
-<h2 id="how-can-lakefs-help-me">
-  
-  
-    <a href="#how-can-lakefs-help-me" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Can lakeFS Help Me?
-  
-  
-</h2>
-    
-
-<p>lakeFS helps you maintain a tidy data lake in several ways, including:</p>
-<h3 id="isolated-devtest-environments-with-zero-copy-branching">
-  
-  
-    <a href="#isolated-devtest-environments-with-zero-copy-branching" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Isolated Dev/Test Environments with zero-copy branching
-  
-  
-</h3>
-    
-
-<p>lakeFS makes creating isolated dev/test environments for ETL testing instantaneous, and through its use of zero-copy branching, cheap. This enables you to test and validate code changes on production data without impacting it, as well as run analysis and experiments on production data in an isolated clone.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/etl_testing.html">Read more</a></p>
-<h3 id="reproducibility-what-did-my-data-look-like-at-a-point-in-time">
-  
-  
-    <a href="#reproducibility-what-did-my-data-look-like-at-a-point-in-time" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Reproducibility: What Did My Data Look Like at a Point In Time?
-  
-  
-</h3>
-    
-
-<p>Being able to look at data as it was at a given point is particularly useful in at least two scenarios:</p>
-
-<ol>
-  <li>
-    <p>Reproducibility of ML experiments</p>
-
-    <p>ML experimentation is iterative, requiring the ability to reproduce specific results. With lakeFS, you can version all aspects of an ML experiment, including the data. This enables:</p>
-
-    <p><strong>Data Lineage</strong>: Track the transformation of data from raw datasets to the final version used in experiments, ensuring transparency and traceability.</p>
-
-    <p><strong>Zero-Copy Branching</strong>: Minimize storage use by creating lightweight branches of your data, allowing for easy experimentation across different versions.</p>
-
-    <p><strong>Easy Integration</strong>: Seamlessly integrate with ML tools like MLFlow, linking experiments directly to the exact data versions used, making reproducibility straightforward.</p>
-
-    <p>lakeFS enhances your ML workflow by ensuring that all versions of data are easily accessible, traceable, and reproducible.</p>
+<ol id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#prerequisites" id="markdown-toc-prerequisites">Prerequisites</a>    <ol>
+      <li><a href="#databricks-authentication" id="markdown-toc-databricks-authentication">Databricks authentication</a></li>
+    </ol>
   </li>
-  <li>
-    <p>Troubleshooting production problems</p>
-
-    <p>Data engineers are often asked to validate the data. A user might report inconsistencies, question the accuracy, or simply report it to be incorrect.</p>
-
-    <p>Since the data continuously changes, it is challenging to understand its state at the time of the error.</p>
-
-    <p>With lakeFS you can create a branch from a commit to debug an issue in isolation.</p>
+  <li><a href="#guide" id="markdown-toc-guide">Guide</a>    <ol>
+      <li><a href="#table-descriptor-definition" id="markdown-toc-table-descriptor-definition">Table descriptor definition</a></li>
+      <li><a href="#write-some-data" id="markdown-toc-write-some-data">Write some data</a></li>
+      <li><a href="#the-unity-catalog-exporter-script" id="markdown-toc-the-unity-catalog-exporter-script">The Unity Catalog exporter script</a></li>
+      <li><a href="#action-configuration" id="markdown-toc-action-configuration">Action configuration</a></li>
+      <li><a href="#databricks-integration" id="markdown-toc-databricks-integration">Databricks Integration</a></li>
+    </ol>
   </li>
 </ol>
 
-<p>👉🏻 <a href="./understand/use_cases/reproducibility.html">Read More</a></p>
-<h3 id="rollback-of-data-changes-and-recovery-from-data-errors">
+</div>
+<h2 id="overview">
   
   
-    <a href="#rollback-of-data-changes-and-recovery-from-data-errors" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Rollback of Data Changes and Recovery from Data Errors
-  
-  
-</h3>
-    
-
-<p>Human error or misconfigurations can lead to erroneous data making its way into production or critical data being accidentally deleted. Traditional backups are often inadequate for recovery in these situations, as they may be outdated and require time-consuming object-level sifting.</p>
-
-<p>With lakeFS, you can avoid these inefficiencies by committing snapshots of data at well-defined times. This allows for instant recovery: simply identify a good historical commit and restore or copy from it with a single operation.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/rollback.html">Read more</a></p>
-<h3 id="establishing-data-quality-guarantees---cicd-for-data">
-  
-  
-    <a href="#establishing-data-quality-guarantees---cicd-for-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Establishing data quality guarantees - CI/CD for data
-  
-  
-</h3>
-    
-
-<p>The best way to deal with mistakes is to avoid them. A data source that is ingested into the lake introducing low-quality data should be blocked before exposure if possible.</p>
-
-<p>With lakeFS, you can achieve this by tying data quality tests to commit and merge operations via lakeFS <a href="/understand/use_cases/cicd_for_data.html#using-hooks-as-data-quality-gates">hooks</a>.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/cicd_for_data.html">Read more</a></p>
-<h2 id="next-step">
-  
-  
-    <a href="#next-step" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Next Step
+    <a href="#overview" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Overview
   
   
 </h2>
     
 
-<p>Try lakeFS on the <a href="https://lakefs.cloud/">cloud</a> or <a href="https://docs.lakefs.io/quickstart/">run it locally</a></p>
+<p>Databricks Unity Catalog serves as a centralized data governance platform for your data lakes.
+Through the Unity Catalog, you can search for and locate data assets across workspaces via a unified catalog.
+Leveraging the external tables feature within Unity Catalog, you can register a Delta Lake table exported from lakeFS and
+access it through the unified catalog. 
+The subsequent step-by-step guide will lead you through the process of configuring a <a href="/howto/hooks/lua.html">Lua hook</a>
+that exports Delta Lake tables from lakeFS, and subsequently registers them in Unity Catalog.</p>
+
+<blockquote class="note">
+  <p>Currently, Unity Catalog export feature exclusively supports AWS S3 and Azure ADLS Gen2 as the underlying storage solution. It’s planned to <a href="https://github.com/treeverse/lakeFS/issues/7199">support other cloud providers soon</a>.</p>
+</blockquote>
+
+<p>Reference Guide: <a href="https://lakefs.io/blog/lakefs-unity-catalog-integration-tutorial/">lakeFS + Unity Catalog Integration: Step-by-Step Tutorial</a></p>
+<h2 id="prerequisites">
+  
+  
+    <a href="#prerequisites" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Prerequisites
+  
+  
+</h2>
+    
+
+<p>Before starting, ensure you have the following:</p>
+
+<ol>
+  <li>Access to Unity Catalog</li>
+  <li>An active lakeFS installation with S3 as the backing storage, and a repository in this installation.</li>
+  <li>A Databricks SQL warehouse.</li>
+  <li>AWS Credentials with S3 access.</li>
+  <li>lakeFS credentials with access to your Delta Tables.</li>
+</ol>
+
+<blockquote class="note">
+  <p>Supported from lakeFS v1.4.0</p>
+</blockquote>
+<h3 id="databricks-authentication">
+  
+  
+    <a href="#databricks-authentication" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Databricks authentication
+  
+  
+</h3>
+    
+
+<p>Given that the hook will ultimately register a table in Unity Catalog, authentication with Databricks is imperative.
+Make sure that:</p>
+
+<ol>
+  <li>You have a Databricks <a href="https://docs.databricks.com/en/dev-tools/service-principals.html">Service Principal</a>.</li>
+  <li>The Service principal has <a href="https://docs.databricks.com/en/dev-tools/service-principals.html#step-3-assign-workspace-level-permissions-to-the-databricks-service-principal">token usage permissions</a>,
+and an associated <a href="https://docs.databricks.com/en/dev-tools/service-principals.html#step-4-generate-a-databricks-personal-access-token-for-the-databricks-service-principal">token</a>
+configured.</li>
+  <li>The service principal has the <code class="language-plaintext highlighter-rouge">Service principal: Manager</code> privilege over itself (Workspace: Admin console -&gt; Service principals -&gt; <code class="language-plaintext highlighter-rouge">&lt;service principal&gt;</code> -&gt; Permissions -&gt; Grant access (<code class="language-plaintext highlighter-rouge">&lt;service principal&gt;</code>:
+<code class="language-plaintext highlighter-rouge">Service principal: Manager</code>), with <code class="language-plaintext highlighter-rouge">Workspace access</code> and <code class="language-plaintext highlighter-rouge">Databricks SQL access</code> checked (Admin console -&gt; Service principals -&gt; <code class="language-plaintext highlighter-rouge">&lt;service principal&gt;</code> -&gt; Configurations).</li>
+  <li>Your SQL warehouse allows the service principal to use it (SQL Warehouses -&gt; <code class="language-plaintext highlighter-rouge">&lt;SQL warehouse&gt;</code> -&gt; Permissions -&gt; <code class="language-plaintext highlighter-rouge">&lt;service principal&gt;</code>: <code class="language-plaintext highlighter-rouge">Can use</code>).</li>
+  <li>The catalog grants the <code class="language-plaintext highlighter-rouge">USE CATALOG</code>, <code class="language-plaintext highlighter-rouge">USE SCHEMA</code>, <code class="language-plaintext highlighter-rouge">CREATE SCHEMA</code> permissions to the service principal(Catalog -&gt; <code class="language-plaintext highlighter-rouge">&lt;catalog name&gt;</code> -&gt; Permissions -&gt; Grant -&gt; <code class="language-plaintext highlighter-rouge">&lt;service principal&gt;</code>: <code class="language-plaintext highlighter-rouge">USE CATALOG</code>, <code class="language-plaintext highlighter-rouge">USE SCHEMA</code>, <code class="language-plaintext highlighter-rouge">CREATE SCHEMA</code>).</li>
+  <li>You have an <em>External Location</em> configured, and the service principal has the <code class="language-plaintext highlighter-rouge">CREATE EXTERNAL TABLE</code> permission over it (Catalog -&gt; External Data -&gt; External Locations -&gt; Create location).</li>
+</ol>
+<h2 id="guide">
+  
+  
+    <a href="#guide" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Guide
+  
+  
+</h2>
+    
+<h3 id="table-descriptor-definition">
+  
+  
+    <a href="#table-descriptor-definition" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table descriptor definition
+  
+  
+</h3>
+    
+
+<p>To guide the Unity Catalog exporter in configuring the table in the catalog, define its properties in the Delta Lake table descriptor. 
+The table descriptor should include (at minimum) the following fields:</p>
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">name</code>: The table name.</li>
+  <li><code class="language-plaintext highlighter-rouge">type</code>: Should be <code class="language-plaintext highlighter-rouge">delta</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">catalog</code>: The name of the catalog in which the table will be created.</li>
+  <li><code class="language-plaintext highlighter-rouge">path</code>: The path in lakeFS (starting from the root of the branch) in which the Delta Lake table’s data is found.</li>
+</ol>
+
+<p>Let’s define the table descriptor and upload it to lakeFS:</p>
+
+<p>Save the following as <code class="language-plaintext highlighter-rouge">famous-people-td.yaml</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">name</span><span class="pi">:</span> <span class="s">famous_people</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">delta</span>
+<span class="na">catalog</span><span class="pi">:</span> <span class="s">my-catalog-name</span>
+<span class="na">path</span><span class="pi">:</span> <span class="s">tables/famous-people</span>
+</code></pre></div></div>
+
+<blockquote class="note">
+  <p>It’s recommended to create a Unity catalog with the same name as your repository</p>
+</blockquote>
+
+<p>Upload the table descriptor to <code class="language-plaintext highlighter-rouge">_lakefs_tables/famous-people-td.yaml</code> and commit:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakectl fs upload lakefs://repo/main/_lakefs_tables/famous-people-td.yaml <span class="nt">-s</span> ./famous-people-td.yaml <span class="o">&amp;&amp;</span> <span class="se">\</span>
+lakectl commit lakefs://repo/main <span class="nt">-m</span> <span class="s2">"add famous people table descriptor"</span>
+</code></pre></div></div>
+<h3 id="write-some-data">
+  
+  
+    <a href="#write-some-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Write some data
+  
+  
+</h3>
+    
+
+<p>Insert data into the table path, using your preferred method (e.g. <a href="/integrations/spark.html">Spark</a>), and commit upon completion.</p>
+
+<p>We shall use Spark and lakeFS’s S3 gateway to write some data as a Delta table:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pyspark <span class="nt">--packages</span> <span class="s2">"io.delta:delta-spark_2.12:3.0.0,org.apache.hadoop:hadoop-aws:3.3.4,com.amazonaws:aws-java-sdk-bundle:1.12.262"</span> <span class="se">\</span>
+  <span class="nt">--conf</span> spark.sql.extensions<span class="o">=</span>io.delta.sql.DeltaSparkSessionExtension <span class="se">\</span>
+  <span class="nt">--conf</span> spark.sql.catalog.spark_catalog<span class="o">=</span>org.apache.spark.sql.delta.catalog.DeltaCatalog <span class="se">\</span>
+  <span class="nt">--conf</span> spark.hadoop.fs.s3a.aws.credentials.provider<span class="o">=</span><span class="s1">'org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider'</span> <span class="se">\</span>
+  <span class="nt">--conf</span> spark.hadoop.fs.s3a.endpoint<span class="o">=</span><span class="s1">'&lt;LAKEFS_SERVER_URL&gt;'</span> <span class="se">\</span>
+  <span class="nt">--conf</span> spark.hadoop.fs.s3a.access.key<span class="o">=</span><span class="s1">'&lt;LAKEFS_ACCESS_KEY&gt;'</span> <span class="se">\</span>
+  <span class="nt">--conf</span> spark.hadoop.fs.s3a.secret.key<span class="o">=</span><span class="s1">'&lt;LAKEFS_SECRET_ACCESS_KEY&gt;'</span> <span class="se">\</span>
+  <span class="nt">--conf</span> spark.hadoop.fs.s3a.path.style.access<span class="o">=</span><span class="nb">true</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
+   <span class="p">(</span><span class="s">'James'</span><span class="p">,</span><span class="s">'Bond'</span><span class="p">,</span><span class="s">'England'</span><span class="p">,</span><span class="s">'intelligence'</span><span class="p">),</span>
+   <span class="p">(</span><span class="s">'Robbie'</span><span class="p">,</span><span class="s">'Williams'</span><span class="p">,</span><span class="s">'England'</span><span class="p">,</span><span class="s">'music'</span><span class="p">),</span>
+   <span class="p">(</span><span class="s">'Hulk'</span><span class="p">,</span><span class="s">'Hogan'</span><span class="p">,</span><span class="s">'USA'</span><span class="p">,</span><span class="s">'entertainment'</span><span class="p">),</span>
+   <span class="p">(</span><span class="s">'Mister'</span><span class="p">,</span><span class="s">'T'</span><span class="p">,</span><span class="s">'USA'</span><span class="p">,</span><span class="s">'entertainment'</span><span class="p">),</span>
+   <span class="p">(</span><span class="s">'Rafael'</span><span class="p">,</span><span class="s">'Nadal'</span><span class="p">,</span><span class="s">'Spain'</span><span class="p">,</span><span class="s">'professional athlete'</span><span class="p">),</span>
+   <span class="p">(</span><span class="s">'Paul'</span><span class="p">,</span><span class="s">'Haver'</span><span class="p">,</span><span class="s">'Belgium'</span><span class="p">,</span><span class="s">'music'</span><span class="p">),</span>
+<span class="p">]</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s">"firstname"</span><span class="p">,</span><span class="s">"lastname"</span><span class="p">,</span><span class="s">"country"</span><span class="p">,</span><span class="s">"category"</span><span class="p">]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">createDataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">schema</span> <span class="o">=</span> <span class="n">columns</span><span class="p">)</span>
+<span class="n">df</span><span class="p">.</span><span class="n">write</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="s">"delta"</span><span class="p">).</span><span class="n">mode</span><span class="p">(</span><span class="s">"overwrite"</span><span class="p">).</span><span class="n">partitionBy</span><span class="p">(</span><span class="s">"category"</span><span class="p">,</span> <span class="s">"country"</span><span class="p">).</span><span class="n">save</span><span class="p">(</span><span class="s">"s3a://repo/main/tables/famous-people"</span><span class="p">)</span>
+</code></pre></div></div>
+<h3 id="the-unity-catalog-exporter-script">
+  
+  
+    <a href="#the-unity-catalog-exporter-script" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> The Unity Catalog exporter script
+  
+  
+</h3>
+    
+
+<blockquote class="note">
+  <p>For code references check <a href="/howto/hooks/lua.html#lakefscatalogexportdelta_exporter">delta_exporter</a> and 
+<a href="/howto/hooks/lua.html#lakefscatalogexportunity_exporter">unity_exporter</a> docs.</p>
+</blockquote>
+
+<p>Create <code class="language-plaintext highlighter-rouge">unity_exporter.lua</code>:</p>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="n">aws</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">"aws"</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">formats</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">"formats"</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">databricks</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">"databricks"</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">delta_export</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">"lakefs/catalogexport/delta_exporter"</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">unity_export</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">"lakefs/catalogexport/unity_exporter"</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">sc</span> <span class="o">=</span> <span class="n">aws</span><span class="p">.</span><span class="n">s3_client</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="n">aws</span><span class="p">.</span><span class="n">access_key_id</span><span class="p">,</span> <span class="n">args</span><span class="p">.</span><span class="n">aws</span><span class="p">.</span><span class="n">secret_access_key</span><span class="p">,</span> <span class="n">args</span><span class="p">.</span><span class="n">aws</span><span class="p">.</span><span class="n">region</span><span class="p">)</span>
+
+<span class="c1">-- Export Delta Lake tables export:</span>
+<span class="kd">local</span> <span class="n">delta_client</span> <span class="o">=</span> <span class="n">formats</span><span class="p">.</span><span class="n">delta_client</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="n">lakefs</span><span class="p">.</span><span class="n">access_key_id</span><span class="p">,</span> <span class="n">args</span><span class="p">.</span><span class="n">lakefs</span><span class="p">.</span><span class="n">secret_access_key</span><span class="p">,</span> <span class="n">args</span><span class="p">.</span><span class="n">aws</span><span class="p">.</span><span class="n">region</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">delta_table_details</span> <span class="o">=</span> <span class="n">delta_export</span><span class="p">.</span><span class="n">export_delta_log</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">args</span><span class="p">.</span><span class="n">table_defs</span><span class="p">,</span> <span class="n">sc</span><span class="p">.</span><span class="n">put_object</span><span class="p">,</span> <span class="n">delta_client</span><span class="p">,</span> <span class="s2">"_lakefs_tables"</span><span class="p">)</span>
+
+<span class="c1">-- Register the exported table in Unity Catalog:</span>
+<span class="kd">local</span> <span class="n">databricks_client</span> <span class="o">=</span> <span class="n">databricks</span><span class="p">.</span><span class="n">client</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="n">databricks_host</span><span class="p">,</span> <span class="n">args</span><span class="p">.</span><span class="n">databricks_token</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">registration_statuses</span> <span class="o">=</span> <span class="n">unity_export</span><span class="p">.</span><span class="n">register_tables</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="s2">"_lakefs_tables"</span><span class="p">,</span> <span class="n">delta_table_details</span><span class="p">,</span> <span class="n">databricks_client</span><span class="p">,</span> <span class="n">args</span><span class="p">.</span><span class="n">warehouse_id</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">t</span><span class="p">,</span> <span class="n">status</span> <span class="k">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">registration_statuses</span><span class="p">)</span> <span class="k">do</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Unity catalog registration for table \"" .. t .. "</span><span class="err">\</span><span class="s2">" completed with commit schema status : "</span> <span class="o">..</span> <span class="n">status</span> <span class="o">..</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Upload the lua script to the <code class="language-plaintext highlighter-rouge">main</code> branch under <code class="language-plaintext highlighter-rouge">scripts/unity_exporter.lua</code> and commit:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakectl fs upload lakefs://repo/main/scripts/unity_exporter.lua <span class="nt">-s</span> ./unity_exporter.lua <span class="o">&amp;&amp;</span> <span class="se">\</span>
+lakectl commit lakefs://repo/main <span class="nt">-m</span> <span class="s2">"upload unity exporter script"</span>
+</code></pre></div></div>
+<h3 id="action-configuration">
+  
+  
+    <a href="#action-configuration" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Action configuration
+  
+  
+</h3>
+    
+
+<p>Define an action configuration that will run the above script after a commit is completed (<code class="language-plaintext highlighter-rouge">post-commit</code>) over the <code class="language-plaintext highlighter-rouge">main</code> branch.</p>
+
+<p>Create <code class="language-plaintext highlighter-rouge">unity_exports_action.yaml</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">name</span><span class="pi">:</span> <span class="s">unity_exports</span>
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">post-commit</span><span class="pi">:</span>
+     <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">main"</span><span class="pi">]</span>
+<span class="na">hooks</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">id</span><span class="pi">:</span> <span class="s">unity_export</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">lua</span>
+    <span class="na">properties</span><span class="pi">:</span>
+      <span class="na">script_path</span><span class="pi">:</span> <span class="s">scripts/unity_exporter.lua</span>
+      <span class="na">args</span><span class="pi">:</span>
+        <span class="na">aws</span><span class="pi">:</span>
+          <span class="na">access_key_id</span><span class="pi">:</span> <span class="s">&lt;AWS_ACCESS_KEY_ID&gt;</span>
+          <span class="na">secret_access_key</span><span class="pi">:</span> <span class="s">&lt;AWS_SECRET_ACCESS_KEY&gt;</span>
+          <span class="na">region</span><span class="pi">:</span> <span class="s">&lt;AWS_REGION&gt;</span>
+        <span class="na">lakefs</span><span class="pi">:</span> <span class="c1"># provide credentials of a user that has access to the script and Delta Table</span>
+          <span class="na">access_key_id</span><span class="pi">:</span> <span class="s">&lt;LAKEFS_ACCESS_KEY_ID&gt;</span> 
+          <span class="na">secret_access_key</span><span class="pi">:</span> <span class="s">&lt;LAKEFS_SECRET_ACCESS_KEY&gt;</span>
+        <span class="na">table_defs</span><span class="pi">:</span> <span class="c1"># an array of table descriptors used to be defined in Unity Catalog</span>
+          <span class="pi">-</span> <span class="s">famous-people-td</span>
+        <span class="na">databricks_host</span><span class="pi">:</span> <span class="s">&lt;DATABRICKS_HOST_URL&gt;</span>
+        <span class="na">databricks_token</span><span class="pi">:</span> <span class="s">&lt;DATABRICKS_SERVICE_PRINCIPAL_TOKEN&gt;</span>
+        <span class="na">warehouse_id</span><span class="pi">:</span> <span class="s">&lt;WAREHOUSE_ID&gt;</span>
+</code></pre></div></div>
+
+<p>Upload the action configurations to <code class="language-plaintext highlighter-rouge">_lakefs_actions/unity_exports_action.yaml</code> and commit:</p>
+
+<blockquote class="note">
+  <p>Once the commit will finish its run, the action will start running since we’ve configured it to run on <code class="language-plaintext highlighter-rouge">post-commit</code> 
+events on the <code class="language-plaintext highlighter-rouge">main</code> branch.</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakectl fs upload lakefs://repo/main/_lakefs_actions/unity_exports_action.yaml <span class="nt">-s</span> ./unity_exports_action.yaml <span class="o">&amp;&amp;</span> <span class="se">\</span>
+lakectl commit lakefs://repo/main <span class="nt">-m</span> <span class="s2">"upload action and run it"</span>
+</code></pre></div></div>
+
+<p>The action has run and exported the <code class="language-plaintext highlighter-rouge">famous_people</code> Delta Lake table to the repo’s storage namespace, and has register 
+the table as an external table in Unity Catalog under the catalog <code class="language-plaintext highlighter-rouge">my-catalog-name</code>, schema <code class="language-plaintext highlighter-rouge">main</code> (as the branch’s name) and 
+table name <code class="language-plaintext highlighter-rouge">famous_people</code>: <code class="language-plaintext highlighter-rouge">my-catalog-name.main.famous_people</code>.</p>
+
+<p><img src="/assets/img/unity_export_hook_result_log.png" alt="Hooks log result in lakeFS UI" /></p>
+<h3 id="databricks-integration">
+  
+  
+    <a href="#databricks-integration" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Databricks Integration
+  
+  
+</h3>
+    
+
+<p>After registering the table in Unity, you can leverage your preferred method to <a href="https://docs.databricks.com/en/query/index.html">query the data</a> 
+from the exported table under <code class="language-plaintext highlighter-rouge">my-catalog-name.main.famous_people</code>, and view it in the Databricks’s Catalog Explorer, or
+retrieve it using the Databricks CLI with the following command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>databricks tables get my-catalog-name.main.famous_people
+</code></pre></div></div>
+
+<p><img src="/assets/img/unity_exported_table_columns.png" alt="Unity Catalog Explorer view" /></p>
 
                 
 

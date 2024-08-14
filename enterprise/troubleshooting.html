@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
   
   <style type="text/css">
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(1) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(9) > .nav-list > .nav-list-item:nth-child(3) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
 
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list-expander svg { transform: rotate(-90deg); }
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list { display: block; }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(9) > .nav-list-expander svg, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(9) > .nav-list > .nav-list-item:not(.passive):nth-child(3) > .nav-list-expander svg { transform: rotate(-90deg); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(9) > .nav-list, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(9) > .nav-list > .nav-list-item:not(.passive):nth-child(3) > .nav-list { display: block; }
 
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list-expander svg { transform: rotate(-90deg); }
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list { display: block; }
@@ -38,21 +38,21 @@
 
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Welcome to lakeFS | lakeFS Documentation</title>
+<title>Troubleshooting lakeFS Enterprise | lakeFS Documentation</title>
 <meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Welcome to lakeFS" />
+<meta property="og:title" content="Troubleshooting lakeFS Enterprise" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes." />
-<meta property="og:description" content="The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes." />
+<meta name="description" content="Guidance on troubleshooting a lakeFS Enterprise deployment" />
+<meta property="og:description" content="Guidance on troubleshooting a lakeFS Enterprise deployment" />
 <meta property="og:site_name" content="lakeFS Documentation" />
 <meta property="og:image" content="https://docs.lakefs.io/assets/img/docs_logo.png" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:image" content="https://docs.lakefs.io/assets/img/docs_logo.png" />
-<meta property="twitter:title" content="Welcome to lakeFS" />
+<meta property="twitter:title" content="Troubleshooting lakeFS Enterprise" />
 <meta name="twitter:site" content="@lakeFS" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes.","headline":"Welcome to lakeFS","image":"https://docs.lakefs.io/assets/img/docs_logo.png","name":"lakeFS","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/logo.svg"}},"sameAs":["https://www.linkedin.com/company/treeverse/","https://twitter.com/lakeFS","https://github.com/treeverse/lakeFS","https://data-folks.masto.host/@lakeFS"],"url":"/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Guidance on troubleshooting a lakeFS Enterprise deployment","headline":"Troubleshooting lakeFS Enterprise","image":"https://docs.lakefs.io/assets/img/docs_logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/logo.svg"}},"url":"/enterprise/troubleshooting.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -212,8 +212,8 @@
             </script>
 
             <ul class="nav-list"><li
-            class="nav-list-item active"><a href="/"
-           class="nav-list-link active">Welcome to lakeFS</a></li><li
+            class="nav-list-item"><a href="/"
+           class="nav-list-link">Welcome to lakeFS</a></li><li
             class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/quickstart/"
@@ -382,7 +382,7 @@
                    class="nav-list-link">Migrating to 1.0</a></li></ul></li><li
             class="nav-list-item"><a href="/cloud/"
            class="nav-list-link">lakeFS Cloud</a></li><li
-            class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
+            class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/enterprise/"
            class="nav-list-link">lakeFS Enterprise</a><ul class="nav-list "><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
@@ -398,8 +398,8 @@
                         <a href="/enterprise/getstarted/migrate-from-oss.html"
                            class="nav-list-link">Migrate from lakeFS OSS</a>
                     </li></ul></li><li class="nav-list-item "><a href="/enterprise/upgrade.html"
-                   class="nav-list-link">Upgrade</a></li><li class="nav-list-item "><a href="/enterprise/troubleshooting.html"
-                   class="nav-list-link">Troubleshooting lakeFS Enterprise</a></li><li class="nav-list-item "><a href="/enterprise/configuration.html"
+                   class="nav-list-link">Upgrade</a></li><li class="nav-list-item  active"><a href="/enterprise/troubleshooting.html"
+                   class="nav-list-link active">Troubleshooting lakeFS Enterprise</a></li><li class="nav-list-item "><a href="/enterprise/configuration.html"
                    class="nav-list-link">Configuration Reference</a></li><li class="nav-list-item "><a href="/enterprise/architecture.html"
                    class="nav-list-link">Architecture</a></li></ul></li><li
             class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
@@ -530,291 +530,269 @@
         </div>
         <div id="main-content-wrap" class="main-content-wrap">
             
+            
+            <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+                <ol class="breadcrumb-nav-list">
+                    
+                    <li class="breadcrumb-nav-list-item"><a href="/enterprise/">lakeFS Enterprise</a>
+                    </li>
+                    
+                    <li class="breadcrumb-nav-list-item"><span>Troubleshooting lakeFS Enterprise</span></li>
+                </ol>
+            </nav>
+            
+            
             <div id="main-content" class="main-content" role="main">
                 
-                    <h1 id="temporary-placeholder-for-lakefs-databricks-docs">
+                    <h1 id="troubleshooting-lakefs-enterprise">
   
   
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-1">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-1" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-2">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-2" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-3">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-3" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-4">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-4" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-5">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-5" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-6">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-6" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
+    <a href="#troubleshooting-lakefs-enterprise" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Troubleshooting lakeFS Enterprise
   
   
 </h1>
     
 
-<p><img src="/assets/img/waving-axolotl-transparent.gif" width="90" /></p>
-
-<p><strong>lakeFS brings software engineering best practices and applies them to data engineering.</strong></p>
-
-<p>lakeFS provides version control over the data lake, and uses Git-like semantics to create and access those versions. If you know git, you’ll be right at home with lakeFS.</p>
-
-<p>With lakeFS, you can use concepts on your data lake such as <strong>branch</strong> to create an isolated version of the data, <strong>commit</strong> to create a reproducible point in time, and <strong>merge</strong> in order to incorporate your changes in one atomic action.</p>
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/GTxsyeoLccw"></iframe>
-<h2 id="how-do-i-get-started">
+<div class="toc-block">
+<h2 class="no_toc text-delta" id="table-of-contents">
   
   
-    <a href="#how-do-i-get-started" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Do I Get Started?
+    <a href="#table-of-contents" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
   
   
 </h2>
     
 
-<p><strong><a href="./quickstart">The hands-on quickstart</a> guides you through some core features of lakeFS</strong>.</p>
-
-<p>These include <a href="./quickstart/branch.html">branching</a>, <a href="quickstart/commit-and-merge.html">merging</a>, and <a href="quickstart/rollback.html">rolling back changes</a> to data.</p>
-
-<p class="note">You can use the <a href="https://lakefs.cloud/register">30-day free trial of lakeFS Cloud</a> if you want to try out lakeFS without installing anything.</p>
-<h2 id="key-lakefs-features">
-  
-  
-    <a href="#key-lakefs-features" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Key lakeFS Features
-  
-  
-</h2>
-    
-
-<ul>
-  <li>It is format-agnostic.</li>
-  <li>It works with numerous data tools and platforms.</li>
-  <li>Your data stays in place.</li>
-  <li>It eliminates the need for data duplication using <a href="/understand/model.html#zero-copy-branching">zero-copy branching</a>.</li>
-  <li>It maintains high performance over data lakes of any size.</li>
-  <li>It includes configurable garbage collection capabilities.</li>
-  <li>It is proven in production and has an active community.</li>
-</ul>
-
-<p><img src="/assets/img/lakeFS_integration.png" alt="lakeFS integration into data lake" width="60%" height="60%" /></p>
-<h2 id="how-does-lakefs-work-with-other-tools">
-  
-  
-    <a href="#how-does-lakefs-work-with-other-tools" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Does lakeFS Work With Other Tools?
-  
-  
-</h2>
-    
-
-<p>lakeFS is an open source project that supports managing data in AWS S3, Azure Blob Storage, Google Cloud Storage (GCS) and any other object storage with an S3 interface. It integrates seamlessly with popular data frameworks such as Spark, Hive Metastore, dbt, Trino, Presto, and many others and includes an S3 compatibility layer.</p>
-
-<p class="note">For more details and a full list see <a href="./integrations/">the integrations pages</a>.</p>
-
-<p class="center">
-    <img src="/assets/img/lakeFSArchitecture.png" />
-</p>
-
-<p class="pb-5">lakeFS maintains compatibility with the S3 API to minimize adoption
-friction. You can use it as a drop-in replacement for S3 from the perspective of
-any tool interacting with a data lake.</p>
-
-<p>For example, take the common operation of reading a collection of data from an object storage into a Spark DataFrame. For data outside a lakeFS repo, the code will look like this:</p>
-
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">parquet</span><span class="p">(</span><span class="s">"s3a://my-bucket/collections/foo/"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>After adding the data collections into my-bucket to a repository, the same operation becomes:</p>
-
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">parquet</span><span class="p">(</span><span class="s">"s3a://my-repo/main-branch/collections/foo/"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>You can use the same methods and syntax you are already using to read and write data when using a lakeFS repository. This simplifies the adoption of lakeFS - minimal changes are needed to get started, making further changes an incremental process.</p>
-<h2 id="lakefs-is-git-for-data">
-  
-  
-    <a href="#lakefs-is-git-for-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> lakeFS is Git for Data
-  
-  
-</h2>
-    
-
-<p>Git conquered the world of code because it had best supported engineering best practices required by developers, in particular:</p>
-
-<ul>
-  <li>Collaborate during development.</li>
-  <li>Develop and Test in isolation</li>
-  <li>Revert code repository to a sable version in case of an error</li>
-  <li>Reproduce and troubleshoot issues with a given version of the code</li>
-  <li>Continuously integrate and deploy new code (CI/CD)</li>
-</ul>
-
-<p>lakeFS provides these exact benefits, that are data practitioners are missing today, and enables them a clear intuitive Git-like interface to easily manage their data like they manage code. Through its versioning engine, lakeFS enables the following built-in operations familiar from Git:</p>
-
-<ul>
-  <li><strong>branch:</strong> a consistent copy of a repository, isolated from other branches and their changes. Initial creation of a branch is a metadata operation that does not duplicate objects.</li>
-  <li><strong>commit:</strong> an immutable checkpoint containing a complete snapshot of a repository.</li>
-  <li><strong>merge:</strong> performed between two branches — merges atomically update one branch with the changes from another.</li>
-  <li><strong>revert:</strong> returns a repo to the exact state of a previous commit.</li>
-  <li><strong>tag:</strong> a pointer to a single immutable commit with a readable, meaningful name.</li>
-</ul>
-
-<p><em>See the <a href="/understand/model.html">object model</a> for an in-depth
-definition of these, and the <a href="/reference/cli.html">CLI reference</a> for the
-full list of commands.</em></p>
-
-<p>Incorporating these operations into your data lake pipelines provides the same collaboration and organizational benefits you get when managing application code with source control.</p>
-<h3 id="the-lakefs-promotion-workflow">
-  
-  
-    <a href="#the-lakefs-promotion-workflow" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> The lakeFS Promotion Workflow
-  
-  
-</h3>
-    
-
-<p>Here’s how lakeFS <em>branches</em> and <em>merges</em> improve the universal process of updating collections with the latest data.</p>
-
-<p><img src="/assets/img/promotion_workflow.png" alt="lakeFS promotion workflow" width="60%" height="60%" /></p>
-
-<ol>
-  <li>First, create a new <strong>branch</strong> from <code class="language-plaintext highlighter-rouge">main</code> to instantly generate a complete “copy” of your production data.</li>
-  <li>Apply changes or make updates on the isolated branch to understand their impact prior to exposure.</li>
-  <li>And finally, perform a <strong>merge</strong> from the feature branch back to main to atomically promote the updates into production.</li>
+<ol id="markdown-toc">
+  <li><a href="#the-flare-command" id="markdown-toc-the-flare-command">The <code class="language-plaintext highlighter-rouge">flare</code> command</a></li>
+  <li><a href="#what-information-does-the-flare-command-collect" id="markdown-toc-what-information-does-the-flare-command-collect">What Information Does the <code class="language-plaintext highlighter-rouge">flare</code> Command Collect?</a></li>
+  <li><a href="#usage---collect-and-send-flare" id="markdown-toc-usage---collect-and-send-flare">Usage - Collect and Send Flare</a></li>
 </ol>
 
-<p>Following this pattern, lakeFS facilitates a streamlined data deployment workflow that consistently produces data assets you can have total confidence in.</p>
-<h2 id="how-can-lakefs-help-me">
+</div>
+
+<p>A lakeFS Enterprise deployment has multiple moving parts that must all be deployed and configured correctly. This is especially true during initial setup. To help troubleshoot issues, both lakeFS and fluffy include the <code class="language-plaintext highlighter-rouge">flare</code> command.</p>
+<h2 id="the-flare-command">
   
   
-    <a href="#how-can-lakefs-help-me" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Can lakeFS Help Me?
+    <a href="#the-flare-command" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> The <code class="language-plaintext highlighter-rouge">flare</code> command
+  
+  
+</h2>
+    
+<h4 id="synopsis">
+  
+  
+    <a href="#synopsis" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Synopsis
+  
+  
+</h4>
+    
+
+<p>Both <code class="language-plaintext highlighter-rouge">lakefs</code> and <code class="language-plaintext highlighter-rouge">fluffy</code> include the flare command</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs flare [flags]
+fluffy flare [flags]
+</code></pre></div></div>
+<h4 class="no_toc" id="flags">
+  
+  
+    <a href="#flags" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Flags
+  
+  
+</h4>
+    
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        --env-var-filename      the name of the file environment variables will be written to (default: lakefs-env.txt)
+        --include-env-vars      should environment variables be collected by flare (default: true)
+    -o, --output                Output path relative to the current path
+    -p, --package               Package generated artifacts into a .zip file (default: false)
+        --stdout                Output to stdout instead of files (default: false)
+        --zip-filename          The name of the zip file created when the -p option is used (default: lakefs-flare.zip)
+</code></pre></div></div>
+<h4 class="no_toc" id="example-usage">
+  
+  
+    <a href="#example-usage" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Example Usage
+  
+  
+</h4>
+    
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># This will run flare with output set to stdout, which is redirected into a file</span>
+<span class="nv">$ </span>./lakefs flare <span class="nt">--stdout</span> <span class="o">&gt;</span> lakefs.flare
+<span class="c"># The same works for fluffy</span>
+<span class="nv">$ </span>./fluffy flare <span class="nt">--stdout</span> <span class="o">&gt;</span> fluffy.flare
+</code></pre></div></div>
+<h2 id="what-information-does-the-flare-command-collect">
+  
+  
+    <a href="#what-information-does-the-flare-command-collect" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> What Information Does the <code class="language-plaintext highlighter-rouge">flare</code> Command Collect?
+  
+  
+</h2>
+    
+<h3 id="configuration">
+  
+  
+    <a href="#configuration" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Configuration
+  
+  
+</h3>
+    
+
+<p>Both lakeFS and fluffy allow configuration to be supplied in multiple ways: configuration file, environment variables, <code class="language-plaintext highlighter-rouge">.env</code> files, and command flags. The <code class="language-plaintext highlighter-rouge">flare</code> command collects the fully resolved final configuration used by the lakeFS/fluffy process.</p>
+<h3 id="environment-variables">
+  
+  
+    <a href="#environment-variables" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Environment Variables
+  
+  
+</h3>
+    
+
+<p>When troubleshooting, it’s important to get a view of the environment in which lakeFS/fluffy are running. This is especially true for container-based deployment environments, like Kubernetes, where env vars are used extensively. The <code class="language-plaintext highlighter-rouge">flare</code> command collects environment variables with the following prefixes:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">LAKEFS_</code></li>
+  <li><code class="language-plaintext highlighter-rouge">FLUFFY_</code></li>
+  <li><code class="language-plaintext highlighter-rouge">HTTP_</code></li>
+  <li><code class="language-plaintext highlighter-rouge">HOSTNAME</code></li>
+</ul>
+<h3 id="sanitization-and-secret-redaction">
+  
+  
+    <a href="#sanitization-and-secret-redaction" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Sanitization and Secret Redaction
+  
+  
+</h3>
+    
+
+<p>Both configuration and env var include sensitive secrets. The <code class="language-plaintext highlighter-rouge">flare</code> command has a multi-step process for redacting secrets from what it collects. The <code class="language-plaintext highlighter-rouge">flare</code> command is able to detect the following types of secrets:</p>
+
+<ul>
+  <li>AWS static credentials</li>
+  <li>Azure storage keys</li>
+  <li>Basic HTTP auth username/password</li>
+  <li>JWTs</li>
+  <li>Bearer auth headers</li>
+  <li>GitHub tokens</li>
+  <li>Certificate private keys</li>
+</ul>
+
+<p>Aside from the specific secret type listed above, <code class="language-plaintext highlighter-rouge">flare</code> also has the ability to detect and redact generic high-entropy strings, which are likely to be secrets.</p>
+
+<p>Redacted secrets are replaced by a <code class="language-plaintext highlighter-rouge">SHA512</code> hash of the value. This allows comparing them (e.g., between lakeFS and fluffy) without exposing the actual values.</p>
+<h2 id="usage---collect-and-send-flare">
+  
+  
+    <a href="#usage---collect-and-send-flare" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Usage - Collect and Send Flare
   
   
 </h2>
     
 
-<p>lakeFS helps you maintain a tidy data lake in several ways, including:</p>
-<h3 id="isolated-devtest-environments-with-zero-copy-branching">
+<p>The following script is intended to be run locally and assumes that lakeFS and fluffy are deployed to a Kubernetes cluster, since this is the recommended setup.<br />
+Running this script requires that <code class="language-plaintext highlighter-rouge">kubectl</code> be installed on the machine it is being run from and that <code class="language-plaintext highlighter-rouge">kubectl</code> is configured with the correct context and credentials to access the cluster. Aside from running the <code class="language-plaintext highlighter-rouge">flare</code> command on both lakeFS and fluffy, this script also fetches the logs from all running pods of lakeFS and fluffy.</p>
+<h3 id="step-1---set-script-variables">
   
   
-    <a href="#isolated-devtest-environments-with-zero-copy-branching" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Isolated Dev/Test Environments with zero-copy branching
-  
-  
-</h3>
-    
-
-<p>lakeFS makes creating isolated dev/test environments for ETL testing instantaneous, and through its use of zero-copy branching, cheap. This enables you to test and validate code changes on production data without impacting it, as well as run analysis and experiments on production data in an isolated clone.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/etl_testing.html">Read more</a></p>
-<h3 id="reproducibility-what-did-my-data-look-like-at-a-point-in-time">
-  
-  
-    <a href="#reproducibility-what-did-my-data-look-like-at-a-point-in-time" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Reproducibility: What Did My Data Look Like at a Point In Time?
+    <a href="#step-1---set-script-variables" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 1 - Set Script Variables
   
   
 </h3>
     
 
-<p>Being able to look at data as it was at a given point is particularly useful in at least two scenarios:</p>
+<p>At the top of the script you’ll find the <code class="language-plaintext highlighter-rouge">Variables</code> block. It is important to change these values according to how lakeFS is deployed in your cluster.</p>
 
-<ol>
-  <li>
-    <p>Reproducibility of ML experiments</p>
-
-    <p>ML experimentation is iterative, requiring the ability to reproduce specific results. With lakeFS, you can version all aspects of an ML experiment, including the data. This enables:</p>
-
-    <p><strong>Data Lineage</strong>: Track the transformation of data from raw datasets to the final version used in experiments, ensuring transparency and traceability.</p>
-
-    <p><strong>Zero-Copy Branching</strong>: Minimize storage use by creating lightweight branches of your data, allowing for easy experimentation across different versions.</p>
-
-    <p><strong>Easy Integration</strong>: Seamlessly integrate with ML tools like MLFlow, linking experiments directly to the exact data versions used, making reproducibility straightforward.</p>
-
-    <p>lakeFS enhances your ML workflow by ensuring that all versions of data are easily accessible, traceable, and reproducible.</p>
-  </li>
-  <li>
-    <p>Troubleshooting production problems</p>
-
-    <p>Data engineers are often asked to validate the data. A user might report inconsistencies, question the accuracy, or simply report it to be incorrect.</p>
-
-    <p>Since the data continuously changes, it is challenging to understand its state at the time of the error.</p>
-
-    <p>With lakeFS you can create a branch from a commit to debug an issue in isolation.</p>
-  </li>
-</ol>
-
-<p>👉🏻 <a href="./understand/use_cases/reproducibility.html">Read More</a></p>
-<h3 id="rollback-of-data-changes-and-recovery-from-data-errors">
+<p><code class="language-plaintext highlighter-rouge">NAMESPACE</code> - The K8s namespace where lakeFS and fluffy are deployed<br />
+<code class="language-plaintext highlighter-rouge">LAKEFS_DEPLOYMENT</code> - The name of the lakeFS K8s deployment<br />
+<code class="language-plaintext highlighter-rouge">FLUFFY_DEPLOYMENT</code> - The name of the fluffy K8s deployment<br />
+<code class="language-plaintext highlighter-rouge">LAKEFS_LOGS_OUTPUT_FILE</code> - The name of the local file where lakeFS logs will be saved<br />
+<code class="language-plaintext highlighter-rouge">FLUFFY_LOGS_OUTPUT_FILE</code> - The name of the local file where fluffy logs will be saved<br />
+<code class="language-plaintext highlighter-rouge">LAKEFS_FLARE_FILE</code> - The name of the local file where the lakeFS <code class="language-plaintext highlighter-rouge">flare</code> result will be saved<br />
+<code class="language-plaintext highlighter-rouge">FLUFFY_FLARE_FILE</code> - The name of the local file where the fluffy <code class="language-plaintext highlighter-rouge">flare</code> result will be saved</p>
+<h3 id="step-2---execute-the-script">
   
   
-    <a href="#rollback-of-data-changes-and-recovery-from-data-errors" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Rollback of Data Changes and Recovery from Data Errors
+    <a href="#step-2---execute-the-script" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 2 - Execute the Script
   
   
 </h3>
     
 
-<p>Human error or misconfigurations can lead to erroneous data making its way into production or critical data being accidentally deleted. Traditional backups are often inadequate for recovery in these situations, as they may be outdated and require time-consuming object-level sifting.</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
 
-<p>With lakeFS, you can avoid these inefficiencies by committing snapshots of data at well-defined times. This allows for instant recovery: simply identify a good historical commit and restore or copy from it with a single operation.</p>
+<span class="nv">RED</span><span class="o">=</span><span class="s1">'\033[0;31m'</span>
+<span class="nv">NC</span><span class="o">=</span><span class="s1">'\033[0m'</span>
 
-<p>👉🏻 <a href="./understand/use_cases/rollback.html">Read more</a></p>
-<h3 id="establishing-data-quality-guarantees---cicd-for-data">
+<span class="c"># Variables</span>
+<span class="nv">NAMESPACE</span><span class="o">=</span>lakefs-prod
+<span class="nv">LAKEFS_DEPLOYMENT</span><span class="o">=</span>lakefs-server
+<span class="nv">FLUFFY_DEPLOYMENT</span><span class="o">=</span>lakefs-fluffy
+<span class="nv">LAKEFS_LOGS_OUTPUT_FILE</span><span class="o">=</span>lakefs.log
+<span class="nv">FLUFFY_LOGS_OUTPUT_FILE</span><span class="o">=</span>fluffy.log
+<span class="nv">LAKEFS_FLARE_FILE</span><span class="o">=</span>lakefs.flare
+<span class="nv">FLUFFY_FLARE_FILE</span><span class="o">=</span>fluffy.flare
+
+<span class="c"># Find kubectl</span>
+<span class="nv">KUBECTLCMD</span><span class="o">=</span><span class="si">$(</span>which kubectl<span class="si">)</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nt">-z</span> <span class="s2">"</span><span class="nv">$KUBECTLCMD</span><span class="s2">"</span> <span class="o">]</span>
+<span class="k">then
+    </span><span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"</span><span class="k">${</span><span class="nv">RED</span><span class="k">}</span><span class="s2">Couldn't find kubectl in path</span><span class="k">${</span><span class="nv">NC</span><span class="k">}</span><span class="s2">"</span>
+    <span class="nb">exit </span>1
+<span class="k">fi</span>
+
+<span class="nv">$KUBECTLCMD</span> get pods <span class="nt">-o</span> name <span class="nt">-n</span> <span class="nv">$NAMESPACE</span> | <span class="nb">grep </span>pod/<span class="nv">$LAKEFS_DEPLOYMENT</span> | xargs <span class="nt">-I</span> <span class="o">{}</span> <span class="nv">$KUBECTLCMD</span> logs <span class="nt">-n</span> <span class="nv">$NAMESPACE</span> <span class="nt">--all-containers</span><span class="o">=</span><span class="nb">true</span> <span class="nt">--prefix</span> <span class="nt">--ignore-errors</span> <span class="nt">--timestamps</span> <span class="o">{}</span> <span class="o">&gt;</span> <span class="nv">$LAKEFS_LOGS_OUTPUT_FILE</span>
+<span class="nv">$KUBECTLCMD</span> get pods <span class="nt">-o</span> name <span class="nt">-n</span> <span class="nv">$NAMESPACE</span> | <span class="nb">grep </span>pod/<span class="nv">$FLUFFY_DEPLOYMENT</span> | xargs <span class="nt">-I</span> <span class="o">{}</span> <span class="nv">$KUBECTLCMD</span> logs <span class="nt">-n</span> <span class="nv">$NAMESPACE</span> <span class="nt">--all-containers</span><span class="o">=</span><span class="nb">true</span> <span class="nt">--prefix</span> <span class="nt">--ignore-errors</span> <span class="nt">--timestamps</span> <span class="o">{}</span> <span class="o">&gt;</span> <span class="nv">$FLUFFY_LOGS_OUTPUT_FILE</span>
+
+<span class="nv">$KUBECTLCMD</span> <span class="nb">exec </span>deployment/<span class="nv">$LAKEFS_DEPLOYMENT</span> <span class="nt">--</span> ./lakefs flare <span class="nt">--stdout</span> <span class="o">&gt;</span> <span class="nv">$LAKEFS_FLARE_FILE</span>
+<span class="nv">$KUBECTLCMD</span> <span class="nb">exec </span>deployment/<span class="nv">$FLUFFY_DEPLOYMENT</span> <span class="nt">--</span> ./lakefs flare <span class="nt">--stdout</span> <span class="o">&gt;</span> <span class="nv">$FLUFFY_FLARE_FILE</span>
+</code></pre></div></div>
+<h3 id="step-3---inspect-the-output-files">
   
   
-    <a href="#establishing-data-quality-guarantees---cicd-for-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Establishing data quality guarantees - CI/CD for data
+    <a href="#step-3---inspect-the-output-files" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 3 - Inspect the Output Files
   
   
 </h3>
     
 
-<p>The best way to deal with mistakes is to avoid them. A data source that is ingested into the lake introducing low-quality data should be blocked before exposure if possible.</p>
-
-<p>With lakeFS, you can achieve this by tying data quality tests to commit and merge operations via lakeFS <a href="/understand/use_cases/cicd_for_data.html#using-hooks-as-data-quality-gates">hooks</a>.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/cicd_for_data.html">Read more</a></p>
-<h2 id="next-step">
+<p>After executing the script you should have four files: lakeFS/fluffy logs and lakeFS/fluffy flare output. Before sharing these files, please review them to make sure all secrets were correctly redacted and that all the collected information is shareable.</p>
+<h3 id="step-4---zip-output-files-and-attach-to-hubspot-ticket">
   
   
-    <a href="#next-step" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Next Step
+    <a href="#step-4---zip-output-files-and-attach-to-hubspot-ticket" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 4 - Zip Output Files and Attach to HubSpot Ticket
   
   
-</h2>
+</h3>
     
 
-<p>Try lakeFS on the <a href="https://lakefs.cloud/">cloud</a> or <a href="https://docs.lakefs.io/quickstart/">run it locally</a></p>
+<p>Once you’re done inspecting the files, you can zip them into a single file and attach it to a HubSpot issue.</p>
+<h4 id="new-ticket">
+  
+  
+    <a href="#new-ticket" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> New Ticket
+  
+  
+</h4>
+    
+
+<p>When filing a new ticket, you can attach the zip file using the file upload input at the bottom of the new ticket form.</p>
+
+<p><img src="/assets/img/flare_new_ticket.png" alt="new ticket" /></p>
+<h4 id="existing-ticket">
+  
+  
+    <a href="#existing-ticket" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Existing Ticket
+  
+  
+</h4>
+    
+
+<p>To add a file to an existing ticket, click the ticket subject in the support portal. On the ticket details attach a file as a new response. You can also add text to the response, if you’d like to add further details.</p>
+
+<p><img src="/assets/img/flare_existing_ticket.png" alt="existing ticket" /></p>
 
                 
 

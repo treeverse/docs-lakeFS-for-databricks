@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
   
   <style type="text/css">
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(1) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(4) > .nav-list > .nav-list-item:nth-child(23) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
 
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list-expander svg { transform: rotate(-90deg); }
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list { display: block; }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(4) > .nav-list-expander svg, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(4) > .nav-list > .nav-list-item:not(.passive):nth-child(23) > .nav-list-expander svg { transform: rotate(-90deg); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(4) > .nav-list, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(4) > .nav-list > .nav-list-item:not(.passive):nth-child(23) > .nav-list { display: block; }
 
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list-expander svg { transform: rotate(-90deg); }
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list { display: block; }
@@ -38,21 +38,21 @@
 
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Welcome to lakeFS | lakeFS Documentation</title>
+<title>Vertex AI | lakeFS Documentation</title>
 <meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Welcome to lakeFS" />
+<meta property="og:title" content="Vertex AI" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes." />
-<meta property="og:description" content="The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes." />
+<meta name="description" content="How to use Vertex Datasets and gcsfuse with lakeFS" />
+<meta property="og:description" content="How to use Vertex Datasets and gcsfuse with lakeFS" />
 <meta property="og:site_name" content="lakeFS Documentation" />
 <meta property="og:image" content="https://docs.lakefs.io/assets/img/docs_logo.png" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:image" content="https://docs.lakefs.io/assets/img/docs_logo.png" />
-<meta property="twitter:title" content="Welcome to lakeFS" />
+<meta property="twitter:title" content="Vertex AI" />
 <meta name="twitter:site" content="@lakeFS" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes.","headline":"Welcome to lakeFS","image":"https://docs.lakefs.io/assets/img/docs_logo.png","name":"lakeFS","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/logo.svg"}},"sameAs":["https://www.linkedin.com/company/treeverse/","https://twitter.com/lakeFS","https://github.com/treeverse/lakeFS","https://data-folks.masto.host/@lakeFS"],"url":"/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"How to use Vertex Datasets and gcsfuse with lakeFS","headline":"Vertex AI","image":"https://docs.lakefs.io/assets/img/docs_logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/logo.svg"}},"url":"/integrations/vertex_ai.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -212,8 +212,8 @@
             </script>
 
             <ul class="nav-list"><li
-            class="nav-list-item active"><a href="/"
-           class="nav-list-link active">Welcome to lakeFS</a></li><li
+            class="nav-list-item"><a href="/"
+           class="nav-list-link">Welcome to lakeFS</a></li><li
             class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/quickstart/"
@@ -281,7 +281,7 @@
                    class="nav-list-link">Sizing Guide</a></li><li class="nav-list-item "><a href="/howto/scim.html"
                    class="nav-list-link">System for Cross-domain Identity Management (SCIM)</a></li><li class="nav-list-item "><a href="/howto/local-checkouts.html"
                    class="nav-list-link">Work with lakeFS data locally</a></li></ul></li><li
-            class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
+            class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/integrations/"
            class="nav-list-link">Integrations</a><ul class="nav-list "><li class="nav-list-item "><a href="/integrations/aws_cli.html"
@@ -306,8 +306,8 @@
                    class="nav-list-link">Presto / Trino</a></li><li class="nav-list-item "><a href="/integrations/python.html"
                    class="nav-list-link">Python</a></li><li class="nav-list-item "><a href="/integrations/r.html"
                    class="nav-list-link">R</a></li><li class="nav-list-item "><a href="/integrations/unity-catalog.html"
-                   class="nav-list-link">Unity Catalog</a></li><li class="nav-list-item "><a href="/integrations/vertex_ai.html"
-                   class="nav-list-link">Vertex AI</a></li></ul></li><li
+                   class="nav-list-link">Unity Catalog</a></li><li class="nav-list-item  active"><a href="/integrations/vertex_ai.html"
+                   class="nav-list-link active">Vertex AI</a></li></ul></li><li
             class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/understand/"
@@ -530,291 +530,215 @@
         </div>
         <div id="main-content-wrap" class="main-content-wrap">
             
+            
+            <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+                <ol class="breadcrumb-nav-list">
+                    
+                    <li class="breadcrumb-nav-list-item"><a href="/integrations/">Integrations</a>
+                    </li>
+                    
+                    <li class="breadcrumb-nav-list-item"><span>Vertex AI</span></li>
+                </ol>
+            </nav>
+            
+            
             <div id="main-content" class="main-content" role="main">
                 
-                    <h1 id="temporary-placeholder-for-lakefs-databricks-docs">
+                    <h1 id="using-vertex-ai-with-lakefs">
   
   
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-1">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-1" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-2">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-2" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-3">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-3" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-4">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-4" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-5">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-5" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-6">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-6" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
+    <a href="#using-vertex-ai-with-lakefs" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Using Vertex AI with lakeFS
   
   
 </h1>
     
 
-<p><img src="/assets/img/waving-axolotl-transparent.gif" width="90" /></p>
+<p>Vertex AI lets Google Cloud users Build, deploy, and scale machine learning (ML) models faster, with fully managed ML tools for any use case.</p>
 
-<p><strong>lakeFS brings software engineering best practices and applies them to data engineering.</strong></p>
+<p>lakeFS Works with Vertex AI by allowing users to create repositories on <a href="/howto/deploy/gcp.html">GCS Buckets</a>, then use either the Dataset API to create managed Datasets on top of lakeFS version, or by automatically exporting lakeFS object versions in a way readable by <a href="https://cloud.google.com/blog/products/ai-machine-learning/cloud-storage-file-system-ai-training">Cloud Storage Mounts</a>.</p>
 
-<p>lakeFS provides version control over the data lake, and uses Git-like semantics to create and access those versions. If you know git, you’ll be right at home with lakeFS.</p>
-
-<p>With lakeFS, you can use concepts on your data lake such as <strong>branch</strong> to create an isolated version of the data, <strong>commit</strong> to create a reproducible point in time, and <strong>merge</strong> in order to incorporate your changes in one atomic action.</p>
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/GTxsyeoLccw"></iframe>
-<h2 id="how-do-i-get-started">
+<div class="toc-block">
+<h2 class="no_toc text-delta" id="table-of-contents">
   
   
-    <a href="#how-do-i-get-started" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Do I Get Started?
+    <a href="#table-of-contents" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
   
   
 </h2>
     
 
-<p><strong><a href="./quickstart">The hands-on quickstart</a> guides you through some core features of lakeFS</strong>.</p>
-
-<p>These include <a href="./quickstart/branch.html">branching</a>, <a href="quickstart/commit-and-merge.html">merging</a>, and <a href="quickstart/rollback.html">rolling back changes</a> to data.</p>
-
-<p class="note">You can use the <a href="https://lakefs.cloud/register">30-day free trial of lakeFS Cloud</a> if you want to try out lakeFS without installing anything.</p>
-<h2 id="key-lakefs-features">
-  
-  
-    <a href="#key-lakefs-features" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Key lakeFS Features
-  
-  
-</h2>
-    
-
-<ul>
-  <li>It is format-agnostic.</li>
-  <li>It works with numerous data tools and platforms.</li>
-  <li>Your data stays in place.</li>
-  <li>It eliminates the need for data duplication using <a href="/understand/model.html#zero-copy-branching">zero-copy branching</a>.</li>
-  <li>It maintains high performance over data lakes of any size.</li>
-  <li>It includes configurable garbage collection capabilities.</li>
-  <li>It is proven in production and has an active community.</li>
-</ul>
-
-<p><img src="/assets/img/lakeFS_integration.png" alt="lakeFS integration into data lake" width="60%" height="60%" /></p>
-<h2 id="how-does-lakefs-work-with-other-tools">
-  
-  
-    <a href="#how-does-lakefs-work-with-other-tools" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Does lakeFS Work With Other Tools?
-  
-  
-</h2>
-    
-
-<p>lakeFS is an open source project that supports managing data in AWS S3, Azure Blob Storage, Google Cloud Storage (GCS) and any other object storage with an S3 interface. It integrates seamlessly with popular data frameworks such as Spark, Hive Metastore, dbt, Trino, Presto, and many others and includes an S3 compatibility layer.</p>
-
-<p class="note">For more details and a full list see <a href="./integrations/">the integrations pages</a>.</p>
-
-<p class="center">
-    <img src="/assets/img/lakeFSArchitecture.png" />
-</p>
-
-<p class="pb-5">lakeFS maintains compatibility with the S3 API to minimize adoption
-friction. You can use it as a drop-in replacement for S3 from the perspective of
-any tool interacting with a data lake.</p>
-
-<p>For example, take the common operation of reading a collection of data from an object storage into a Spark DataFrame. For data outside a lakeFS repo, the code will look like this:</p>
-
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">parquet</span><span class="p">(</span><span class="s">"s3a://my-bucket/collections/foo/"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>After adding the data collections into my-bucket to a repository, the same operation becomes:</p>
-
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">parquet</span><span class="p">(</span><span class="s">"s3a://my-repo/main-branch/collections/foo/"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>You can use the same methods and syntax you are already using to read and write data when using a lakeFS repository. This simplifies the adoption of lakeFS - minimal changes are needed to get started, making further changes an incremental process.</p>
-<h2 id="lakefs-is-git-for-data">
-  
-  
-    <a href="#lakefs-is-git-for-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> lakeFS is Git for Data
-  
-  
-</h2>
-    
-
-<p>Git conquered the world of code because it had best supported engineering best practices required by developers, in particular:</p>
-
-<ul>
-  <li>Collaborate during development.</li>
-  <li>Develop and Test in isolation</li>
-  <li>Revert code repository to a sable version in case of an error</li>
-  <li>Reproduce and troubleshoot issues with a given version of the code</li>
-  <li>Continuously integrate and deploy new code (CI/CD)</li>
-</ul>
-
-<p>lakeFS provides these exact benefits, that are data practitioners are missing today, and enables them a clear intuitive Git-like interface to easily manage their data like they manage code. Through its versioning engine, lakeFS enables the following built-in operations familiar from Git:</p>
-
-<ul>
-  <li><strong>branch:</strong> a consistent copy of a repository, isolated from other branches and their changes. Initial creation of a branch is a metadata operation that does not duplicate objects.</li>
-  <li><strong>commit:</strong> an immutable checkpoint containing a complete snapshot of a repository.</li>
-  <li><strong>merge:</strong> performed between two branches — merges atomically update one branch with the changes from another.</li>
-  <li><strong>revert:</strong> returns a repo to the exact state of a previous commit.</li>
-  <li><strong>tag:</strong> a pointer to a single immutable commit with a readable, meaningful name.</li>
-</ul>
-
-<p><em>See the <a href="/understand/model.html">object model</a> for an in-depth
-definition of these, and the <a href="/reference/cli.html">CLI reference</a> for the
-full list of commands.</em></p>
-
-<p>Incorporating these operations into your data lake pipelines provides the same collaboration and organizational benefits you get when managing application code with source control.</p>
-<h3 id="the-lakefs-promotion-workflow">
-  
-  
-    <a href="#the-lakefs-promotion-workflow" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> The lakeFS Promotion Workflow
-  
-  
-</h3>
-    
-
-<p>Here’s how lakeFS <em>branches</em> and <em>merges</em> improve the universal process of updating collections with the latest data.</p>
-
-<p><img src="/assets/img/promotion_workflow.png" alt="lakeFS promotion workflow" width="60%" height="60%" /></p>
-
-<ol>
-  <li>First, create a new <strong>branch</strong> from <code class="language-plaintext highlighter-rouge">main</code> to instantly generate a complete “copy” of your production data.</li>
-  <li>Apply changes or make updates on the isolated branch to understand their impact prior to exposure.</li>
-  <li>And finally, perform a <strong>merge</strong> from the feature branch back to main to atomically promote the updates into production.</li>
+<ol id="markdown-toc">
+  <li><a href="#using-lakefs-with-vertex-managed-datasets" id="markdown-toc-using-lakefs-with-vertex-managed-datasets">Using lakeFS with Vertex Managed Datasets</a></li>
+  <li><a href="#using-lakefs-with-cloud-storage-fuse" id="markdown-toc-using-lakefs-with-cloud-storage-fuse">Using lakeFS with Cloud Storage Fuse</a></li>
 </ol>
 
-<p>Following this pattern, lakeFS facilitates a streamlined data deployment workflow that consistently produces data assets you can have total confidence in.</p>
-<h2 id="how-can-lakefs-help-me">
+</div>
+<h2 id="using-lakefs-with-vertex-managed-datasets">
   
   
-    <a href="#how-can-lakefs-help-me" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Can lakeFS Help Me?
+    <a href="#using-lakefs-with-vertex-managed-datasets" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Using lakeFS with Vertex Managed Datasets
   
   
 </h2>
     
 
-<p>lakeFS helps you maintain a tidy data lake in several ways, including:</p>
-<h3 id="isolated-devtest-environments-with-zero-copy-branching">
+<p>Vertex’s <a href="https://cloud.google.com/python/docs/reference/aiplatform/latest/google.cloud.aiplatform.ImageDataset">ImageDataset</a> and <a href="https://cloud.google.com/python/docs/reference/aiplatform/latest/google.cloud.aiplatform.VideoDataset">VideoDataset</a> allow creating a dataset by importing a CSV file from gcs (see <a href="https://cloud.google.com/python/docs/reference/aiplatform/latest/google.cloud.aiplatform.ImageDataset#google_cloud_aiplatform_ImageDataset_create"><code class="language-plaintext highlighter-rouge">gcs_source</code></a>).</p>
+
+<p>This CSV file contains GCS addresses of image files and their corresponding labels.</p>
+
+<p>Since the lakeFS API supports exporting the underlying GCS address of versioned objects, we can generate such a CSV file when creating the dataset:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python
+</span>
+<span class="c1"># Requirements:
+# google-cloud-aiplatform&gt;=1.31.0
+# lakefs-client&gt;=0.107.0
+</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">PosixPath</span>
+<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">StringIO</span>
+
+<span class="kn">import</span> <span class="nn">lakefs_client</span>
+<span class="kn">from</span> <span class="nn">lakefs_client.client</span> <span class="kn">import</span> <span class="n">LakeFSClient</span>
+<span class="kn">from</span> <span class="nn">google.cloud</span> <span class="kn">import</span> <span class="n">storage</span>
+<span class="kn">from</span> <span class="nn">google.cloud</span> <span class="kn">import</span> <span class="n">aiplatform</span>
+
+<span class="c1"># lakeFS connection details
+</span><span class="n">configuration</span> <span class="o">=</span> <span class="n">lakefs_client</span><span class="p">.</span><span class="n">Configuration</span><span class="p">()</span>
+<span class="n">configuration</span><span class="p">.</span><span class="n">username</span> <span class="o">=</span> <span class="s">'AKIAIOSFODNN7EXAMPLE'</span>
+<span class="n">configuration</span><span class="p">.</span><span class="n">password</span> <span class="o">=</span> <span class="s">'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'</span>
+<span class="n">configuration</span><span class="p">.</span><span class="n">host</span> <span class="o">=</span> <span class="s">'https://lakefs.example.com/'</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">LakeFSClient</span><span class="p">(</span><span class="n">configuration</span><span class="p">)</span>
+
+<span class="c1"># Dataset configuration
+</span><span class="n">lakefs_repo</span> <span class="o">=</span> <span class="s">'my-repository'</span>
+<span class="n">lakefs_ref</span> <span class="o">=</span> <span class="s">'main'</span>
+<span class="n">img_dataset</span> <span class="o">=</span> <span class="s">'datasets/my-images/'</span>
+
+<span class="c1"># Vertex configuration
+</span><span class="n">import_bucket</span> <span class="o">=</span> <span class="s">'underlying-gcs-bucket'</span>
+
+<span class="c1"># produce import file for Vertex's SDK
+</span><span class="n">buf</span> <span class="o">=</span> <span class="n">StringIO</span><span class="p">()</span>
+<span class="n">csv_writer</span> <span class="o">=</span> <span class="n">csv</span><span class="p">.</span><span class="n">writer</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span>
+<span class="n">has_more</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">next_offset</span> <span class="o">=</span> <span class="s">""</span>
+<span class="k">while</span> <span class="n">has_more</span><span class="p">:</span>
+    <span class="n">files</span> <span class="o">=</span> <span class="n">client</span><span class="p">.</span><span class="n">objects_api</span><span class="p">.</span><span class="n">list_objects</span><span class="p">(</span>
+        <span class="n">lakefs_repo</span><span class="p">,</span> <span class="n">lakefs_ref</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="n">img_dataset</span><span class="p">,</span> <span class="n">after</span><span class="o">=</span><span class="n">next_offset</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">files</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'results'</span><span class="p">):</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">PosixPath</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">path</span><span class="p">)</span>
+        <span class="n">csv_writer</span><span class="p">.</span><span class="n">writerow</span><span class="p">((</span><span class="n">r</span><span class="p">.</span><span class="n">physical_address</span><span class="p">,</span> <span class="n">p</span><span class="p">.</span><span class="n">parent</span><span class="p">.</span><span class="n">name</span><span class="p">))</span>
+    <span class="n">has_more</span> <span class="o">=</span> <span class="n">files</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'pagination'</span><span class="p">).</span><span class="n">get</span><span class="p">(</span><span class="s">'has_more'</span><span class="p">)</span>
+    <span class="n">next_offset</span> <span class="o">=</span> <span class="n">files</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'pagination'</span><span class="p">).</span><span class="n">get</span><span class="p">(</span><span class="s">'next_offset'</span><span class="p">)</span>
+
+<span class="c1"># spit out CSV
+</span><span class="k">print</span><span class="p">(</span><span class="s">'generated path and labels CSV'</span><span class="p">)</span>
+<span class="n">buf</span><span class="p">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Write it to storage
+</span><span class="n">storage_client</span> <span class="o">=</span> <span class="n">storage</span><span class="p">.</span><span class="n">Client</span><span class="p">()</span>
+<span class="n">bucket</span> <span class="o">=</span> <span class="n">storage_client</span><span class="p">.</span><span class="n">bucket</span><span class="p">(</span><span class="n">import_bucket</span><span class="p">)</span>
+<span class="n">blob</span> <span class="o">=</span> <span class="n">bucket</span><span class="p">.</span><span class="n">blob</span><span class="p">(</span><span class="sa">f</span><span class="s">'vertex/imports/</span><span class="si">{</span><span class="n">lakefs_repo</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">lakefs_ref</span><span class="si">}</span><span class="s">/labels.csv'</span><span class="p">)</span>
+<span class="k">with</span> <span class="n">blob</span><span class="p">.</span><span class="nb">open</span><span class="p">(</span><span class="s">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
+    <span class="n">out</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">buf</span><span class="p">.</span><span class="n">read</span><span class="p">())</span>
+
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'wrote csv to gs: gs://</span><span class="si">{</span><span class="n">import_bucket</span><span class="si">}</span><span class="s">/vertex/imports/</span><span class="si">{</span><span class="n">lakefs_repo</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">lakefs_ref</span><span class="si">}</span><span class="s">/labels.csv'</span><span class="p">)</span>
+
+<span class="c1"># import in vertex, as dataset
+</span><span class="k">print</span><span class="p">(</span><span class="s">'Importing dataset...'</span><span class="p">)</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">aiplatform</span><span class="p">.</span><span class="n">ImageDataset</span><span class="p">.</span><span class="n">create</span><span class="p">(</span>
+    <span class="n">display_name</span><span class="o">=</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">lakefs_repo</span><span class="si">}</span><span class="s">_</span><span class="si">{</span><span class="n">lakefs_ref</span><span class="si">}</span><span class="s">_imgs'</span><span class="p">,</span>
+    <span class="n">gcs_source</span><span class="o">=</span><span class="sa">f</span><span class="s">'gs://</span><span class="si">{</span><span class="n">import_bucket</span><span class="si">}</span><span class="s">/vertex/imports/</span><span class="si">{</span><span class="n">lakefs_repo</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">lakefs_ref</span><span class="si">}</span><span class="s">/labels.csv'</span><span class="p">,</span>
+    <span class="n">import_schema_uri</span><span class="o">=</span><span class="n">aiplatform</span><span class="p">.</span><span class="n">schema</span><span class="p">.</span><span class="n">dataset</span><span class="p">.</span><span class="n">ioformat</span><span class="p">.</span><span class="n">image</span><span class="p">.</span><span class="n">single_label_classification</span><span class="p">,</span>
+    <span class="n">sync</span><span class="o">=</span><span class="bp">True</span>
+<span class="p">)</span>
+<span class="n">ds</span><span class="p">.</span><span class="n">wait</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Done! </span><span class="si">{</span><span class="n">ds</span><span class="p">.</span><span class="n">display_name</span><span class="si">}</span><span class="s"> (</span><span class="si">{</span><span class="n">ds</span><span class="p">.</span><span class="n">resource_name</span><span class="si">}</span><span class="s">)'</span><span class="p">)</span>
+</code></pre></div></div>
+<h2 id="using-lakefs-with-cloud-storage-fuse">
   
   
-    <a href="#isolated-devtest-environments-with-zero-copy-branching" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Isolated Dev/Test Environments with zero-copy branching
+    <a href="#using-lakefs-with-cloud-storage-fuse" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Using lakeFS with Cloud Storage Fuse
   
   
-</h3>
+</h2>
     
 
-<p>lakeFS makes creating isolated dev/test environments for ETL testing instantaneous, and through its use of zero-copy branching, cheap. This enables you to test and validate code changes on production data without impacting it, as well as run analysis and experiments on production data in an isolated clone.</p>
+<p>Vertex allows using Google Cloud Storage mounted as a <a href="https://cloud.google.com/vertex-ai/docs/training/cloud-storage-file-system">Fuse Filesystem</a> as custom input for training jobs.</p>
 
-<p>👉🏻 <a href="./understand/use_cases/etl_testing.html">Read more</a></p>
-<h3 id="reproducibility-what-did-my-data-look-like-at-a-point-in-time">
-  
-  
-    <a href="#reproducibility-what-did-my-data-look-like-at-a-point-in-time" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Reproducibility: What Did My Data Look Like at a Point In Time?
-  
-  
-</h3>
-    
+<p>Instead of having to copy lakeFS files for each version we want to consume, we can create symlinks by using <a href="https://github.com/GoogleCloudPlatform/gcsfuse">gcsfuse</a>’s native <a href="https://github.com/GoogleCloudPlatform/gcsfuse/blob/v1.0.0/docs/semantics.md#symlink-inodes">symlink inodes</a>.</p>
 
-<p>Being able to look at data as it was at a given point is particularly useful in at least two scenarios:</p>
+<p>This process can be fully automated by using the example <a href="https://github.com/treeverse/lakeFS/blob/master/examples/hooks/gcsfuse_symlink_exporter.lua">gcsfuse_symlink_exporter.lua</a> Lua hook.</p>
+
+<p>Here’s what we need to do:</p>
 
 <ol>
-  <li>
-    <p>Reproducibility of ML experiments</p>
-
-    <p>ML experimentation is iterative, requiring the ability to reproduce specific results. With lakeFS, you can version all aspects of an ML experiment, including the data. This enables:</p>
-
-    <p><strong>Data Lineage</strong>: Track the transformation of data from raw datasets to the final version used in experiments, ensuring transparency and traceability.</p>
-
-    <p><strong>Zero-Copy Branching</strong>: Minimize storage use by creating lightweight branches of your data, allowing for easy experimentation across different versions.</p>
-
-    <p><strong>Easy Integration</strong>: Seamlessly integrate with ML tools like MLFlow, linking experiments directly to the exact data versions used, making reproducibility straightforward.</p>
-
-    <p>lakeFS enhances your ML workflow by ensuring that all versions of data are easily accessible, traceable, and reproducible.</p>
-  </li>
-  <li>
-    <p>Troubleshooting production problems</p>
-
-    <p>Data engineers are often asked to validate the data. A user might report inconsistencies, question the accuracy, or simply report it to be incorrect.</p>
-
-    <p>Since the data continuously changes, it is challenging to understand its state at the time of the error.</p>
-
-    <p>With lakeFS you can create a branch from a commit to debug an issue in isolation.</p>
-  </li>
+  <li>Upload the example <code class="language-plaintext highlighter-rouge">.lua</code> file into our lakeFS repository. For this example, we’ll put it under <code class="language-plaintext highlighter-rouge">scripts/gcsfuse_symlink_exporter.lua</code>.</li>
+  <li>Create a new hook definition file and upload to <code class="language-plaintext highlighter-rouge">_lakefs_actions/export_images.yaml</code>:</li>
 </ol>
 
-<p>👉🏻 <a href="./understand/use_cases/reproducibility.html">Read More</a></p>
-<h3 id="rollback-of-data-changes-and-recovery-from-data-errors">
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="c1"># Example hook declaration: (_lakefs_actions/export_images.yaml):</span>
+<span class="na">name</span><span class="pi">:</span> <span class="s">export_images</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">post-commit</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">main"</span><span class="pi">]</span>
+  <span class="na">post-merge</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">main"</span><span class="pi">]</span>
+  <span class="na">post-create-tag</span><span class="pi">:</span>
+
+<span class="na">hooks</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">id</span><span class="pi">:</span> <span class="s">gcsfuse_export_images</span>
+  <span class="na">type</span><span class="pi">:</span> <span class="s">lua</span>
+  <span class="na">properties</span><span class="pi">:</span>
+    <span class="na">script_path</span><span class="pi">:</span> <span class="s">scripts/export_gcs_fuse.lua</span>  <span class="c1"># Path to the script we uploaded in the previous step</span>
+    <span class="na">args</span><span class="pi">:</span>
+      <span class="na">prefix</span><span class="pi">:</span> <span class="s2">"</span><span class="s">datasets/images/"</span>  <span class="c1"># Path we want to export every commit</span>
+      <span class="na">destination</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gs://my-bucket/exports/my-repo/"</span>  <span class="c1"># Where should we create the symlinks?</span>
+      <span class="na">mount</span><span class="pi">:</span>
+        <span class="na">from</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gs://my-bucket/repos/my-repo/"</span>  <span class="c1"># Symlinks are to a unix-mounted file</span>
+        <span class="na">to</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/gcs/my-bucket/repos/my-repo/"</span>    <span class="c1">#  This will ensure they point to a location that exists.</span>
+      
+      <span class="c1"># Should be the contents of a valid credentials.json file</span>
+      <span class="c1"># See: https://developers.google.com/workspace/guides/create-credentials</span>
+      <span class="c1"># Will be used to write the symlink files</span>
+      <span class="na">gcs_credentials_json_string</span><span class="pi">:</span> <span class="pi">|</span>
+        <span class="s">{</span>
+          <span class="s">"client_id": "...",</span>
+          <span class="s">"client_secret": "...",</span>
+          <span class="s">"refresh_token": "...",</span>
+          <span class="s">"type": "..."</span>
+        <span class="s">}</span>
+</code></pre></div></div>
+
+<p>Done! On the next tag creation or update to the <code class="language-plaintext highlighter-rouge">main</code> branch, we’ll automatically export the lakeFS version of <code class="language-plaintext highlighter-rouge">datasets/images/</code> to a mountable location.</p>
+
+<p>To consume the symlink-ed files, we can read them normally from the mount:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'/gcs/my-bucket/exports/my-repo/branches/main/datasets/images/001.jpg'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">image_data</span> <span class="o">=</span> <span class="n">f</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+
+</code></pre></div></div>
+
+<p>Previously exported commits are also readable, if we exported them in the past:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">commit_id</span> <span class="o">=</span> <span class="s">'abcdef123deadbeef567'</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s">'/gcs/my-bucket/exports/my-repo/commits/</span><span class="si">{</span><span class="n">commit_id</span><span class="si">}</span><span class="s">/datasets/images/001.jpg'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">image_data</span> <span class="o">=</span> <span class="n">f</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+
+</code></pre></div></div>
+<h3 id="considerations-when-using-lakefs-with-cloud-storage-fuse">
   
   
-    <a href="#rollback-of-data-changes-and-recovery-from-data-errors" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Rollback of Data Changes and Recovery from Data Errors
+    <a href="#considerations-when-using-lakefs-with-cloud-storage-fuse" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Considerations when using lakeFS with Cloud Storage Fuse
   
   
 </h3>
     
 
-<p>Human error or misconfigurations can lead to erroneous data making its way into production or critical data being accidentally deleted. Traditional backups are often inadequate for recovery in these situations, as they may be outdated and require time-consuming object-level sifting.</p>
-
-<p>With lakeFS, you can avoid these inefficiencies by committing snapshots of data at well-defined times. This allows for instant recovery: simply identify a good historical commit and restore or copy from it with a single operation.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/rollback.html">Read more</a></p>
-<h3 id="establishing-data-quality-guarantees---cicd-for-data">
-  
-  
-    <a href="#establishing-data-quality-guarantees---cicd-for-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Establishing data quality guarantees - CI/CD for data
-  
-  
-</h3>
-    
-
-<p>The best way to deal with mistakes is to avoid them. A data source that is ingested into the lake introducing low-quality data should be blocked before exposure if possible.</p>
-
-<p>With lakeFS, you can achieve this by tying data quality tests to commit and merge operations via lakeFS <a href="/understand/use_cases/cicd_for_data.html#using-hooks-as-data-quality-gates">hooks</a>.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/cicd_for_data.html">Read more</a></p>
-<h2 id="next-step">
-  
-  
-    <a href="#next-step" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Next Step
-  
-  
-</h2>
-    
-
-<p>Try lakeFS on the <a href="https://lakefs.cloud/">cloud</a> or <a href="https://docs.lakefs.io/quickstart/">run it locally</a></p>
+<p>For lakeFS paths to be readable by gcsfuse, the mount option <code class="language-plaintext highlighter-rouge">--implicit-dirs</code> must be specified.</p>
 
                 
 

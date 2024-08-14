@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
   
   <style type="text/css">
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(1) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(5) > .nav-list > .nav-list-item:nth-child(2) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
 
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list-expander svg { transform: rotate(-90deg); }
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list { display: block; }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(5) > .nav-list-expander svg, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(5) > .nav-list > .nav-list-item:not(.passive):nth-child(2) > .nav-list-expander svg { transform: rotate(-90deg); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(5) > .nav-list, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(5) > .nav-list > .nav-list-item:not(.passive):nth-child(2) > .nav-list { display: block; }
 
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list-expander svg { transform: rotate(-90deg); }
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list { display: block; }
@@ -38,21 +38,21 @@
 
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Welcome to lakeFS | lakeFS Documentation</title>
+<title>Concepts and Model | lakeFS Documentation</title>
 <meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Welcome to lakeFS" />
+<meta property="og:title" content="Concepts and Model" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes." />
-<meta property="og:description" content="The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes." />
+<meta name="description" content="The lakeFS object model blends the object models of Git and of object stores such as S3. Read this page to learn more." />
+<meta property="og:description" content="The lakeFS object model blends the object models of Git and of object stores such as S3. Read this page to learn more." />
 <meta property="og:site_name" content="lakeFS Documentation" />
 <meta property="og:image" content="https://docs.lakefs.io/assets/img/docs_logo.png" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:image" content="https://docs.lakefs.io/assets/img/docs_logo.png" />
-<meta property="twitter:title" content="Welcome to lakeFS" />
+<meta property="twitter:title" content="Concepts and Model" />
 <meta name="twitter:site" content="@lakeFS" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes.","headline":"Welcome to lakeFS","image":"https://docs.lakefs.io/assets/img/docs_logo.png","name":"lakeFS","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/logo.svg"}},"sameAs":["https://www.linkedin.com/company/treeverse/","https://twitter.com/lakeFS","https://github.com/treeverse/lakeFS","https://data-folks.masto.host/@lakeFS"],"url":"/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"The lakeFS object model blends the object models of Git and of object stores such as S3. Read this page to learn more.","headline":"Concepts and Model","image":"https://docs.lakefs.io/assets/img/docs_logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/logo.svg"}},"url":"/understand/model.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -212,8 +212,8 @@
             </script>
 
             <ul class="nav-list"><li
-            class="nav-list-item active"><a href="/"
-           class="nav-list-link active">Welcome to lakeFS</a></li><li
+            class="nav-list-item"><a href="/"
+           class="nav-list-link">Welcome to lakeFS</a></li><li
             class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/quickstart/"
@@ -308,12 +308,12 @@
                    class="nav-list-link">R</a></li><li class="nav-list-item "><a href="/integrations/unity-catalog.html"
                    class="nav-list-link">Unity Catalog</a></li><li class="nav-list-item "><a href="/integrations/vertex_ai.html"
                    class="nav-list-link">Vertex AI</a></li></ul></li><li
-            class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
+            class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/understand/"
            class="nav-list-link">Understanding lakeFS</a><ul class="nav-list "><li class="nav-list-item "><a href="/understand/architecture.html"
-                   class="nav-list-link">Architecture</a></li><li class="nav-list-item "><a href="/understand/model.html"
-                   class="nav-list-link">Concepts and  Model</a></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
+                   class="nav-list-link">Architecture</a></li><li class="nav-list-item  active"><a href="/understand/model.html"
+                   class="nav-list-link active">Concepts and  Model</a></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                         <use xlink:href="#svg-arrow-right"></use>
                     </svg></a><a href="/understand/data_lifecycle_management/"
                    class="nav-list-link">Data Lifecycle Management</a><ul class="nav-list"><li class="nav-list-item ">
@@ -530,291 +530,255 @@
         </div>
         <div id="main-content-wrap" class="main-content-wrap">
             
+            
+            <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+                <ol class="breadcrumb-nav-list">
+                    
+                    <li class="breadcrumb-nav-list-item"><a href="/understand/">Understanding lakeFS</a>
+                    </li>
+                    
+                    <li class="breadcrumb-nav-list-item"><span>Concepts and  Model</span></li>
+                </ol>
+            </nav>
+            
+            
             <div id="main-content" class="main-content" role="main">
                 
-                    <h1 id="temporary-placeholder-for-lakefs-databricks-docs">
+                    <h1 id="lakefs-concepts-and-model">
   
   
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-1">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-1" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-2">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-2" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-3">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-3" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-4">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-4" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-5">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-5" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
-  
-  
-</h1>
-    
-<h1 id="temporary-placeholder-for-lakefs-databricks-docs-6">
-  
-  
-    <a href="#temporary-placeholder-for-lakefs-databricks-docs-6" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Temporary placeholder for lakeFS-Databricks docs!
+    <a href="#lakefs-concepts-and-model" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> lakeFS Concepts and Model
   
   
 </h1>
     
 
-<p><img src="/assets/img/waving-axolotl-transparent.gif" width="90" /></p>
-
-<p><strong>lakeFS brings software engineering best practices and applies them to data engineering.</strong></p>
-
-<p>lakeFS provides version control over the data lake, and uses Git-like semantics to create and access those versions. If you know git, you’ll be right at home with lakeFS.</p>
-
-<p>With lakeFS, you can use concepts on your data lake such as <strong>branch</strong> to create an isolated version of the data, <strong>commit</strong> to create a reproducible point in time, and <strong>merge</strong> in order to incorporate your changes in one atomic action.</p>
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/GTxsyeoLccw"></iframe>
-<h2 id="how-do-i-get-started">
+<div class="toc-block">
+<h2 class="no_toc text-delta" id="table-of-contents">
   
   
-    <a href="#how-do-i-get-started" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Do I Get Started?
+    <a href="#table-of-contents" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
   
   
 </h2>
     
 
-<p><strong><a href="./quickstart">The hands-on quickstart</a> guides you through some core features of lakeFS</strong>.</p>
-
-<p>These include <a href="./quickstart/branch.html">branching</a>, <a href="quickstart/commit-and-merge.html">merging</a>, and <a href="quickstart/rollback.html">rolling back changes</a> to data.</p>
-
-<p class="note">You can use the <a href="https://lakefs.cloud/register">30-day free trial of lakeFS Cloud</a> if you want to try out lakeFS without installing anything.</p>
-<h2 id="key-lakefs-features">
-  
-  
-    <a href="#key-lakefs-features" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Key lakeFS Features
-  
-  
-</h2>
-    
-
-<ul>
-  <li>It is format-agnostic.</li>
-  <li>It works with numerous data tools and platforms.</li>
-  <li>Your data stays in place.</li>
-  <li>It eliminates the need for data duplication using <a href="/understand/model.html#zero-copy-branching">zero-copy branching</a>.</li>
-  <li>It maintains high performance over data lakes of any size.</li>
-  <li>It includes configurable garbage collection capabilities.</li>
-  <li>It is proven in production and has an active community.</li>
-</ul>
-
-<p><img src="/assets/img/lakeFS_integration.png" alt="lakeFS integration into data lake" width="60%" height="60%" /></p>
-<h2 id="how-does-lakefs-work-with-other-tools">
-  
-  
-    <a href="#how-does-lakefs-work-with-other-tools" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Does lakeFS Work With Other Tools?
-  
-  
-</h2>
-    
-
-<p>lakeFS is an open source project that supports managing data in AWS S3, Azure Blob Storage, Google Cloud Storage (GCS) and any other object storage with an S3 interface. It integrates seamlessly with popular data frameworks such as Spark, Hive Metastore, dbt, Trino, Presto, and many others and includes an S3 compatibility layer.</p>
-
-<p class="note">For more details and a full list see <a href="./integrations/">the integrations pages</a>.</p>
-
-<p class="center">
-    <img src="/assets/img/lakeFSArchitecture.png" />
-</p>
-
-<p class="pb-5">lakeFS maintains compatibility with the S3 API to minimize adoption
-friction. You can use it as a drop-in replacement for S3 from the perspective of
-any tool interacting with a data lake.</p>
-
-<p>For example, take the common operation of reading a collection of data from an object storage into a Spark DataFrame. For data outside a lakeFS repo, the code will look like this:</p>
-
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">parquet</span><span class="p">(</span><span class="s">"s3a://my-bucket/collections/foo/"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>After adding the data collections into my-bucket to a repository, the same operation becomes:</p>
-
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">parquet</span><span class="p">(</span><span class="s">"s3a://my-repo/main-branch/collections/foo/"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>You can use the same methods and syntax you are already using to read and write data when using a lakeFS repository. This simplifies the adoption of lakeFS - minimal changes are needed to get started, making further changes an incremental process.</p>
-<h2 id="lakefs-is-git-for-data">
-  
-  
-    <a href="#lakefs-is-git-for-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> lakeFS is Git for Data
-  
-  
-</h2>
-    
-
-<p>Git conquered the world of code because it had best supported engineering best practices required by developers, in particular:</p>
-
-<ul>
-  <li>Collaborate during development.</li>
-  <li>Develop and Test in isolation</li>
-  <li>Revert code repository to a sable version in case of an error</li>
-  <li>Reproduce and troubleshoot issues with a given version of the code</li>
-  <li>Continuously integrate and deploy new code (CI/CD)</li>
-</ul>
-
-<p>lakeFS provides these exact benefits, that are data practitioners are missing today, and enables them a clear intuitive Git-like interface to easily manage their data like they manage code. Through its versioning engine, lakeFS enables the following built-in operations familiar from Git:</p>
-
-<ul>
-  <li><strong>branch:</strong> a consistent copy of a repository, isolated from other branches and their changes. Initial creation of a branch is a metadata operation that does not duplicate objects.</li>
-  <li><strong>commit:</strong> an immutable checkpoint containing a complete snapshot of a repository.</li>
-  <li><strong>merge:</strong> performed between two branches — merges atomically update one branch with the changes from another.</li>
-  <li><strong>revert:</strong> returns a repo to the exact state of a previous commit.</li>
-  <li><strong>tag:</strong> a pointer to a single immutable commit with a readable, meaningful name.</li>
-</ul>
-
-<p><em>See the <a href="/understand/model.html">object model</a> for an in-depth
-definition of these, and the <a href="/reference/cli.html">CLI reference</a> for the
-full list of commands.</em></p>
-
-<p>Incorporating these operations into your data lake pipelines provides the same collaboration and organizational benefits you get when managing application code with source control.</p>
-<h3 id="the-lakefs-promotion-workflow">
-  
-  
-    <a href="#the-lakefs-promotion-workflow" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> The lakeFS Promotion Workflow
-  
-  
-</h3>
-    
-
-<p>Here’s how lakeFS <em>branches</em> and <em>merges</em> improve the universal process of updating collections with the latest data.</p>
-
-<p><img src="/assets/img/promotion_workflow.png" alt="lakeFS promotion workflow" width="60%" height="60%" /></p>
-
-<ol>
-  <li>First, create a new <strong>branch</strong> from <code class="language-plaintext highlighter-rouge">main</code> to instantly generate a complete “copy” of your production data.</li>
-  <li>Apply changes or make updates on the isolated branch to understand their impact prior to exposure.</li>
-  <li>And finally, perform a <strong>merge</strong> from the feature branch back to main to atomically promote the updates into production.</li>
-</ol>
-
-<p>Following this pattern, lakeFS facilitates a streamlined data deployment workflow that consistently produces data assets you can have total confidence in.</p>
-<h2 id="how-can-lakefs-help-me">
-  
-  
-    <a href="#how-can-lakefs-help-me" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How Can lakeFS Help Me?
-  
-  
-</h2>
-    
-
-<p>lakeFS helps you maintain a tidy data lake in several ways, including:</p>
-<h3 id="isolated-devtest-environments-with-zero-copy-branching">
-  
-  
-    <a href="#isolated-devtest-environments-with-zero-copy-branching" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Isolated Dev/Test Environments with zero-copy branching
-  
-  
-</h3>
-    
-
-<p>lakeFS makes creating isolated dev/test environments for ETL testing instantaneous, and through its use of zero-copy branching, cheap. This enables you to test and validate code changes on production data without impacting it, as well as run analysis and experiments on production data in an isolated clone.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/etl_testing.html">Read more</a></p>
-<h3 id="reproducibility-what-did-my-data-look-like-at-a-point-in-time">
-  
-  
-    <a href="#reproducibility-what-did-my-data-look-like-at-a-point-in-time" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Reproducibility: What Did My Data Look Like at a Point In Time?
-  
-  
-</h3>
-    
-
-<p>Being able to look at data as it was at a given point is particularly useful in at least two scenarios:</p>
-
-<ol>
-  <li>
-    <p>Reproducibility of ML experiments</p>
-
-    <p>ML experimentation is iterative, requiring the ability to reproduce specific results. With lakeFS, you can version all aspects of an ML experiment, including the data. This enables:</p>
-
-    <p><strong>Data Lineage</strong>: Track the transformation of data from raw datasets to the final version used in experiments, ensuring transparency and traceability.</p>
-
-    <p><strong>Zero-Copy Branching</strong>: Minimize storage use by creating lightweight branches of your data, allowing for easy experimentation across different versions.</p>
-
-    <p><strong>Easy Integration</strong>: Seamlessly integrate with ML tools like MLFlow, linking experiments directly to the exact data versions used, making reproducibility straightforward.</p>
-
-    <p>lakeFS enhances your ML workflow by ensuring that all versions of data are easily accessible, traceable, and reproducible.</p>
+<ol id="markdown-toc">
+  <li><a href="#objects" id="markdown-toc-objects">Objects</a></li>
+  <li><a href="#version-control" id="markdown-toc-version-control">Version Control</a>    <ol>
+      <li><a href="#repository" id="markdown-toc-repository">Repository</a></li>
+      <li><a href="#commits" id="markdown-toc-commits">Commits</a></li>
+      <li><a href="#branches" id="markdown-toc-branches">Branches</a></li>
+      <li><a href="#tags" id="markdown-toc-tags">Tags</a></li>
+      <li><a href="#history" id="markdown-toc-history">History</a></li>
+      <li><a href="#merge" id="markdown-toc-merge">Merge</a></li>
+      <li><a href="#ref-expressions" id="markdown-toc-ref-expressions">Ref expressions</a></li>
+    </ol>
   </li>
-  <li>
-    <p>Troubleshooting production problems</p>
-
-    <p>Data engineers are often asked to validate the data. A user might report inconsistencies, question the accuracy, or simply report it to be incorrect.</p>
-
-    <p>Since the data continuously changes, it is challenging to understand its state at the time of the error.</p>
-
-    <p>With lakeFS you can create a branch from a commit to debug an issue in isolation.</p>
+  <li><a href="#concepts-unique-to-lakefs" id="markdown-toc-concepts-unique-to-lakefs">Concepts unique to lakeFS</a>    <ol>
+      <li><a href="#lakefs-protocol-uris" id="markdown-toc-lakefs-protocol-uris"><code class="language-plaintext highlighter-rouge">lakefs</code> protocol URIs</a></li>
+    </ol>
   </li>
 </ol>
 
-<p>👉🏻 <a href="./understand/use_cases/reproducibility.html">Read More</a></p>
-<h3 id="rollback-of-data-changes-and-recovery-from-data-errors">
-  
-  
-    <a href="#rollback-of-data-changes-and-recovery-from-data-errors" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Rollback of Data Changes and Recovery from Data Errors
-  
-  
-</h3>
-    
+</div>
 
-<p>Human error or misconfigurations can lead to erroneous data making its way into production or critical data being accidentally deleted. Traditional backups are often inadequate for recovery in these situations, as they may be outdated and require time-consuming object-level sifting.</p>
-
-<p>With lakeFS, you can avoid these inefficiencies by committing snapshots of data at well-defined times. This allows for instant recovery: simply identify a good historical commit and restore or copy from it with a single operation.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/rollback.html">Read more</a></p>
-<h3 id="establishing-data-quality-guarantees---cicd-for-data">
+<p>lakeFS blends concepts from object stores such as S3 with concepts from Git. This reference
+defines the common concepts of lakeFS.</p>
+<h2 id="objects">
   
   
-    <a href="#establishing-data-quality-guarantees---cicd-for-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Establishing data quality guarantees - CI/CD for data
-  
-  
-</h3>
-    
-
-<p>The best way to deal with mistakes is to avoid them. A data source that is ingested into the lake introducing low-quality data should be blocked before exposure if possible.</p>
-
-<p>With lakeFS, you can achieve this by tying data quality tests to commit and merge operations via lakeFS <a href="/understand/use_cases/cicd_for_data.html#using-hooks-as-data-quality-gates">hooks</a>.</p>
-
-<p>👉🏻 <a href="./understand/use_cases/cicd_for_data.html">Read more</a></p>
-<h2 id="next-step">
-  
-  
-    <a href="#next-step" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Next Step
+    <a href="#objects" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Objects
   
   
 </h2>
     
 
-<p>Try lakeFS on the <a href="https://lakefs.cloud/">cloud</a> or <a href="https://docs.lakefs.io/quickstart/">run it locally</a></p>
+<p>lakeFS is an interface to manage objects in an object store.</p>
+
+<blockquote class="tip">
+  <p>The actual data itself is not stored inside lakeFS directly but in an <a href="#concepts-unique-to-lakefs">underlying object store</a>.
+lakeFS manages pointers and additional metadata about these objects.</p>
+</blockquote>
+<h2 id="version-control">
+  
+  
+    <a href="#version-control" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Version Control
+  
+  
+</h2>
+    
+
+<p>lakeFS is spearheading version control semantics for data. Most of these concepts will be familiar to Git users:</p>
+<h3 id="repository">
+  
+  
+    <a href="#repository" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Repository
+  
+  
+</h3>
+    
+
+<p>In lakeFS, a <em>repository</em> is a set of related objects (or collections of objects). In many cases, these represent tables of <a href="https://lakefs.io/blog/hudi-iceberg-and-delta-lake-data-lake-table-formats-compared/" target="_blank">various formats</a> for tabular data, semi-structured data such as JSON or log files - or a set of unstructured objects such as images, videos, sensor data, etc.</p>
+
+<p>lakeFS represents repositories as a logical namespace used to group together objects, branches, and commits - analogous to a repository in Git.</p>
+
+<p>lakeFS repository naming requirements are as follows:</p>
+
+<ul>
+  <li>Start with a lower case letter or number</li>
+  <li>Contain only lower case letters, numbers and hyphens</li>
+  <li>Be between 3 and 63 characters long</li>
+</ul>
+<h3 id="commits">
+  
+  
+    <a href="#commits" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Commits
+  
+  
+</h3>
+    
+
+<p>Using commits, you can view a <a href="#repository">repository</a> at a certain point in its history and you’re guaranteed that the data you see is exactly as it was at the point of committing it.</p>
+
+<p>These commits are immutable “checkpoints” containing all contents of a repository at a given point in the repository’s history.</p>
+
+<p>Each commit contains metadata - the committer, timestamp, a commit message, as well as arbitrary key/value pairs you can choose to add.</p>
+
+<p class="note"><strong>Identifying Commits</strong><br /><br />
+  A commit is identified by its <em>commit ID</em>, a digest of all contents of the commit. <br />
+  Commit IDs are by nature long, so you may use a unique prefix to abbreviate them. A commit may also be identified by using a textual definition, called a <em>ref</em>. <br /><br />
+  Examples of refs include tags, branch names, and expressions.</p>
+<h3 id="branches">
+  
+  
+    <a href="#branches" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Branches
+  
+  
+</h3>
+    
+
+<p>Branches in lakeFS allow users to create their own “isolated” view of the repository.</p>
+
+<p>Changes on one branch do not appear on other branches. Users can take changes from one branch and apply it to another by <a href="#merge">merging</a> them.</p>
+<h4 id="zero-copy-branching">
+  
+  
+    <a href="#zero-copy-branching" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Zero-copy branching
+  
+  
+</h4>
+    
+
+<p>Under the hood, branches are simply a pointer to a <a href="#commits">commit</a> along with a set of uncommitted changes.
+Creating a branch is a <strong>zero-copy operation</strong>; instead of duplicating data, it involves creating a pointer to the source commit for the branch.</p>
+<h3 id="tags">
+  
+  
+    <a href="#tags" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Tags
+  
+  
+</h3>
+    
+
+<p>Tags are a way to give a meaningful name to a specific commit.
+Using tags allow users to reference specific releases, experiments, or versions by using a human friendly name.</p>
+
+<p>Example tags:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">v2.3</code> to mark a release.</li>
+  <li><code class="language-plaintext highlighter-rouge">dev-jane-before-v2.3-merge</code> to mark Jane’s private temporary point.</li>
+</ul>
+
+<p>Tag names adhere to the same rules as <a href="https://git-scm.com/docs/git-check-ref-format">git ref names</a>.</p>
+<h3 id="history">
+  
+  
+    <a href="#history" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> History
+  
+  
+</h3>
+    
+
+<p>The <em>history</em> of the branch is the list of commits from the branch tip through the first
+parent of each commit. Histories go back in time.</p>
+<h3 id="merge">
+  
+  
+    <a href="#merge" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Merge
+  
+  
+</h3>
+    
+
+<p><em>Merging</em> is the way to integrate changes from a branch into another branch.
+The result of a merge is a new commit, with the destination as the first parent and the source as the second.</p>
+
+<p class="note">To learn more about how merging works in lakeFS, see the <a href="/understand/how/merge.html">merge reference</a></p>
+<h3 id="ref-expressions">
+  
+  
+    <a href="#ref-expressions" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Ref expressions
+  
+  
+</h3>
+    
+
+<p>lakeFS also supports <em>expressions</em> for creating a ref. These are similar to <a href="https://git-scm.com/docs/gitrevisions#_specifying_revisions">revisions in
+Git</a>; indeed all <code class="language-plaintext highlighter-rouge">~</code> and <code class="language-plaintext highlighter-rouge">^</code>
+examples at the end of that section will work unchanged in lakeFS.</p>
+
+<ul>
+  <li>A branch or a tag are ref expressions.</li>
+  <li>If <code class="language-plaintext highlighter-rouge">&lt;ref&gt;</code> is a ref expression, then:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">&lt;ref&gt;^</code> is a ref expression referring to its first parent.</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;ref&gt;^N</code> is a ref expression referring to its N’th parent; in particular <code class="language-plaintext highlighter-rouge">&lt;ref&gt;^1</code> is the
+same as <code class="language-plaintext highlighter-rouge">&lt;ref&gt;^</code>.</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;ref&gt;~</code> is a ref expression referring to its first parent; in particular <code class="language-plaintext highlighter-rouge">&lt;ref&gt;~</code> is the
+same as <code class="language-plaintext highlighter-rouge">&lt;ref&gt;^</code> and <code class="language-plaintext highlighter-rouge">&lt;ref&gt;~</code>.</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;ref&gt;~N</code> is a ref expression referring to its N’th parent, always traversing to the first
+parent.  So <code class="language-plaintext highlighter-rouge">&lt;ref&gt;~N</code> is the same as <code class="language-plaintext highlighter-rouge">&lt;ref&gt;^^...^</code> with N consecutive carets <code class="language-plaintext highlighter-rouge">^</code>.</li>
+    </ul>
+  </li>
+</ul>
+<h2 id="concepts-unique-to-lakefs">
+  
+  
+    <a href="#concepts-unique-to-lakefs" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Concepts unique to lakeFS
+  
+  
+</h2>
+    
+
+<p>The <em>underlying storage</em> is a location in an object store where lakeFS keeps your objects and some immutable metadata.</p>
+
+<p>When creating a lakeFS repository, you assign it with a <em>storage namespace</em>. The repository’s
+storage namespace is a location in the underlying storage where data for this repository
+will be stored.</p>
+
+<p>We sometimes refer to underlying storage as <em>physical</em>. The path used to store the contents of an object is then termed a <em>physical path</em>.
+Once lakeFS saves an object in the underlying storage it is never modified, except to remove it
+entirely during some cleanups.</p>
+
+<p>A lot of what lakeFS does is to manage how lakeFS paths translate to <em>physical paths</em> on the
+object store. This mapping is generally <strong>not</strong> straightforward. Importantly (and contrary to
+many object stores), lakeFS may map multiple paths to the same object on backing storage, and
+always does this for objects that are unchanged across versions.</p>
+<h3 id="lakefs-protocol-uris">
+  
+  
+    <a href="#lakefs-protocol-uris" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> <code class="language-plaintext highlighter-rouge">lakefs</code> protocol URIs
+  
+  
+</h3>
+    
+
+<p>lakeFS uses a specific format for path URIs. The URI <code class="language-plaintext highlighter-rouge">lakefs://&lt;REPO&gt;/&lt;REF&gt;/&lt;KEY&gt;</code> is a path
+to objects in the given repo and ref expression under key. This is used both for path
+prefixes and for full paths. In similar fashion, <code class="language-plaintext highlighter-rouge">lakefs://&lt;REPO&gt;/&lt;REF&gt;</code> identifies the
+repository at a ref expression, and <code class="language-plaintext highlighter-rouge">lakefs://&lt;REPO&gt;</code> identifes a repo.</p>
 
                 
 
