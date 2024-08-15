@@ -1,0 +1,72 @@
+{"0": {
+    "doc": "Page not found",
+    "title": "Page not found",
+    "content": " ",
+    "url": "/404.html",
+    
+    "relUrl": "/404.html"
+  },"1": {
+    "doc": "Page not found",
+    "title": "We can’t seem to find the page you’re looking for.",
+    "content": "Error code: 404 . Back to Docs . ",
+    "url": "/404.html#we-cant-seem-to-find-the-page-youre-looking-for",
+    
+    "relUrl": "/404.html#we-cant-seem-to-find-the-page-youre-looking-for"
+  },"2": {
+    "doc": "⭐ Helloworld",
+    "title": "lakeFS for databricks Quickstart",
+    "content": "Welcome to lakeFS for databricks ! . Launch . Spin up the quickstart environment locally under Docker . Query . Query the pre-populated data on the main branch . ",
+    "url": "/helloworld/#lakefs-for-databricks-quickstart",
+    
+    "relUrl": "/helloworld/#lakefs-for-databricks-quickstart"
+  },"3": {
+    "doc": "⭐ Helloworld",
+    "title": "⭐ Helloworld",
+    "content": " ",
+    "url": "/helloworld/",
+    
+    "relUrl": "/helloworld/"
+  },"4": {
+    "doc": "Welcome to lakeFS for Databricks",
+    "title": "Welcome to the lakeFS for Databricks docs!",
+    "content": ". ",
+    "url": "/#welcome-to-the-lakefs-for-databricks-docs",
+    
+    "relUrl": "/#welcome-to-the-lakefs-for-databricks-docs"
+  },"5": {
+    "doc": "Welcome to lakeFS for Databricks",
+    "title": "Welcome to lakeFS for Databricks",
+    "content": " ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"6": {
+    "doc": "1️⃣ Run lakeFS for databricks",
+    "title": "Spin up the environment",
+    "content": " ",
+    "url": "/helloworld/launch.html#spin-up-the-environment",
+    
+    "relUrl": "/helloworld/launch.html#spin-up-the-environment"
+  },"7": {
+    "doc": "1️⃣ Run lakeFS for databricks",
+    "title": "1️⃣ Run lakeFS for databricks",
+    "content": " ",
+    "url": "/helloworld/launch.html",
+    
+    "relUrl": "/helloworld/launch.html"
+  },"8": {
+    "doc": "2️⃣ Query the data",
+    "title": "Let’s Query Something",
+    "content": " ",
+    "url": "/helloworld/query.html#lets-query-something",
+    
+    "relUrl": "/helloworld/query.html#lets-query-something"
+  },"9": {
+    "doc": "2️⃣ Query the data",
+    "title": "2️⃣ Query the data",
+    "content": " ",
+    "url": "/helloworld/query.html",
+    
+    "relUrl": "/helloworld/query.html"
+  }
+}
