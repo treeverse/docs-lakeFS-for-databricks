@@ -13,60 +13,130 @@
     
     "relUrl": "/404.html#we-cant-seem-to-find-the-page-youre-looking-for"
   },"2": {
-    "doc": "⭐ Helloworld",
-    "title": "lakeFS for databricks Quickstart",
-    "content": "Welcome to lakeFS for databricks ! . Launch . Spin up the quickstart environment locally under Docker . Query . Query the pre-populated data on the main branch . ",
-    "url": "/helloworld/#lakefs-for-databricks-quickstart",
-    
-    "relUrl": "/helloworld/#lakefs-for-databricks-quickstart"
-  },"3": {
-    "doc": "⭐ Helloworld",
-    "title": "⭐ Helloworld",
+    "doc": "CLI Reference",
+    "title": "CLI Reference",
     "content": " ",
-    "url": "/helloworld/",
+    "url": "/CLI%20Reference.html",
     
-    "relUrl": "/helloworld/"
+    "relUrl": "/CLI%20Reference.html"
+  },"3": {
+    "doc": "FAQ",
+    "title": "FAQ",
+    "content": " ",
+    "url": "/faq.html",
+    
+    "relUrl": "/faq.html"
   },"4": {
-    "doc": "Welcome to lakeFS for Databricks",
-    "title": "Welcome to the lakeFS for Databricks docs!",
-    "content": ". ",
-    "url": "/#welcome-to-the-lakefs-for-databricks-docs",
+    "doc": "Get Started",
+    "title": "Get Started with lakeFS for Databricks",
+    "content": " ",
+    "url": "/getstarted/#get-started-with-lakefs-for-databricks",
     
-    "relUrl": "/#welcome-to-the-lakefs-for-databricks-docs"
+    "relUrl": "/getstarted/#get-started-with-lakefs-for-databricks"
   },"5": {
-    "doc": "Welcome to lakeFS for Databricks",
-    "title": "Welcome to lakeFS for Databricks",
+    "doc": "Get Started",
+    "title": "Install",
+    "content": " ",
+    "url": "/getstarted/#install",
+    
+    "relUrl": "/getstarted/#install"
+  },"6": {
+    "doc": "Get Started",
+    "title": "Setup",
+    "content": " ",
+    "url": "/getstarted/#setup",
+    
+    "relUrl": "/getstarted/#setup"
+  },"7": {
+    "doc": "Get Started",
+    "title": "Try it Out",
+    "content": " ",
+    "url": "/getstarted/#try-it-out",
+    
+    "relUrl": "/getstarted/#try-it-out"
+  },"8": {
+    "doc": "Get Started",
+    "title": "Get Started",
+    "content": " ",
+    "url": "/getstarted/",
+    
+    "relUrl": "/getstarted/"
+  },"9": {
+    "doc": "lakeFS for Databricks",
+    "title": "Welcome to lakeFS for Databricks!",
+    "content": ". ",
+    "url": "/#welcome-to-lakefs-for-databricks",
+    
+    "relUrl": "/#welcome-to-lakefs-for-databricks"
+  },"10": {
+    "doc": "lakeFS for Databricks",
+    "title": "What is lakeFS for Databricks?",
+    "content": " ",
+    "url": "/#what-is-lakefs-for-databricks",
+    
+    "relUrl": "/#what-is-lakefs-for-databricks"
+  },"11": {
+    "doc": "lakeFS for Databricks",
+    "title": "Why lakeFS for Databricks?",
+    "content": "Use cases . ",
+    "url": "/#why-lakefs-for-databricks",
+    
+    "relUrl": "/#why-lakefs-for-databricks"
+  },"12": {
+    "doc": "lakeFS for Databricks",
+    "title": "How does lakeFS for Databricks work?",
+    "content": "Limitations . ",
+    "url": "/#how-does-lakefs-for-databricks-work",
+    
+    "relUrl": "/#how-does-lakefs-for-databricks-work"
+  },"13": {
+    "doc": "lakeFS for Databricks",
+    "title": "lakeFS for Databricks",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"6": {
-    "doc": "1️⃣ Run lakeFS for databricks",
-    "title": "Spin up the environment",
+  },"14": {
+    "doc": "Install",
+    "title": "Install",
     "content": " ",
-    "url": "/helloworld/launch.html#spin-up-the-environment",
+    "url": "/getstarted/install.html",
     
-    "relUrl": "/helloworld/launch.html#spin-up-the-environment"
-  },"7": {
-    "doc": "1️⃣ Run lakeFS for databricks",
-    "title": "1️⃣ Run lakeFS for databricks",
+    "relUrl": "/getstarted/install.html"
+  },"15": {
+    "doc": "Roadmap",
+    "title": "Roadmap",
     "content": " ",
-    "url": "/helloworld/launch.html",
+    "url": "/roadmap.html",
     
-    "relUrl": "/helloworld/launch.html"
-  },"8": {
-    "doc": "2️⃣ Query the data",
-    "title": "Let’s Query Something",
+    "relUrl": "/roadmap.html"
+  },"16": {
+    "doc": "Setup",
+    "title": "Setup",
     "content": " ",
-    "url": "/helloworld/query.html#lets-query-something",
+    "url": "/getstarted/setup.html",
     
-    "relUrl": "/helloworld/query.html#lets-query-something"
-  },"9": {
-    "doc": "2️⃣ Query the data",
-    "title": "2️⃣ Query the data",
+    "relUrl": "/getstarted/setup.html"
+  },"17": {
+    "doc": "Try it Out",
+    "title": "Try it Out",
     "content": " ",
-    "url": "/helloworld/query.html",
+    "url": "/getstarted/try-it-out.html",
     
-    "relUrl": "/helloworld/query.html"
+    "relUrl": "/getstarted/try-it-out.html"
+  },"18": {
+    "doc": "Try it Out",
+    "title": "With Sample Data",
+    "content": " ",
+    "url": "/getstarted/try-it-out.html#with-sample-data",
+    
+    "relUrl": "/getstarted/try-it-out.html#with-sample-data"
+  },"19": {
+    "doc": "Try it Out",
+    "title": "With your Data",
+    "content": " ",
+    "url": "/getstarted/try-it-out.html#with-your-data",
+    
+    "relUrl": "/getstarted/try-it-out.html#with-your-data"
   }
 }

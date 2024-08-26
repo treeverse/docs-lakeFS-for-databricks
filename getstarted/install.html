@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
   
   <style type="text/css">
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(1) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(2) > .nav-list > .nav-list-item:nth-child(1) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
 
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list-expander svg { transform: rotate(-90deg); }
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(1) > .nav-list { display: block; }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(2) > .nav-list-expander svg, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(2) > .nav-list > .nav-list-item:not(.passive):nth-child(1) > .nav-list-expander svg { transform: rotate(-90deg); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(2) > .nav-list, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(2) > .nav-list > .nav-list-item:not(.passive):nth-child(1) > .nav-list { display: block; }
 
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list-expander svg { transform: rotate(-90deg); }
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list { display: block; }
@@ -38,21 +38,21 @@
 
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>lakeFS for Databricks | Docs</title>
+<title>Install | Docs</title>
 <meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="lakeFS for Databricks" />
+<meta property="og:title" content="Install" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="An overview of lakeFS for Databricks" />
-<meta property="og:description" content="An overview of lakeFS for Databricks" />
+<meta name="description" content="lakeFS for Databricks Installation Guide" />
+<meta property="og:description" content="lakeFS for Databricks Installation Guide" />
 <meta property="og:site_name" content="Docs" />
 <meta property="og:image" content="https://docs-databricks.lakefs.io/assets/img/docs_logo.png" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:image" content="https://docs-databricks.lakefs.io/assets/img/docs_logo.png" />
-<meta property="twitter:title" content="lakeFS for Databricks" />
+<meta property="twitter:title" content="Install" />
 <meta name="twitter:site" content="@lakeFS" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"An overview of lakeFS for Databricks","headline":"lakeFS for Databricks","image":"https://docs-databricks.lakefs.io/assets/img/docs_logo.png","name":"lakeFS","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/lakeFS_for_databricks_logo.svg"}},"sameAs":["https://www.linkedin.com/company/treeverse/","https://twitter.com/lakeFS","https://github.com/treeverse/lakeFS","https://data-folks.masto.host/@lakeFS"],"url":"/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"lakeFS for Databricks Installation Guide","headline":"Install","image":"https://docs-databricks.lakefs.io/assets/img/docs_logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/lakeFS_for_databricks_logo.svg"}},"url":"/getstarted/install.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -212,13 +212,13 @@
             </script>
 
             <ul class="nav-list"><li
-            class="nav-list-item active"><a href="/"
-           class="nav-list-link active">lakeFS for Databricks</a></li><li
-            class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
+            class="nav-list-item"><a href="/"
+           class="nav-list-link">lakeFS for Databricks</a></li><li
+            class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/getstarted/"
-           class="nav-list-link">Get Started</a><ul class="nav-list "><li class="nav-list-item "><a href="/getstarted/install.html"
-                   class="nav-list-link">Install</a></li><li class="nav-list-item "><a href="/getstarted/setup.html"
+           class="nav-list-link">Get Started</a><ul class="nav-list "><li class="nav-list-item  active"><a href="/getstarted/install.html"
+                   class="nav-list-link active">Install</a></li><li class="nav-list-item "><a href="/getstarted/setup.html"
                    class="nav-list-link">Setup</a></li><li class="nav-list-item "><a href="/getstarted/try-it-out.html"
                    class="nav-list-link">Try it Out</a></li></ul></li><li
             class="nav-list-item"><a href="/CLI%20Reference.html"
@@ -331,50 +331,27 @@
         </div>
         <div id="main-content-wrap" class="main-content-wrap">
             
+            
+            <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+                <ol class="breadcrumb-nav-list">
+                    
+                    <li class="breadcrumb-nav-list-item"><a href="/getstarted/">Get Started</a>
+                    </li>
+                    
+                    <li class="breadcrumb-nav-list-item"><span>Install</span></li>
+                </ol>
+            </nav>
+            
+            
             <div id="main-content" class="main-content" role="main">
                 
-                    <h1 id="welcome-to-lakefs-for-databricks">
+                    <h1 id="install">
   
   
-    <a href="#welcome-to-lakefs-for-databricks" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Welcome to lakeFS for Databricks!
+    <a href="#install" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Install
   
   
 </h1>
-    
-
-<p><img src="/assets/img/waving-axolotl-transparent.gif" width="90" /></p>
-<h2 id="what-is-lakefs-for-databricks">
-  
-  
-    <a href="#what-is-lakefs-for-databricks" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> What is lakeFS for Databricks?
-  
-  
-</h2>
-    
-<h2 id="why-lakefs-for-databricks">
-  
-  
-    <a href="#why-lakefs-for-databricks" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Why lakeFS for Databricks?
-  
-  
-</h2>
-    
-<p>Use cases</p>
-<h2 id="how-does-lakefs-for-databricks-work">
-  
-  
-    <a href="#how-does-lakefs-for-databricks-work" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How does lakeFS for Databricks work?
-  
-  
-</h2>
-    
-<h3 id="limitations">
-  
-  
-    <a href="#limitations" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Limitations
-  
-  
-</h3>
 
                 
 
