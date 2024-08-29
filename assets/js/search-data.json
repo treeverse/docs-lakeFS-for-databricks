@@ -20,118 +20,181 @@
     
     "relUrl": "/CLI%20Reference.html"
   },"3": {
+    "doc": "Azure",
+    "title": "lakeFS for Databricks on Azure",
+    "content": "In this guide we will do a step-by-step walkthrough of setting up an environment of lakeFS cloud and a Databricks Workspace on Azure. By the end of this guide, you will be able to use Unity Catalog with lakeFS’s versioning capabilities. ",
+    "url": "/getstarted/setup/azure.html#lakefs-for-databricks-on-azure",
+    
+    "relUrl": "/getstarted/setup/azure.html#lakefs-for-databricks-on-azure"
+  },"4": {
+    "doc": "Azure",
+    "title": "Pre-requisites",
+    "content": ". | A Databricks workspace with Unity Catalog enabled. | Define an External location as the storage root for the catalogs you will create using lakeFS for Databricks. | The workspace you are using should have access to this location. | . | Databricks Storage Credentials to access the external location you will use. | The workspace you are using should have access to these storage credentials. | . | A personal access token for a Databricks user with the following permissions: . | CREATE MANAGED STORAGE for the specified external location. | CREATE CATALOG for the workspace’s metastore to enable catalog creation. | . | An Azure account, with the necessary permissions to create Azure AD applications and service principals. | . ",
+    "url": "/getstarted/setup/azure.html#pre-requisites",
+    
+    "relUrl": "/getstarted/setup/azure.html#pre-requisites"
+  },"5": {
+    "doc": "Azure",
+    "title": "Setting up lakeFS Cloud on Azure",
+    "content": ". | Log in to lakefs.cloud. If you don’t have an account: . | Complete the registration process. | Verify your email. | . | Go to Onboarding -&gt; Setup and follow the setup steps. Keep the following points in mind to ensure your setup integrates with your Databricks workspace: . | In Step 1: | . | Cloud Vendor: Choose “Azure” | Region: Choose the same region as your Databricks workspace. - In Step 3: | Fill in your storage group, storage account, and container as specified in the “Prerequisites” section. | Use the Storage Account and Container designated for the external location in Databricks. | Note: Garbage Collection is currently not supported by lakeFS for Databricks, so do not enable it. | . | Verify your setup is complete: . | Go to Clusters and click on the link to the newly created installation. | Log in to your lakeFS instance. | . If you’re able to log in, your setup is complete. | . ",
+    "url": "/getstarted/setup/azure.html#setting-up-lakefs-cloud-on-azure",
+    
+    "relUrl": "/getstarted/setup/azure.html#setting-up-lakefs-cloud-on-azure"
+  },"6": {
+    "doc": "Azure",
+    "title": "Create a dedicated lakeFS repository for a Unity catalog",
+    "content": ". | Create a new repository in lakeFS through the UI or lakectl CLI. The namespace for your new repository should be accessible through the created external location. | . Steps for creating a new repository through the lakeFS UI: . 1Log in to lakeFS - Open your web browser and navigate to your lakeFS instance URL. - Log in with your credentials. | Access the Repositories Page . | Once logged in, you should see a list of repositories (if any exist). | Look for a button or link labeled “Create Repository”. | . | Fill in Repository Details . | Enter a unique name for your repository. | Choose a storage namespace (the namespace for your new repository should be under the external location you created in the pre-requisites). | Click “Create Repository”. | . | . Congratulations! You’ve successfully created a new repository in lakeFS. ",
+    "url": "/getstarted/setup/azure.html#create-a-dedicated-lakefs-repository-for-a-unity-catalog",
+    
+    "relUrl": "/getstarted/setup/azure.html#create-a-dedicated-lakefs-repository-for-a-unity-catalog"
+  },"7": {
+    "doc": "Azure",
+    "title": "Generate lakeFS credentials",
+    "content": "Through the lakeFS UI, generate a new access key for your user. This key will be used to authenticate with lakeFS for Databricks. Steps for generating a new access key through the lakeFS UI: . | Access the Administration page . | Click on the “Administration” link in the top navigation bar. | You should see an empty list of credentials ath the “My Credentials” tab. | . | Generate a new access key . | Click on the “Generate Access Key” button. | Enter a description for the new access key. | Click “Generate Access Key”. | . | . Congratulations! You’ve successfully generated a new access key for your user. Copy the access key and secret key to a secure location. In case you want to use a user with limited permissions, you can create an API user with the following permissions: . { \"id\": \"lakeFSForDatabricksPolicy\", \"statement\": [ { \"action\": [ \"fs:ListRepositories\", \"fs:ReadRepository\", \"fs:ReadCommit\", \"fs:ListBranches\", \"fs:ListTags\", \"fs:ListObjects\", \"fs:ReadObject\", \"fs:WriteObject\", \"fs:DeleteObject\", \"fs:RevertBranch\", \"fs:ReadBranch\", \"fs:ReadTag\", \"fs:CreateBranch\", \"fs:CreateTag\", \"fs:DeleteBranch\", \"fs:DeleteTag\", \"fs:CreateCommit\" ], \"effect\": \"allow\", \"resource\": \"arn:lakefs:fs:::repository/{repositoryId}\" } ] } . You can read more about lakeFS RBAC here. ",
+    "url": "/getstarted/setup/azure.html#generate-lakefs-credentials",
+    
+    "relUrl": "/getstarted/setup/azure.html#generate-lakefs-credentials"
+  },"8": {
+    "doc": "Azure",
+    "title": "Setup lakefs-databricks",
+    "content": ". | Download CLI (how?) | . ",
+    "url": "/getstarted/setup/azure.html#setup-lakefs-databricks",
+    
+    "relUrl": "/getstarted/setup/azure.html#setup-lakefs-databricks"
+  },"9": {
+    "doc": "Azure",
+    "title": "lakefs-databricks Configuration",
+    "content": "unity: # The Databricks workspace URL (i.e https://dbc-&lt;workspace-id&gt;.cloud.databricks.com) url: &lt;unity_url&gt; token: &lt;unity_token&gt; lakefs: secret_access_key: &lt;lakefs_secret_access_key&gt; access_key_id: &lt;lakefs_access_key_id&gt; # Cloud Installation API URL suffix /api/v1 url: &lt;lakefs_installation_url&gt;/api/v1 databricks_storage: type: azure azure: client_id: &lt;client_id&gt; client_secret: &lt;client_secret&gt; tenant_id: &lt;tenant_id&gt; . ",
+    "url": "/getstarted/setup/azure.html#lakefs-databricks-configuration",
+    
+    "relUrl": "/getstarted/setup/azure.html#lakefs-databricks-configuration"
+  },"10": {
+    "doc": "Azure",
+    "title": "Create Catalog",
+    "content": "# default config location $HOME/.lakefs-databricks.yaml lakefs-databricks catalog create &lt;catalog-name&gt; &lt;lakefs-repository-name&gt; . ",
+    "url": "/getstarted/setup/azure.html#create-catalog",
+    
+    "relUrl": "/getstarted/setup/azure.html#create-catalog"
+  },"11": {
+    "doc": "Azure",
+    "title": "Azure",
+    "content": " ",
+    "url": "/getstarted/setup/azure.html",
+    
+    "relUrl": "/getstarted/setup/azure.html"
+  },"12": {
     "doc": "FAQ",
     "title": "FAQ",
     "content": " ",
     "url": "/faq.html",
     
     "relUrl": "/faq.html"
-  },"4": {
+  },"13": {
     "doc": "Get Started",
     "title": "Get Started with lakeFS for Databricks",
     "content": " ",
     "url": "/getstarted/#get-started-with-lakefs-for-databricks",
     
     "relUrl": "/getstarted/#get-started-with-lakefs-for-databricks"
-  },"5": {
+  },"14": {
     "doc": "Get Started",
     "title": "Install",
     "content": " ",
     "url": "/getstarted/#install",
     
     "relUrl": "/getstarted/#install"
-  },"6": {
+  },"15": {
     "doc": "Get Started",
     "title": "Setup",
     "content": " ",
     "url": "/getstarted/#setup",
     
     "relUrl": "/getstarted/#setup"
-  },"7": {
+  },"16": {
     "doc": "Get Started",
     "title": "Try it Out",
     "content": " ",
     "url": "/getstarted/#try-it-out",
     
     "relUrl": "/getstarted/#try-it-out"
-  },"8": {
+  },"17": {
     "doc": "Get Started",
     "title": "Get Started",
     "content": " ",
     "url": "/getstarted/",
     
     "relUrl": "/getstarted/"
-  },"9": {
+  },"18": {
     "doc": "lakeFS for Databricks",
     "title": "Welcome to lakeFS for Databricks!",
     "content": ". ",
     "url": "/#welcome-to-lakefs-for-databricks",
     
     "relUrl": "/#welcome-to-lakefs-for-databricks"
-  },"10": {
+  },"19": {
     "doc": "lakeFS for Databricks",
     "title": "What is lakeFS for Databricks?",
     "content": " ",
     "url": "/#what-is-lakefs-for-databricks",
     
     "relUrl": "/#what-is-lakefs-for-databricks"
-  },"11": {
+  },"20": {
     "doc": "lakeFS for Databricks",
     "title": "Why lakeFS for Databricks?",
     "content": "Use cases . ",
     "url": "/#why-lakefs-for-databricks",
     
     "relUrl": "/#why-lakefs-for-databricks"
-  },"12": {
+  },"21": {
     "doc": "lakeFS for Databricks",
     "title": "How does lakeFS for Databricks work?",
     "content": "Limitations . ",
     "url": "/#how-does-lakefs-for-databricks-work",
     
     "relUrl": "/#how-does-lakefs-for-databricks-work"
-  },"13": {
+  },"22": {
     "doc": "lakeFS for Databricks",
     "title": "lakeFS for Databricks",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"14": {
+  },"23": {
     "doc": "Install",
     "title": "Install",
     "content": " ",
     "url": "/getstarted/install.html",
     
     "relUrl": "/getstarted/install.html"
-  },"15": {
+  },"24": {
     "doc": "Roadmap",
     "title": "Roadmap",
     "content": " ",
     "url": "/roadmap.html",
     
     "relUrl": "/roadmap.html"
-  },"16": {
+  },"25": {
     "doc": "Setup",
     "title": "Setup",
     "content": " ",
     "url": "/getstarted/setup.html",
     
     "relUrl": "/getstarted/setup.html"
-  },"17": {
+  },"26": {
     "doc": "Try it Out",
     "title": "Try it Out",
     "content": " ",
     "url": "/getstarted/try-it-out.html",
     
     "relUrl": "/getstarted/try-it-out.html"
-  },"18": {
+  },"27": {
     "doc": "Try it Out",
     "title": "With Sample Data",
     "content": " ",
     "url": "/getstarted/try-it-out.html#with-sample-data",
     
     "relUrl": "/getstarted/try-it-out.html#with-sample-data"
-  },"19": {
+  },"28": {
     "doc": "Try it Out",
     "title": "With your Data",
     "content": " ",
