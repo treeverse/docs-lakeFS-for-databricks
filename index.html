@@ -353,15 +353,14 @@
   
 </h2>
     
-<h2 id="why-lakefs-for-databricks">
-  
-  
-    <a href="#why-lakefs-for-databricks" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Why lakeFS for Databricks?
-  
-  
-</h2>
-    
-<p>Use cases</p>
+
+<p><strong>lakeFS for Databricks</strong> is a dataset versioning solution designed for <a href="https://www.databricks.com/product/unity-catalog">Unity Catalog</a>.
+It provides the ability to efficiently manage updates and collaborate on production data with ease and confidence. Working at the catalog 
+level, lakeFS for Databricks provides versioning across multiple <a href="https://docs.databricks.com/en/delta/index.html">Delta Lake</a> tables 
+using Git-like semantics.</p>
+
+<p>lakeFS for Databricks boosts data teams productivity and reduces time to delivery. It enables them to easily track and 
+manage changes, experiment with data, collaborate effectively, and maintain data integrity and reproducibility.</p>
 <h2 id="how-does-lakefs-for-databricks-work">
   
   
@@ -370,19 +369,86 @@
   
 </h2>
     
-<h3 id="limitations">
+
+<p>lakeFS for Databricks transforms your Unity Catalog into a versioned catalog by integrating with <a href="https://lakefs.io/">lakeFS</a>, 
+the robust data versioning engine that powers its capabilities. You continue to work on your Delta Lake tables directly 
+via Unity Catalog using either serverless or standard Databricks compute, while using the lakeFS for Databricks CLI tool
+for versioning operations such as <a href="https://docs.lakefs.io/understand/model.html#branches">branching</a> or <a href="https://docs.lakefs.io/understand/model.html#commits">commiting</a> changes.</p>
+
+<p align="center" width="100%" style="margin: 40px">
+    <img src="/assets/how_it_works_diagram.png" width="600" />
+</p>
+
+<p>lakeFS for Databricks leverages Unity <a href="https://docs.databricks.com/en/schemas/index.html">schemas</a> to represent <a href="https://docs.lakefs.io/understand/model.html#branches">lakeFS branches</a>, visible in the Unity Catalog UI.</p>
+
+<p>Data reads and writes occur directly through Unity Catalog, with lakeFS for Databricks observing changes rather than 
+interfering in the data path.</p>
+<h2 id="why-lakefs-for-databricks">
   
   
-    <a href="#limitations" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Limitations
+    <a href="#why-lakefs-for-databricks" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Why lakeFS for Databricks?
+  
+  
+</h2>
+    
+<h3 id="test-before-run">
+  
+  
+    <a href="#test-before-run" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Test before Run
   
   
 </h3>
+    
+
+<p>With lakeFS for Databricks, you can create branches from your production catalogs, allowing you to work on real production
+data in isolation without duplicating large datasets or relying on partial samples. This lets you modify data
+pipelines, test outputs, and apply changes confidently.</p>
+<h3 id="collaborate">
+  
+  
+    <a href="#collaborate" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Collaborate
+  
+  
+</h3>
+    
+
+<p>Easily collaborate on shared datasets by creating branches for individual work. Commit your changes and share specific
+data versions with your team.</p>
+<h3 id="reproduce-results">
+  
+  
+    <a href="#reproduce-results" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Reproduce Results
+  
+  
+</h3>
+    
+
+<p>Transform your Unity Catalog into a versioned catalog with lakeFS for Databricks. Each commit captures changes across all Delta
+Lake tables, allowing you to consistently reproduce results by referencing specific commits.</p>
+<h3 id="instant-error-recovery">
+  
+  
+    <a href="#instant-error-recovery" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Instant Error Recovery
+  
+  
+</h3>
+    
+
+<p>With lakeFS for Databricks, perform a catalog-level rollback to quickly restore your environment to a previous, healthy
+state. This multi-table time travel capability ensures quick recovery from errors.</p>
 
                 
 
                 
                 
 
+                
+                <div style="float: right" class="mt-5">
+
+                    <a type="button" class="btn btn-green" href="./getstarted/index.html">
+                        Next: Get Started <i class="fa fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
                 
 
             </div>

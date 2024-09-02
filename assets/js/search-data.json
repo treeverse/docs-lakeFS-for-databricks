@@ -197,24 +197,24 @@
   },"28": {
     "doc": "lakeFS for Databricks",
     "title": "What is lakeFS for Databricks?",
-    "content": " ",
+    "content": "lakeFS for Databricks is a dataset versioning solution designed for Unity Catalog. It provides the ability to efficiently manage updates and collaborate on production data with ease and confidence. Working at the catalog level, lakeFS for Databricks provides versioning across multiple Delta Lake tables using Git-like semantics. lakeFS for Databricks boosts data teams productivity and reduces time to delivery. It enables them to easily track and manage changes, experiment with data, collaborate effectively, and maintain data integrity and reproducibility. ",
     "url": "/#what-is-lakefs-for-databricks",
     
     "relUrl": "/#what-is-lakefs-for-databricks"
   },"29": {
     "doc": "lakeFS for Databricks",
-    "title": "Why lakeFS for Databricks?",
-    "content": "Use cases . ",
-    "url": "/#why-lakefs-for-databricks",
-    
-    "relUrl": "/#why-lakefs-for-databricks"
-  },"30": {
-    "doc": "lakeFS for Databricks",
     "title": "How does lakeFS for Databricks work?",
-    "content": "Limitations . ",
+    "content": "lakeFS for Databricks transforms your Unity Catalog into a versioned catalog by integrating with lakeFS, the robust data versioning engine that powers its capabilities. You continue to work on your Delta Lake tables directly via Unity Catalog using either serverless or standard Databricks compute, while using the lakeFS for Databricks CLI tool for versioning operations such as branching or commiting changes. lakeFS for Databricks leverages Unity schemas to represent lakeFS branches, visible in the Unity Catalog UI. Data reads and writes occur directly through Unity Catalog, with lakeFS for Databricks observing changes rather than interfering in the data path. ",
     "url": "/#how-does-lakefs-for-databricks-work",
     
     "relUrl": "/#how-does-lakefs-for-databricks-work"
+  },"30": {
+    "doc": "lakeFS for Databricks",
+    "title": "Why lakeFS for Databricks?",
+    "content": "Test before Run . With lakeFS for Databricks, you can create branches from your production catalogs, allowing you to work on real production data in isolation without duplicating large datasets or relying on partial samples. This lets you modify data pipelines, test outputs, and apply changes confidently. Collaborate . Easily collaborate on shared datasets by creating branches for individual work. Commit your changes and share specific data versions with your team. Reproduce Results . Transform your Unity Catalog into a versioned catalog with lakeFS for Databricks. Each commit captures changes across all Delta Lake tables, allowing you to consistently reproduce results by referencing specific commits. Instant Error Recovery . With lakeFS for Databricks, perform a catalog-level rollback to quickly restore your environment to a previous, healthy state. This multi-table time travel capability ensures quick recovery from errors. ",
+    "url": "/#why-lakefs-for-databricks",
+    
+    "relUrl": "/#why-lakefs-for-databricks"
   },"31": {
     "doc": "lakeFS for Databricks",
     "title": "lakeFS for Databricks",
