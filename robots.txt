@@ -1,6 +1,9 @@
 User-agent: *
-# blocking older versions of the API.
-# note: this prevents direct indexing and access, but these pages are still available via refs from other sites.
-Disallow: /v0.*
-Disallow: /v1.*
+Disallow: /
+
+# AdsBot crawlers must be named explicitly:
+# https://developers.google.com/search/docs/crawling-indexing/robots/create-robots-txt
+User-agent: AdsBot-Google
+Disallow: /
+
 Sitemap: https://docs-databricks.lakefs.io/sitemap.xml
