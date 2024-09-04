@@ -337,13 +337,269 @@
             
             <div id="main-content" class="main-content" role="main">
                 
-                    <h1 id="cli-reference">
+                    <h1 id="lakefs-databricks-cli-reference">
   
   
-    <a href="#cli-reference" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> CLI Reference
+    <a href="#lakefs-databricks-cli-reference" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> lakefs-databricks CLI Reference
   
   
 </h1>
+    
+
+<div class="toc-block">
+<h2 class="no_toc text-delta" id="table-of-contents">
+  
+  
+    <a href="#table-of-contents" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
+  
+  
+</h2>
+    
+
+<ol id="markdown-toc">
+  <li><a href="#installing-lakefs-databricks-locally" id="markdown-toc-installing-lakefs-databricks-locally">Installing lakefs-databricks locally</a>    <ol>
+      <li><a href="#cli-configuration" id="markdown-toc-cli-configuration">CLI Configuration</a>        <ol>
+          <li><a href="#configuration-file" id="markdown-toc-configuration-file">Configuration file</a></li>
+          <li><a href="#environment-variables" id="markdown-toc-environment-variables">Environment variables</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li><a href="#command-reference" id="markdown-toc-command-reference">Command Reference</a>    <ol>
+      <li><a href="#commands" id="markdown-toc-commands">Commands</a>        <ol>
+          <li><a href="#catalog-create" id="markdown-toc-catalog-create">catalog create</a></li>
+          <li><a href="#branch-create" id="markdown-toc-branch-create">branch create</a></li>
+          <li><a href="#commit" id="markdown-toc-commit">commit</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+</div>
+<h2 id="installing-lakefs-databricks-locally">
+  
+  
+    <a href="#installing-lakefs-databricks-locally" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Installing lakefs-databricks locally
+  
+  
+</h2>
+    
+<p><code class="language-plaintext highlighter-rouge">lakefs-databricks</code> is available for Linux, macOS, and Windows. <br />
+TODO: UPDATE LINKS</p>
+
+<p><a href="https://treeverse-tools.s3.amazonaws.com/lakefs-databricks/artifacts/0.3.0/aarch64-apple-darwin/lakefs-databricks-aarch64-apple-darwin-0.3.0.tar.gz">lakefs-databricks-aarch64-apple-darwin-0.3.0.tar.gz</a> <br />
+<a href="https://treeverse-tools.s3.amazonaws.com/lakefs-databricks/artifacts/0.3.0/x86_64-apple-darwin/lakefs-databricks-x86_64-apple-darwin-0.3.0.tar.gz">lakefs-databricks-x86_64-apple-darwin-0.3.0.tar.gz</a> <br />
+<a href="https://treeverse-tools.s3.amazonaws.com/lakefs-databricks/artifacts/0.3.0/x86_64-pc-windows-msvc/lakefs-databricks-x86_64-pc-windows-msvc-0.3.0.zip">lakefs-databricks-x86_64-pc-windows-msvc-0.3.0.zip</a> <br />
+<a href="https://treeverse-tools.s3.amazonaws.com/lakefs-databricks/artifacts/0.3.0/x86_64-unknown-linux-gnu/lakefs-databricks-x86_64-unknown-linux-gnu-0.3.0.tar.gz">lakefs-databricks-x86_64-unknown-linux-gnu-0.3.0.tar.gz</a> <br />
+<a href="https://treeverse-tools.s3.amazonaws.com/lakefs-databricks/artifacts/0.3.0/x86_64-unknown-linux-musl/lakefs-databricks-x86_64-unknown-linux-musl-0.3.0.tar.gz">lakefs-databricks-x86_64-unknown-linux-musl-0.3.0.tar.gz</a></p>
+<h3 id="cli-configuration">
+  
+  
+    <a href="#cli-configuration" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> CLI Configuration
+  
+  
+</h3>
+    
+
+<p><code class="language-plaintext highlighter-rouge">lakefs-databricks</code> can be configured using either a YAML file or environment variables.</p>
+<h4 id="configuration-file">
+  
+  
+    <a href="#configuration-file" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Configuration file
+  
+  
+</h4>
+    
+
+<p>By default, <code class="language-plaintext highlighter-rouge">lakefs-databricks</code> will look for a file named <code class="language-plaintext highlighter-rouge">.lakefs-databricks.yaml</code> in your home directory, but the
+configuration file can be specified by passing the <code class="language-plaintext highlighter-rouge">-c</code> (or <code class="language-plaintext highlighter-rouge">--config</code>) argument to <code class="language-plaintext highlighter-rouge">lakefs-databricks</code> (see below).</p>
+
+<div class="tabs">
+  <ul>
+    <li><a href="#aws_file">AWS</a></li>
+	<li><a href="#azure_file">Azure</a></li>
+  </ul>
+  <div id="aws_file">
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">unity</span><span class="pi">:</span>
+  <span class="c1"># The Databricks workspace URL (i.e. https://dbc-&lt;workspace-id&gt;.cloud.databricks.com)</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">&lt;unity_url&gt;</span>
+  <span class="na">token</span><span class="pi">:</span> <span class="s">&lt;unity_token&gt;</span>
+<span class="na">lakefs</span><span class="pi">:</span>
+  <span class="na">secret_access_key</span><span class="pi">:</span> <span class="s">&lt;lakefs_secret_access_key&gt;</span>
+  <span class="na">access_key_id</span><span class="pi">:</span> <span class="s">&lt;lakefs_access_key_id&gt;</span>
+  <span class="c1"># Cloud Installation API URL (with suffix /api/v1)</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">&lt;lakefs_installation_url&gt;/api/v1</span>
+<span class="na">databricks_storage</span><span class="pi">:</span>
+  <span class="na">type</span><span class="pi">:</span> <span class="s">s3</span>
+  <span class="na">s3</span><span class="pi">:</span>
+    <span class="na">access_key_id</span><span class="pi">:</span> <span class="s">&lt;aws_access_key_id&gt;</span>
+    <span class="na">secret_access_key</span><span class="pi">:</span> <span class="s">&lt;aws_secret_access_key&gt;</span>
+    <span class="na">region</span><span class="pi">:</span> <span class="s">&lt;aws_region&gt;</span>
+</code></pre></div>    </div>
+
+  </div>
+  <div id="azure_file">
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">unity</span><span class="pi">:</span>
+  <span class="c1"># The Databricks workspace URL (i.e. https://adb-&lt;workspace-id&gt;.azuredatabricks.net)</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">&lt;unity_url&gt;</span>
+  <span class="na">token</span><span class="pi">:</span> <span class="s">&lt;unity_token&gt;</span>
+<span class="na">lakefs</span><span class="pi">:</span>
+  <span class="na">secret_access_key</span><span class="pi">:</span> <span class="s">&lt;lakefs_secret_access_key&gt;</span>
+  <span class="na">access_key_id</span><span class="pi">:</span> <span class="s">&lt;lakefs_access_key_id&gt;</span>
+  <span class="c1"># Cloud Installation API URL (with suffix /api/v1)</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">&lt;lakefs_installation_url&gt;/api/v1</span>
+<span class="na">databricks_storage</span><span class="pi">:</span>
+  <span class="na">type</span><span class="pi">:</span> <span class="s">azure</span>
+  <span class="na">azure</span><span class="pi">:</span>
+    <span class="na">client_id</span><span class="pi">:</span> <span class="s">&lt;client id&gt;</span>
+    <span class="na">client_secret</span><span class="pi">:</span> <span class="s">&lt;client secret&gt;</span>
+    <span class="na">tenant_id</span><span class="pi">:</span> <span class="s">&lt;tenant id&gt;</span>
+</code></pre></div>    </div>
+  </div>
+</div>
+<h4 id="environment-variables">
+  
+  
+    <a href="#environment-variables" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Environment variables
+  
+  
+</h4>
+    
+
+<div class="tabs">
+  <ul>
+    <li><a href="#aws_env">AWS</a></li>
+	<li><a href="#azure_env">Azure</a></li>
+  </ul>
+  <div id="aws_env">
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LAKEFS_DATABRICKS_UNITY_URL=&lt;unity_url&gt;
+LAKEFS_DATABRICKS_UNITY_TOKEN=&lt;unity_token&gt;
+LAKEFS_DATABRICKS_LAKEFS_URL=&lt;lakefs_installation_url&gt;/api/v1
+LAKEFS_DATABRICKS_LAKEFS_ACCESS_KEY_ID=&lt;lakefs_access_key_id&gt;
+LAKEFS_DATABRICKS_LAKEFS_SECRET_ACCESS_KEY=&lt;lakefs_secret_access_key&gt;
+LAKEFS_DATABRICKS_DATABRICKS_STORAGE_TYPE=s3
+LAKEFS_DATABRICKS_DATABRICKS_STORAGE_S3_ACCESS_KEY_ID=&lt;aws_access_key_id&gt;
+LAKEFS_DATABRICKS_DATABRICKS_STORAGE_S3_SECRET_ACCESS_KEY=&lt;aws_secret_access_key&gt;
+LAKEFS_DATABRICKS_DATABRICKS_STORAGE_S3_REGION=&lt;aws_region&gt;
+</code></pre></div>    </div>
+
+  </div>
+  <div id="azure_env">
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LAKEFS_DATABRICKS_UNITY_URL=&lt;unity_url&gt;
+LAKEFS_DATABRICKS_UNITY_TOKEN=&lt;unity_token&gt;
+LAKEFS_DATABRICKS_LAKEFS_URL=&lt;lakefs_installation_url&gt;/api/v1
+LAKEFS_DATABRICKS_LAKEFS_ACCESS_KEY_ID=&lt;lakefs_access_key_id&gt;
+LAKEFS_DATABRICKS_LAKEFS_SECRET_ACCESS_KEY=&lt;lakefs_secret_access_key&gt;
+LAKEFS_DATABRICKS_DATABRICKS_STORAGE_TYPE=azure
+LAKEFS_DATABRICKS_DATABRICKS_STORAGE_AZURE_CLIENT_ID=&lt;client_id&gt;
+LAKEFS_DATABRICKS_DATABRICKS_STORAGE_AZURE_CLIENT_SECRET=&lt;client_secret&gt;
+LAKEFS_DATABRICKS_DATABRICKS_STORAGE_AZURE_TENANT_ID=&lt;tenant_id&gt;
+</code></pre></div>    </div>
+  </div>
+</div>
+<h2 id="command-reference">
+  
+  
+    <a href="#command-reference" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Command Reference
+  
+  
+</h2>
+    
+
+<p><strong>Options</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-c, --config &lt;FILE&gt;  Config file to use
+-h, --help           Print help
+-V, --version        Print version
+</code></pre></div></div>
+
+<p><strong>Usage</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks <span class="o">[</span>OPTIONS] &lt;COMMAND&gt;
+</code></pre></div></div>
+<h3 id="commands">
+  
+  
+    <a href="#commands" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Commands
+  
+  
+</h3>
+    
+<h4 id="catalog-create">
+  
+  
+    <a href="#catalog-create" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> catalog create
+  
+  
+</h4>
+    
+<p>Create a versioned catalog</p>
+
+<p><strong>Options</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--force           
+          Force creation of the catalog even if it already exists.
+
+          If specified, the lakeFS repository will be re-associated with the provided Unity catalog. This may have undesired effects.
+--sample-catalog  
+          Add sample data to the created catalog
+</code></pre></div></div>
+
+<p><strong>Usage</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks catalog create <span class="o">[</span>OPTIONS] &lt;CATALOG_NAME&gt; &lt;LAKEFS_REPO_NAME&gt;
+</code></pre></div></div>
+
+<p><strong>Examples</strong></p>
+
+<p>Create a catalog named “my-catalog” mapped to the LakeFS repository “my-repo”:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks catalog create my-catalog my-repo
+</code></pre></div></div>
+<p>Force-create the same catalog, with sample data:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks catalog create <span class="nt">--force</span> <span class="nt">--sample-catalog</span> my-catalog my-repo
+</code></pre></div></div>
+<h4 id="branch-create">
+  
+  
+    <a href="#branch-create" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> branch create
+  
+  
+</h4>
+    
+<p>Create a branch</p>
+
+<p><strong>Usage</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks branch create &lt;LAKEFS_REPO_NAME&gt; &lt;BRANCH_NAME&gt; &lt;SOURCE_BRANCH_NAME&gt;
+</code></pre></div></div>
+<p><strong>Examples</strong></p>
+
+<p>Create a branch called “my-branch” from the source branch “main”, on the LakeFS repository “my-repo”:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks branch create my-repo my-branch main
+</code></pre></div></div>
+<h4 id="commit">
+  
+  
+    <a href="#commit" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> commit
+  
+  
+</h4>
+    
+<p>Record catalog changes</p>
+
+<p><strong>Options</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-m, --message &lt;MESSAGE&gt;  Commit message
+</code></pre></div></div>
+
+<p><strong>Usage</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks commit <span class="o">[</span>OPTIONS] &lt;LAKEFS_REPO_NAME&gt; &lt;BRANCH_ID&gt;
+</code></pre></div></div>
+
+<p><strong>Examples</strong></p>
+
+<p>Commit the changes on branch “my-branch” and repo “my-repo”, with commit message “Changes”:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks commit <span class="nt">-m</span> <span class="s2">"Changes"</span> my-repo my-branch
+</code></pre></div></div>
 
                 
 
