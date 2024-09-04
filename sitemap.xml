@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://docs-databricks.lakefs.io/CLI%20Reference.html</loc>
-</url>
-<url>
 <loc>https://docs-databricks.lakefs.io/getstarted/setup/aws.html</loc>
 </url>
 <url>
 <loc>https://docs-databricks.lakefs.io/getstarted/setup/azure.html</loc>
 </url>
 <url>
+<loc>https://docs-databricks.lakefs.io/cli-reference.html</loc>
+</url>
+<url>
 <loc>https://docs-databricks.lakefs.io/faq.html</loc>
+</url>
+<url>
+<loc>https://docs-databricks.lakefs.io/getstarted/setup/</loc>
 </url>
 <url>
 <loc>https://docs-databricks.lakefs.io/getstarted/</loc>
@@ -23,9 +26,6 @@
 </url>
 <url>
 <loc>https://docs-databricks.lakefs.io/roadmap.html</loc>
-</url>
-<url>
-<loc>https://docs-databricks.lakefs.io/getstarted/setup.html</loc>
 </url>
 <url>
 <loc>https://docs-databricks.lakefs.io/getstarted/try-it-out.html</loc>

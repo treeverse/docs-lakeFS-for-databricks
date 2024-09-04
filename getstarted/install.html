@@ -220,10 +220,16 @@
            class="nav-list-link">Get Started</a><ul class="nav-list "><li class="nav-list-item  active"><a href="/getstarted/install.html"
                    class="nav-list-link active">Install</a></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                         <use xlink:href="#svg-arrow-right"></use>
-                    </svg></a><a href="/getstarted/setup.html"
-                   class="nav-list-link">Setup</a><ul class="nav-list"></ul></li><li class="nav-list-item "><a href="/getstarted/try-it-out.html"
+                    </svg></a><a href="/getstarted/setup/"
+                   class="nav-list-link">Setup</a><ul class="nav-list"><li class="nav-list-item ">
+                        <a href="/getstarted/setup/aws.html"
+                           class="nav-list-link">AWS</a>
+                    </li><li class="nav-list-item ">
+                        <a href="/getstarted/setup/azure.html"
+                           class="nav-list-link">Azure</a>
+                    </li></ul></li><li class="nav-list-item "><a href="/getstarted/try-it-out.html"
                    class="nav-list-link">Try it Out</a></li></ul></li><li
-            class="nav-list-item"><a href="/CLI%20Reference.html"
+            class="nav-list-item"><a href="/cli-reference.html"
            class="nav-list-link">CLI Reference</a></li><li
             class="nav-list-item"><a href="/roadmap.html"
            class="nav-list-link">Roadmap</a></li><li
@@ -354,12 +360,50 @@
   
   
 </h1>
+    
+
+<p>Installing lakeFS for Databricks is a two-step process. First, create a <a href="https://docs.lakefs.io/cloud/#lakefs-cloud">lakeFS Cloud</a> account.
+Then, download the <code class="language-plaintext highlighter-rouge">lakefs-databricks</code> CLI tool.</p>
+<h2 id="create-a-lakefs-cloud-account">
+  
+  
+    <a href="#create-a-lakefs-cloud-account" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Create a lakeFS Cloud Account
+  
+  
+</h2>
+    
+
+<ol>
+  <li>Register to <a href="https://lakefs.cloud/register">lakeFS Cloud</a></li>
+  <li>Verify your email</li>
+</ol>
+
+<p class="note"><strong>Note</strong><br />
+To use lakeFS for Databricks, you must verify your lakeFS Cloud account. Account verification enables you to use lakeFS 
+Cloud with your data, which is a required by lakeFS for Databricks.</p>
+<h2 id="download-the-lakefs-databricks-cli">
+  
+  
+    <a href="#download-the-lakefs-databricks-cli" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Download the lakefs-databricks CLI
+  
+  
+</h2>
+    
+
+<p>Follow <a href="/cli-reference.html">this</a> link to download <code class="language-plaintext highlighter-rouge">lakefs-databricks</code>, the lakeFS for Databricks CLI tool.</p>
 
                 
 
                 
                 
 
+                
+                <div style="float: right" class="mt-5">
+
+                    <a type="button" class="btn btn-green" href="./setup/index.html">
+                        Next: Setup lakeFS for Databricks <i class="fa fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
                 
 
             </div>

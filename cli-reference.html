@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
   
   <style type="text/css">
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(2) > .nav-list > .nav-list-item:nth-child(2) > .nav-list > .nav-list-item:nth-child(2) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(3) > .nav-list-link { display: block; font-weight: 600; text-decoration: none; background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }
 
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(2) > .nav-list-expander svg, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(2) > .nav-list > .nav-list-item:not(.passive):nth-child(2) > .nav-list-expander svg { transform: rotate(-90deg); }
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(2) > .nav-list, .site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(2) > .nav-list > .nav-list-item:not(.passive):nth-child(2) > .nav-list { display: block; }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(3) > .nav-list-expander svg { transform: rotate(-90deg); }
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.passive):nth-child(3) > .nav-list { display: block; }
 
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list-expander svg { transform: rotate(-90deg); }
 .site-nav > .nav-category-list > .nav-list-item:not(.passive) > .nav-list { display: block; }
@@ -38,21 +38,21 @@
 
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Azure | Docs</title>
+<title>CLI Reference | Docs</title>
 <meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Azure" />
+<meta property="og:title" content="CLI Reference" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="How to setup lakeFS for databricks cloud environment on Azure" />
-<meta property="og:description" content="How to setup lakeFS for databricks cloud environment on Azure" />
+<meta name="description" content="lakefs-databricks CLI Reference" />
+<meta property="og:description" content="lakefs-databricks CLI Reference" />
 <meta property="og:site_name" content="Docs" />
 <meta property="og:image" content="https://docs-databricks.lakefs.io/assets/img/docs_logo.png" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:image" content="https://docs-databricks.lakefs.io/assets/img/docs_logo.png" />
-<meta property="twitter:title" content="Azure" />
+<meta property="twitter:title" content="CLI Reference" />
 <meta name="twitter:site" content="@lakeFS" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"How to setup lakeFS for databricks cloud environment on Azure","headline":"Azure","image":"https://docs-databricks.lakefs.io/assets/img/docs_logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/lakeFS_for_databricks_logo.svg"}},"url":"/getstarted/setup/azure.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"lakefs-databricks CLI Reference","headline":"CLI Reference","image":"https://docs-databricks.lakefs.io/assets/img/docs_logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/lakeFS_for_databricks_logo.svg"}},"url":"/cli-reference.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -214,23 +214,23 @@
             <ul class="nav-list"><li
             class="nav-list-item"><a href="/"
            class="nav-list-link">lakeFS for Databricks</a></li><li
-            class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
+            class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                 <use xlink:href="#svg-arrow-right"></use>
             </svg></a><a href="/getstarted/"
            class="nav-list-link">Get Started</a><ul class="nav-list "><li class="nav-list-item "><a href="/getstarted/install.html"
-                   class="nav-list-link">Install</a></li><li class="nav-list-item  active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
+                   class="nav-list-link">Install</a></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24">
                         <use xlink:href="#svg-arrow-right"></use>
                     </svg></a><a href="/getstarted/setup/"
                    class="nav-list-link">Setup</a><ul class="nav-list"><li class="nav-list-item ">
                         <a href="/getstarted/setup/aws.html"
                            class="nav-list-link">AWS</a>
-                    </li><li class="nav-list-item  active">
+                    </li><li class="nav-list-item ">
                         <a href="/getstarted/setup/azure.html"
-                           class="nav-list-link active">Azure</a>
+                           class="nav-list-link">Azure</a>
                     </li></ul></li><li class="nav-list-item "><a href="/getstarted/try-it-out.html"
                    class="nav-list-link">Try it Out</a></li></ul></li><li
-            class="nav-list-item"><a href="/cli-reference.html"
-           class="nav-list-link">CLI Reference</a></li><li
+            class="nav-list-item active"><a href="/cli-reference.html"
+           class="nav-list-link active">CLI Reference</a></li><li
             class="nav-list-item"><a href="/roadmap.html"
            class="nav-list-link">Roadmap</a></li><li
             class="nav-list-item"><a href="/faq.html"
@@ -340,37 +340,17 @@
         <div id="main-content-wrap" class="main-content-wrap">
             
             
-            <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-                <ol class="breadcrumb-nav-list">
-                    
-                    <li class="breadcrumb-nav-list-item"><a
-                                href="/getstarted/">Get Started</a>
-                    </li>
-                    <li class="breadcrumb-nav-list-item"><a href="/getstarted/setup/">Setup</a>
-                    </li>
-                    
-                    <li class="breadcrumb-nav-list-item"><span>Azure</span></li>
-                </ol>
-            </nav>
-            
             
             <div id="main-content" class="main-content" role="main">
                 
-                    <h1 id="setup-lakefs-for-databricks-on-azure">
+                    <h1 id="lakefs-databricks-cli-reference">
   
   
-    <a href="#setup-lakefs-for-databricks-on-azure" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Setup lakeFS for Databricks on Azure
+    <a href="#lakefs-databricks-cli-reference" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> lakefs-databricks CLI Reference
   
   
 </h1>
     
-
-<p>Setting up lakeFS for Databricks on Azure involves three steps:</p>
-<ol>
-  <li>Prepare Your <strong>Databricks Workspace</strong>: to enable access to Unity Catalog and External storage locations</li>
-  <li>Set Up <strong>lakeFS Cloud</strong>: Configure lakeFS Cloud to version your Unity Catalog data</li>
-  <li>Configure the <code class="language-plaintext highlighter-rouge">lakefs-databricks</code> CLI: configure the lakefs-databricks CLI tool to interact with your Databricks workspace and lakeFS Cloud</li>
-</ol>
 
 <div class="toc-block">
 <h2 class="no_toc text-delta" id="table-of-contents">
@@ -383,225 +363,237 @@
     
 
 <ol id="markdown-toc">
-  <li><a href="#prerequisites" id="markdown-toc-prerequisites">Prerequisites</a></li>
-  <li><a href="#prepare-your-databricks-workspace" id="markdown-toc-prepare-your-databricks-workspace">Prepare your Databricks Workspace</a></li>
-  <li><a href="#setup-lakefs-cloud" id="markdown-toc-setup-lakefs-cloud">Setup lakeFS Cloud</a></li>
-  <li><a href="#configure-the-lakefs-databricks-cli" id="markdown-toc-configure-the-lakefs-databricks-cli">Configure the <code class="language-plaintext highlighter-rouge">lakefs-databricks</code> CLI</a></li>
+  <li><a href="#installing-lakefs-databricks-locally" id="markdown-toc-installing-lakefs-databricks-locally">Installing lakefs-databricks locally</a></li>
+  <li><a href="#cli-configuration" id="markdown-toc-cli-configuration">CLI Configuration</a></li>
+  <li><a href="#command-reference" id="markdown-toc-command-reference">Command Reference</a></li>
 </ol>
 
 </div>
-<h2 id="prerequisites">
+<h2 id="installing-lakefs-databricks-locally">
   
   
-    <a href="#prerequisites" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Prerequisites
+    <a href="#installing-lakefs-databricks-locally" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Installing lakefs-databricks locally
+  
+  
+</h2>
+    
+<p><code class="language-plaintext highlighter-rouge">lakefs-databricks</code> is available for Linux, macOS, and Windows. <br />
+TODO: UPDATE LINKS</p>
+
+<p><a href="https://treeverse-tools.s3.amazonaws.com/lakefs-databricks/artifacts/0.3.0/aarch64-apple-darwin/lakefs-databricks-aarch64-apple-darwin-0.3.0.tar.gz">lakefs-databricks-aarch64-apple-darwin-0.3.0.tar.gz</a> <br />
+<a href="https://treeverse-tools.s3.amazonaws.com/lakefs-databricks/artifacts/0.3.0/x86_64-apple-darwin/lakefs-databricks-x86_64-apple-darwin-0.3.0.tar.gz">lakefs-databricks-x86_64-apple-darwin-0.3.0.tar.gz</a> <br />
+<a href="https://treeverse-tools.s3.amazonaws.com/lakefs-databricks/artifacts/0.3.0/x86_64-pc-windows-msvc/lakefs-databricks-x86_64-pc-windows-msvc-0.3.0.zip">lakefs-databricks-x86_64-pc-windows-msvc-0.3.0.zip</a> <br />
+<a href="https://treeverse-tools.s3.amazonaws.com/lakefs-databricks/artifacts/0.3.0/x86_64-unknown-linux-gnu/lakefs-databricks-x86_64-unknown-linux-gnu-0.3.0.tar.gz">lakefs-databricks-x86_64-unknown-linux-gnu-0.3.0.tar.gz</a> <br />
+<a href="https://treeverse-tools.s3.amazonaws.com/lakefs-databricks/artifacts/0.3.0/x86_64-unknown-linux-musl/lakefs-databricks-x86_64-unknown-linux-musl-0.3.0.tar.gz">lakefs-databricks-x86_64-unknown-linux-musl-0.3.0.tar.gz</a></p>
+<h2 id="cli-configuration">
+  
+  
+    <a href="#cli-configuration" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> CLI Configuration
   
   
 </h2>
     
 
-<ol>
-  <li>Databricks workspace with Unity Catalog enabled.</li>
-  <li>Azure account, with the permissions to create Azure AD applications and <a href="https://learn.microsoft.com/en-us/entra/identity-platform/app-objects-and-service-principals?tabs=browser#service-principal-object">service principals</a>.</li>
-  <li>Ensure you have a storage <a href="https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#containers">container</a>  ready for lakeFS to use with Databricks, such as, <code class="language-plaintext highlighter-rouge">https://my-storage-account.blob.core.windows.net/lakefs-databricks-container</code>. 
-lakeFS for Databricks will create catalogs under this container.</li>
-</ol>
-<h2 id="prepare-your-databricks-workspace">
+<p><code class="language-plaintext highlighter-rouge">lakefs-databricks</code> can be configured using either a YAML file or environment variables.</p>
+<h4 id="configuration-file">
   
   
-    <a href="#prepare-your-databricks-workspace" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Prepare your Databricks Workspace
+    <a href="#configuration-file" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Configuration file
+  
+  
+</h4>
+    
+
+<p>By default, <code class="language-plaintext highlighter-rouge">lakefs-databricks</code> will look for a file named <code class="language-plaintext highlighter-rouge">.lakefs-databricks.yaml</code> in your home directory, but the
+configuration file can be specified by passing the <code class="language-plaintext highlighter-rouge">-c</code> (or <code class="language-plaintext highlighter-rouge">--config</code>) argument to <code class="language-plaintext highlighter-rouge">lakefs-databricks</code> (see below).</p>
+
+<div class="tabs">
+  <ul>
+    <li><a href="#aws_file">AWS</a></li>
+	<li><a href="#azure_file">Azure</a></li>
+  </ul>
+  <div id="aws_file">
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">unity</span><span class="pi">:</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">&lt;unity_url&gt;</span> <span class="c1"># Your Databricks workspace URL. e.g. https://dbc-&lt;workspace-id&gt;.cloud.databricks.com</span>
+  <span class="na">token</span><span class="pi">:</span> <span class="s">&lt;unity_token&gt;</span>  <span class="c1"># The Personal access token you created during the Databricks Workspace preparation</span>
+<span class="na">lakefs</span><span class="pi">:</span>
+  <span class="na">secret_access_key</span><span class="pi">:</span> <span class="s">&lt;lakefs_secret_access_key&gt;</span> <span class="c1"># The secret_access_key you created during lakeFS Cloud setup</span>
+  <span class="na">access_key_id</span><span class="pi">:</span> <span class="s">&lt;lakefs_access_key_id&gt;</span> <span class="c1"># The access_key_id you created during lakeFS Cloud setup</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">&lt;lakefs_endpoint_url&gt;/api/v1</span> <span class="c1"># The Url of your lakeFS Cloud instance e.g. https://example-org.us-east-1.lakefscloud.io </span>
+<span class="na">databricks_storage</span><span class="pi">:</span>
+  <span class="na">type</span><span class="pi">:</span> <span class="s">s3</span>
+  <span class="na">s3</span><span class="pi">:</span>
+    <span class="na">access_key_id</span><span class="pi">:</span> <span class="s">&lt;aws_access_key_id&gt;</span> <span class="c1"># the access_key you created on the previous step</span>
+    <span class="na">secret_access_key</span><span class="pi">:</span> <span class="s">&lt;aws_secret_access_key&gt;</span> <span class="c1"># the secret_access_key you created on the previous step</span>
+    <span class="na">region</span><span class="pi">:</span> <span class="s">&lt;aws_region&gt;</span>
+</code></pre></div>    </div>
+
+  </div>
+  <div id="azure_file">
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">unity</span><span class="pi">:</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">&lt;unity_url&gt;</span> <span class="c1"># Your Databricks workspace URL. e.g. https://dbc-&lt;workspace-id&gt;.cloud.databricks.com</span>
+  <span class="na">token</span><span class="pi">:</span> <span class="s">&lt;unity_token&gt;</span> <span class="c1"># The Personal access token you created during the Databricks Workspace preparation</span>
+<span class="na">lakefs</span><span class="pi">:</span>
+  <span class="na">secret_access_key</span><span class="pi">:</span> <span class="s">&lt;lakefs_secret_access_key&gt;</span> <span class="c1"># The secret_access_key you created during lakeFS Cloud setup</span>
+  <span class="na">access_key_id</span><span class="pi">:</span> <span class="s">&lt;lakefs_access_key_id&gt;</span> <span class="c1"># The access_key_id you created during lakeFS Cloud setup</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">&lt;lakefs_endpoint_url&gt;/api/v1</span> <span class="c1"># The Url of your lakeFS Cloud instance e.g. https://example-org.us-east-1.lakefscloud.io </span>
+<span class="na">databricks_storage</span><span class="pi">:</span>
+  <span class="na">type</span><span class="pi">:</span> <span class="s">azure</span>
+  <span class="na">azure</span><span class="pi">:</span>
+    <span class="na">client_id</span><span class="pi">:</span> <span class="s">&lt;client_id&gt;</span> <span class="c1"># The client_id from the lakeFS Cloud Terraform output  </span>
+    <span class="na">client_secret</span><span class="pi">:</span> <span class="s">&lt;client_secret&gt;</span> <span class="c1"># The client_secret from the lakeFS Cloud Terraform output</span>
+    <span class="na">tenant_id</span><span class="pi">:</span> <span class="s">&lt;tenant_id&gt;</span> <span class="c1"># The tenant_id from the lakeFS Cloud Terraform output</span>
+</code></pre></div>    </div>
+  </div>
+</div>
+<h4 id="environment-variables">
+  
+  
+    <a href="#environment-variables" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Environment variables
+  
+  
+</h4>
+    
+
+<div class="tabs">
+  <ul>
+    <li><a href="#aws_env">AWS</a></li>
+	<li><a href="#azure_env">Azure</a></li>
+  </ul>
+  <div id="aws_env">
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LAKEFS_DATABRICKS_UNITY_URL=&lt;unity_url&gt;
+LAKEFS_DATABRICKS_UNITY_TOKEN=&lt;unity_token&gt;
+LAKEFS_DATABRICKS_LAKEFS_URL=&lt;lakefs_installation_url&gt;/api/v1
+LAKEFS_DATABRICKS_LAKEFS_ACCESS_KEY_ID=&lt;lakefs_access_key_id&gt;
+LAKEFS_DATABRICKS_LAKEFS_SECRET_ACCESS_KEY=&lt;lakefs_secret_access_key&gt;
+LAKEFS_DATABRICKS_DATABRICKS_STORAGE_TYPE=s3
+LAKEFS_DATABRICKS_DATABRICKS_STORAGE_S3_ACCESS_KEY_ID=&lt;aws_access_key_id&gt;
+LAKEFS_DATABRICKS_DATABRICKS_STORAGE_S3_SECRET_ACCESS_KEY=&lt;aws_secret_access_key&gt;
+LAKEFS_DATABRICKS_DATABRICKS_STORAGE_S3_REGION=&lt;aws_region&gt;
+</code></pre></div>    </div>
+
+  </div>
+  <div id="azure_env">
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LAKEFS_DATABRICKS_UNITY_URL=&lt;unity_url&gt;
+LAKEFS_DATABRICKS_UNITY_TOKEN=&lt;unity_token&gt;
+LAKEFS_DATABRICKS_LAKEFS_URL=&lt;lakefs_installation_url&gt;/api/v1
+LAKEFS_DATABRICKS_LAKEFS_ACCESS_KEY_ID=&lt;lakefs_access_key_id&gt;
+LAKEFS_DATABRICKS_LAKEFS_SECRET_ACCESS_KEY=&lt;lakefs_secret_access_key&gt;
+LAKEFS_DATABRICKS_DATABRICKS_STORAGE_TYPE=azure
+LAKEFS_DATABRICKS_DATABRICKS_STORAGE_AZURE_CLIENT_ID=&lt;client_id&gt;
+LAKEFS_DATABRICKS_DATABRICKS_STORAGE_AZURE_CLIENT_SECRET=&lt;client_secret&gt;
+LAKEFS_DATABRICKS_DATABRICKS_STORAGE_AZURE_TENANT_ID=&lt;tenant_id&gt;
+</code></pre></div>    </div>
+  </div>
+</div>
+<h2 id="command-reference">
+  
+  
+    <a href="#command-reference" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Command Reference
   
   
 </h2>
     
 
-<p>Create the following resources within your Databricks workspace:</p>
-<ul>
-  <li><strong>Storage Credentials</strong>: Create Databricks <a href="https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-storage-credentials">Storage Credentials</a> 
-with associated <a href="https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-contributor">Storage Blob Data Contributor</a> role for the 
-storage container selected for lakeFS for Databricks (refer to <a href="#prerequisites">prerequisites</a>). Ensure your workspace has permission to use these storage credentials.</li>
-  <li>
-    <p><strong>External Location</strong>: Use the storage credentials created in the previous step to define an <a href="https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-external-locations">External Location</a> within 
-the selected storage container for lakeFS for Databricks (refer to <a href="#prerequisites">prerequisites</a>), e.g. <code class="language-plaintext highlighter-rouge">https://my-storage-account.blob.core.windows.net/lakefs-databricks-container/my-first-catalog</code>. Ensure your Databricks workspace has access to this location.</p>
+<p><strong>Options</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-c, --config &lt;FILE&gt;  Config file to use
+-h, --help           Print help
+-V, --version        Print version
+</code></pre></div></div>
 
-    <p class="note"><strong>Note</strong><br />
-  It is recommended to create a dedicated external location for each catalog lakeFS for Databricks create and manages.</p>
-  </li>
-  <li><strong>Personal Access Token</strong>: Generate a <a href="https://docs.databricks.com/en/dev-tools/auth/pat.html">personal access token</a> for a Databricks user with the following permissions:
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">CREATE MANAGED STORAGE</code> for the specified external location</li>
-      <li><code class="language-plaintext highlighter-rouge">CREATE CATALOG</code> for the workspace’s metastore to enable catalog creation</li>
-    </ul>
-  </li>
-</ul>
-<h2 id="setup-lakefs-cloud">
+<p><strong>Usage</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks <span class="o">[</span>OPTIONS] &lt;COMMAND&gt;
+</code></pre></div></div>
+<h3 id="commands">
   
   
-    <a href="#setup-lakefs-cloud" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Setup lakeFS Cloud
-  
-  
-</h2>
-    
-<h3 id="step-1-log-in-to-your-lakefs-cloud-account">
-  
-  
-    <a href="#step-1-log-in-to-your-lakefs-cloud-account" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 1: Log in to Your lakeFS Cloud Account
+    <a href="#commands" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Commands
   
   
 </h3>
     
-
-<p>Log in to the <a href="(https://lakefs.cloud/)">lakeFS Cloud account</a> created during the <a href="/getstarted/install.html#create-a-lakefs-cloud-account">installation process</a>.</p>
-<h3 id="step-2-configure-lakefs-cloud">
+<h4 id="catalog-create">
   
   
-    <a href="#step-2-configure-lakefs-cloud" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 2: Configure lakeFS Cloud
+    <a href="#catalog-create" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> catalog create
   
   
-</h3>
+</h4>
     
+<p>Create a versioned catalog</p>
 
-<p>Follow these steps to configure lakeFS Cloud with the storage container selected for lakeFS for Databricks (refer to <a href="#prerequisites">prerequisites</a>):.<br />
-Navigate to <a href="https://lakefs.cloud/onboarding/setup">Onboarding -&gt; Setup</a>, and follow the guide to complete the setup wizard to ensure compatibility with lakeFS for Databricks:</p>
+<p><strong>Options</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--force           
+          Force creation of the catalog even if it already exists.
 
-<div>
-  <p>Select Cloud Vendor and Region to run the lakeFS Cloud Servers
-  <img src="/assets/img/lakefs-databricks/get-started/azure_pick_provider_and_region.png" /></p>
+          If specified, the lakeFS repository will be re-associated with the provided Unity catalog. This may have undesired effects.
+--sample-catalog  
+          Add sample data to the created catalog
+</code></pre></div></div>
 
-  <ul>
-     <li><strong>Cloud Vendor</strong>: Select "Azure"</li>
-     <li><strong>Region</strong>: Choose the region where your Databricks Workspace is located</li>
-  </ul>
-</div>
+<p><strong>Usage</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks catalog create <span class="o">[</span>OPTIONS] &lt;CATALOG_NAME&gt; &lt;LAKEFS_REPO_NAME&gt;
+</code></pre></div></div>
 
-<div>
-  <p>Create Roles
-  <img src="/assets/img/lakefs-databricks/get-started/azure_create_role_gc_disabled.png" /></p>
-  <ul>
-     <li>Fill in the Storage Group, Storage Account, and Container you selected for lakeFS for Databricks as specified in the <a href="#prerequisites">Prerequisites</a> section.</li>
-  </ul>
+<p><strong>Examples</strong></p>
 
-  <p class="note"><strong>Note</strong><br />
-  Garbage Collection is currently unsupported by lakeFS for Databricks. Please disable it during setup.</p>
-</div>
-
-<div>
-  <p>Apply Terraform to create Azure Resources
-  <img src="/assets/img/lakefs-databricks/get-started/azure_apply_terraform.png" /></p>
-
-  <ul>
-     <li>Switch to your Azure account and apply the created Terraform template to create resources required by lakeFS Cloud</li>
-     <li>The Terraform output includes Service Principal client id, client secret, and tenant id save it in a secure place for later</li>
-  </ul>
-</div>
-
-<div>
-  <p>Connectivity Test
-  <img src="/assets/img/lakefs-databricks/get-started/azure_connectivity_test.png" /></p>
-
-  <ul>
-     <li>Test your connection!</li>
-  </ul>
-</div>
-<h3 id="step-3-log-in-to-your-lakefs-cloud-installation">
+<p>Create a catalog named “my-catalog” mapped to the LakeFS repository “my-repo”:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks catalog create my-catalog my-repo
+</code></pre></div></div>
+<p>Force-create the same catalog, with sample data:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks catalog create <span class="nt">--force</span> <span class="nt">--sample-catalog</span> my-catalog my-repo
+</code></pre></div></div>
+<h4 id="branch-create">
   
   
-    <a href="#step-3-log-in-to-your-lakefs-cloud-installation" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 3: Log in to your lakeFS Cloud Installation
+    <a href="#branch-create" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> branch create
   
   
-</h3>
+</h4>
     
+<p>Create a branch</p>
 
-<p>Log in to the installation created during the setup process you’ve followed:</p>
-<ul>
-  <li>Navigate to <a href="https://lakefs.cloud/clusters">Clusters</a> and click on the link to the newly created installation.</li>
-  <li>Log in to your lakeFS instance.</li>
-</ul>
-<h3 id="step-4-generate-lakefs-credentials">
+<p><strong>Usage</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks branch create &lt;LAKEFS_REPO_NAME&gt; &lt;BRANCH_NAME&gt; &lt;SOURCE_BRANCH_NAME&gt;
+</code></pre></div></div>
+<p><strong>Examples</strong></p>
+
+<p>Create a branch called “my-branch” from the source branch “main”, on the LakeFS repository “my-repo”:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks branch create my-repo my-branch main
+</code></pre></div></div>
+<h4 id="commit">
   
   
-    <a href="#step-4-generate-lakefs-credentials" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 4: Generate lakeFS Credentials
+    <a href="#commit" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> commit
   
   
-</h3>
+</h4>
     
+<p>Record catalog changes</p>
 
-<p>To generate credentials for lakeFS for Databricks:</p>
-<ul>
-  <li>In the lakeFS UI, go to the <strong>Administration</strong> tab.</li>
-  <li>Click “Create Access Key”<br />
-<img src="/assets/img/lakefs-databricks/get-started/create_access_key.png" /></li>
-  <li>Save the access key and secret key in a secure location</li>
-  <li>By default, these credentials have admin permissions. If you need more restrictive permissions, create a user with the following steps:
-    <ul>
-      <li>Go to <strong>Administration -&gt; Users</strong></li>
-      <li>Click “Create API User” and name it “lakeFS for Databricks”</li>
-      <li>Go to <strong>Administration -&gt; Policies</strong> and create the policy below:
-        <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lakeFSForDatabricksPolicy"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"statement"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-          </span><span class="s2">"fs:ListRepositories"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"fs:ReadRepository"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"fs:ReadCommit"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"fs:ListBranches"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"fs:ListTags"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"fs:ListObjects"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"fs:ReadObject"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"fs:WriteObject"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"fs:DeleteObject"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"fs:RevertBranch"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"fs:ReadBranch"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"fs:ReadTag"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"fs:CreateBranch"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"fs:CreateTag"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"fs:DeleteBranch"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"fs:DeleteTag"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"fs:CreateCommit"</span><span class="w">
-        </span><span class="p">],</span><span class="w">
-        </span><span class="nl">"effect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"allow"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"resource"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arn:lakefs:fs:::repository/{repositoryId}"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span></code></pre></div>        </div>
-      </li>
-      <li>Go to <strong>Administration -&gt; Users</strong></li>
-      <li>Select “lakeFS for Databricks”</li>
-      <li>Attach the newly created <code class="language-plaintext highlighter-rouge">lakeFSForDatabricksPolicy</code></li>
-    </ul>
-  </li>
-</ul>
-<h2 id="configure-the-lakefs-databricks-cli">
-  
-  
-    <a href="#configure-the-lakefs-databricks-cli" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Configure the <code class="language-plaintext highlighter-rouge">lakefs-databricks</code> CLI
-  
-  
-</h2>
-    
+<p><strong>Options</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-m, --message &lt;MESSAGE&gt;  Commit message
+</code></pre></div></div>
 
-<p>Follow the <code class="language-plaintext highlighter-rouge">lakefs-databricks</code> <a href="/cli-reference.html#cli-configuration">configuration guide</a>.</p>
+<p><strong>Usage</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks commit <span class="o">[</span>OPTIONS] &lt;LAKEFS_REPO_NAME&gt; &lt;BRANCH_ID&gt;
+</code></pre></div></div>
+
+<p><strong>Examples</strong></p>
+
+<p>Commit the changes on branch “my-branch” and repo “my-repo”, with commit message “Changes”:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks commit <span class="nt">-m</span> <span class="s2">"Changes"</span> my-repo my-branch
+</code></pre></div></div>
 
                 
 
                 
                 
-                <div style="float: left" class="mt-5">
 
-                    <a type="button" class="btn btn-green" href="./../install.html">
-                        <i class="fa fa-solid fa-arrow-left"></i> Previous: Install lakeFS for Databricks
-                    </a>
-                </div>
-                
-
-                
-                <div style="float: right" class="mt-5">
-
-                    <a type="button" class="btn btn-green" href="./../try-it-out.html">
-                        Next: Start using lakeFS for Databricks <i class="fa fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
                 
 
             </div>
