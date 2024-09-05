@@ -10,9 +10,6 @@
 <loc>https://docs-databricks.lakefs.io/cli-reference.html</loc>
 </url>
 <url>
-<loc>https://docs-databricks.lakefs.io/faq.html</loc>
-</url>
-<url>
 <loc>https://docs-databricks.lakefs.io/getstarted/setup/</loc>
 </url>
 <url>
@@ -25,7 +22,7 @@
 <loc>https://docs-databricks.lakefs.io/getstarted/install.html</loc>
 </url>
 <url>
-<loc>https://docs-databricks.lakefs.io/roadmap.html</loc>
+<loc>https://docs-databricks.lakefs.io/limitations.html</loc>
 </url>
 <url>
 <loc>https://docs-databricks.lakefs.io/getstarted/try-it-out.html</loc>

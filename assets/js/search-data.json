@@ -153,131 +153,131 @@
     
     "relUrl": "/cli-reference.html"
   },"22": {
-    "doc": "FAQ",
-    "title": "FAQ",
-    "content": " ",
-    "url": "/faq.html",
-    
-    "relUrl": "/faq.html"
-  },"23": {
     "doc": "Setup",
     "title": "Setup",
     "content": " ",
     "url": "/getstarted/setup/",
     
     "relUrl": "/getstarted/setup/"
-  },"24": {
+  },"23": {
     "doc": "Setup",
     "title": "AWS",
     "content": "On AWS . ",
     "url": "/getstarted/setup/#aws",
     
     "relUrl": "/getstarted/setup/#aws"
-  },"25": {
+  },"24": {
     "doc": "Setup",
     "title": "Azure",
     "content": "On Azure . ",
     "url": "/getstarted/setup/#azure",
     
     "relUrl": "/getstarted/setup/#azure"
-  },"26": {
+  },"25": {
     "doc": "Get Started",
     "title": "Get Started with lakeFS for Databricks",
     "content": " ",
     "url": "/getstarted/#get-started-with-lakefs-for-databricks",
     
     "relUrl": "/getstarted/#get-started-with-lakefs-for-databricks"
-  },"27": {
+  },"26": {
     "doc": "Get Started",
     "title": "Install",
     "content": "Install lakeFS for Databricks . ",
     "url": "/getstarted/#install",
     
     "relUrl": "/getstarted/#install"
-  },"28": {
+  },"27": {
     "doc": "Get Started",
     "title": "Setup",
     "content": "Setup lakeFS for Databricks . ",
     "url": "/getstarted/#setup",
     
     "relUrl": "/getstarted/#setup"
-  },"29": {
+  },"28": {
     "doc": "Get Started",
     "title": "Try it Out",
     "content": "Start using lakeFS for Databricks . ",
     "url": "/getstarted/#try-it-out",
     
     "relUrl": "/getstarted/#try-it-out"
-  },"30": {
+  },"29": {
     "doc": "Get Started",
     "title": "Get Started",
     "content": " ",
     "url": "/getstarted/",
     
     "relUrl": "/getstarted/"
-  },"31": {
+  },"30": {
     "doc": "lakeFS for Databricks",
     "title": "Welcome to lakeFS for Databricks!",
     "content": ". ",
     "url": "/#welcome-to-lakefs-for-databricks",
     
     "relUrl": "/#welcome-to-lakefs-for-databricks"
-  },"32": {
+  },"31": {
     "doc": "lakeFS for Databricks",
     "title": "What is lakeFS for Databricks?",
     "content": "lakeFS for Databricks is a dataset versioning solution designed for Unity Catalog. It provides the ability to efficiently manage updates and collaborate on production data with ease and confidence. Working at the catalog level, lakeFS for Databricks provides versioning across multiple Delta Lake tables using Git-like semantics. lakeFS for Databricks boosts data teams productivity and reduces time to delivery. It enables them to easily track and manage changes, experiment with data, collaborate effectively, and maintain data integrity and reproducibility. ",
     "url": "/#what-is-lakefs-for-databricks",
     
     "relUrl": "/#what-is-lakefs-for-databricks"
-  },"33": {
+  },"32": {
     "doc": "lakeFS for Databricks",
     "title": "How does lakeFS for Databricks work?",
     "content": "lakeFS for Databricks transforms your Unity Catalog into a versioned catalog by integrating with lakeFS, the robust data versioning engine that powers its capabilities. You continue to work on your Delta Lake tables directly via Unity Catalog using either serverless or standard Databricks compute, while using the lakeFS for Databricks CLI tool for versioning operations such as branching or commiting changes. lakeFS for Databricks leverages Unity schemas to represent lakeFS branches, visible in the Unity Catalog UI. Data reads and writes occur directly through Unity Catalog, with lakeFS for Databricks observing changes rather than interfering in the data path. ",
     "url": "/#how-does-lakefs-for-databricks-work",
     
     "relUrl": "/#how-does-lakefs-for-databricks-work"
-  },"34": {
+  },"33": {
     "doc": "lakeFS for Databricks",
     "title": "Why lakeFS for Databricks?",
     "content": "Test before Run . With lakeFS for Databricks, you can create branches from your production catalogs, allowing you to work on real production data in isolation without duplicating large datasets or relying on partial samples. This lets you modify data pipelines, test outputs, and apply changes confidently. Collaborate . Easily collaborate on shared datasets by creating branches for individual work. Commit your changes and share specific data versions with your team. Reproduce Results . Transform your Unity Catalog into a versioned catalog with lakeFS for Databricks. Each commit captures changes across all Delta Lake tables, allowing you to consistently reproduce results by referencing specific commits. Instant Error Recovery . With lakeFS for Databricks, perform a catalog-level rollback to quickly restore your environment to a previous, healthy state. This multi-table time travel capability ensures quick recovery from errors. ",
     "url": "/#why-lakefs-for-databricks",
     
     "relUrl": "/#why-lakefs-for-databricks"
-  },"35": {
+  },"34": {
     "doc": "lakeFS for Databricks",
     "title": "lakeFS for Databricks",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"36": {
+  },"35": {
     "doc": "Install",
     "title": "Install",
     "content": "Installing lakeFS for Databricks is a two-step process. First, create a lakeFS Cloud account. Then, download the lakefs-databricks CLI tool. ",
     "url": "/getstarted/install.html",
     
     "relUrl": "/getstarted/install.html"
-  },"37": {
+  },"36": {
     "doc": "Install",
     "title": "Create a lakeFS Cloud Account",
     "content": ". | Register to lakeFS Cloud | Verify your email | . Note To use lakeFS for Databricks, you must verify your lakeFS Cloud account. Account verification enables you to use lakeFS Cloud with your data, which is a required by lakeFS for Databricks. ",
     "url": "/getstarted/install.html#create-a-lakefs-cloud-account",
     
     "relUrl": "/getstarted/install.html#create-a-lakefs-cloud-account"
-  },"38": {
+  },"37": {
     "doc": "Install",
     "title": "Download the lakefs-databricks CLI",
     "content": "Follow this link to download lakefs-databricks, the lakeFS for Databricks CLI tool. ",
     "url": "/getstarted/install.html#download-the-lakefs-databricks-cli",
     
     "relUrl": "/getstarted/install.html#download-the-lakefs-databricks-cli"
-  },"39": {
-    "doc": "Roadmap",
-    "title": "Roadmap",
-    "content": " ",
-    "url": "/roadmap.html",
+  },"38": {
+    "doc": "Limitations",
+    "title": "Product Limitations",
+    "content": "lakeFS for Databricks is designed to support Delta Lake tables within Unity Catalog, and we are continuously releasing incremental updates to enhance compatibility with the features of both products. This page outlines the current limitations in integrating lakeFS with some Delta Lake and Unity Catalog functionalities. Note Please review the information carefully and ensure you adhere to the instructions below to avoid potential issues. | Partial Azure support. The following operations are not currently supported when using lakeFS for Databricks on Azure: . | Table Deletion (DROP TABLE) | lakefs-databricks Import | . | No support for Managed Tables. lakeFS for Databricks currently requires the use of External tables. Support for Managed tables is a high priority on our roadmap. | No support for following Unity Catalog functionalities: . | Views | Volumes | Functions | Models | . | No support for Delta Lake VACUUM. Vacuum support is on the roadmap. Until full support is implemented, do not run VACUUM on tables managed by lakeFS for Databricks. Running VACUUM on these tables may delete reference tables and compromise data versioning. | No support for Deletion Vectors. If you’re using Delta Lake version 2.3.0 or above and have deletion vectors enabled, lakeFS for Databricks won’t respect them, meaning, Unity Catalog will ignore them. To check if deletion vectors are enabled, use the following command: SHOW TBLPROPERTIES &lt;table_name&gt;; . | No support for operations done directly in lakeFS Cloud. Table CRUD operations or versioning operations, i.e. commits or branch creation performed directly on lakeFS Cloud are not reflected in Unity Catalog. Use Unity Catalog for table CRUD operations, use lakefs-databricks CLI for versioning operations. | . ",
+    "url": "/limitations.html#product-limitations",
     
-    "relUrl": "/roadmap.html"
+    "relUrl": "/limitations.html#product-limitations"
+  },"39": {
+    "doc": "Limitations",
+    "title": "Limitations",
+    "content": " ",
+    "url": "/limitations.html",
+    
+    "relUrl": "/limitations.html"
   },"40": {
     "doc": "Try it Out",
     "title": "Try it Out",
@@ -295,7 +295,7 @@
   },"42": {
     "doc": "Try it Out",
     "title": "With your Data",
-    "content": " ",
+    "content": "Note Before using lakeFS for Databricks with your data, please review the Product Limitations page and ensure you follow the provided guidelines. ",
     "url": "/getstarted/try-it-out.html#with-your-data",
     
     "relUrl": "/getstarted/try-it-out.html#with-your-data"
