@@ -381,9 +381,15 @@ Until full support is implemented, <strong>do not</strong> run VACUUM on tables 
     <p class="warning">Running VACUUM on these tables may delete reference tables and compromise data versioning.</p>
   </li>
   <li>No support for <a href="https://docs.delta.io/latest/delta-deletion-vectors.html">Deletion Vectors</a>. If you’re using Delta Lake version
-2.3.0 or above and have deletion vectors enabled, lakeFS for Databricks won’t respect them, meaning, Unity Catalog will ignore them. To check if deletion vectors are enabled, use the following command:
+2.3.0 or above, deletion vectors are likely enabled by default. However, lakeFS for Databricks does not support deletion vectors. 
+To avoid potential issues, ensure deletion vectors are disabled. To check whether deletion vectors are enabled, use the following command:
     <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">SHOW</span> <span class="n">TBLPROPERTIES</span> <span class="o">&lt;</span><span class="k">table_name</span><span class="o">&gt;</span><span class="p">;</span>
 </code></pre></div>    </div>
+    <p>To disable deletion vectors, run:</p>
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">ALTER</span> <span class="k">TABLE</span> <span class="o">&lt;</span><span class="k">table_name</span><span class="o">&gt;</span> <span class="k">SET</span> <span class="n">TBLPROPERTIES</span> <span class="p">(</span><span class="s1">'delta.enableDeletionVectors'</span> <span class="o">=</span> <span class="k">false</span><span class="p">);</span>
+</code></pre></div>    </div>
+
+    <p class="warning">Using deletion vectors may result in unexpected table behavior.</p>
   </li>
   <li>No support for operations done <strong>directly</strong> in lakeFS Cloud. Table CRUD operations or versioning operations, i.e. commits or 
 branch creation performed directly on lakeFS Cloud are not reflected in Unity Catalog. Use Unity Catalog for table CRUD operations, use 
