@@ -359,26 +359,413 @@
   
 </h1>
     
-<h2 id="with-sample-data">
+
+<div class="toc-block">
+<h2 class="no_toc text-delta" id="table-of-contents">
   
   
-    <a href="#with-sample-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> With Sample Data
+    <a href="#table-of-contents" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
   
   
 </h2>
     
-<h2 id="with-your-data">
+
+<ol id="markdown-toc">
+  <li><a href="#prerequisites" id="markdown-toc-prerequisites">Prerequisites</a></li>
+  <li><a href="#trying-lakefs-for-databricks-with-sample-data" id="markdown-toc-trying-lakefs-for-databricks-with-sample-data">Trying lakeFS for Databricks with Sample Data</a></li>
+  <li><a href="#importing-real-data-into-lakefs-for-databricks" id="markdown-toc-importing-real-data-into-lakefs-for-databricks">Importing real data into lakeFS for Databricks</a></li>
+  <li><a href="#summary" id="markdown-toc-summary">Summary</a></li>
+</ol>
+
+</div>
+<h2 id="prerequisites">
   
   
-    <a href="#with-your-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> With your Data
+    <a href="#prerequisites" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Prerequisites
+  
+  
+</h2>
+    
+
+<p>In order to succesfully complete this guide, please make sure you’ve:</p>
+
+<ol>
+  <li><a href="/getstarted/install.html#create-a-lakefs-cloud-account">Created a lakeFS Cloud account</a> and <a href="/getstarted/install.html#download-the-lakefs-databricks-cli">downloaded the lakeFS for Databricks CLI tool</a></li>
+  <li>Configured the integration on Databricks and lakeFS, following the <a href="./setup">setup guide</a> for either <a href="/getstarted/setup/azure.html">Azure</a> or <a href="/getstarted/setup/aws.html">AWS</a></li>
+</ol>
+<h2 id="trying-lakefs-for-databricks-with-sample-data">
+  
+  
+    <a href="#trying-lakefs-for-databricks-with-sample-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Trying lakeFS for Databricks with Sample Data
+  
+  
+</h2>
+    
+
+<p>So now that we have lakeFS for Databricks configured, we can start trying it out! 🤩</p>
+
+<p>To keep things simple, lakeFS for Databricks allows creating an environment that comes with some sample data baked in - this will allow us to get a feel of the capabilities and use cases enabled by lakeFS for Databricks, without having to do so on our own existing data.</p>
+
+<p>For this tutorial, we’ll create a sample versioned catalog that would allow us to branch and commit changes to this sample data, demonstrating the isolation and versioning capabilities provided by lakeFS.</p>
+<h3 id="step-1-lets-create-a-sample-catalog">
+  
+  
+    <a href="#step-1-lets-create-a-sample-catalog" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 1: Let’s create a sample catalog
+  
+  
+</h3>
+    
+
+<p>Let’s start by creating a sample catalog in <a href="https://docs.databricks.com/en/catalogs/index.html">Unity Catalog</a>.</p>
+
+<p>This catalog will be wired to our <a href="https://docs.lakefs.io/understand/glossary.html#repository">lakeFS repository</a>, reflecting changes that occur to the data managed in that catalog inside lakeFS.
+To do so, we’ll first have to create a lakeFS repository: a versioned storage location backed by our cloud storage, tracking changes to objects such as files and tables.</p>
+
+<p>Let’s create our repository through the lakeFS UI:</p>
+
+<p>
+    <img src="/assets/img/getstarted/try-00-create-repo.png" />
+</p>
+
+<p>Once created, we should be greeted by our new, shiny (yet empty) repository!</p>
+
+<p>
+    <img src="/assets/img/getstarted/try-01-empty-repo.png" />
+</p>
+
+<p>For now, there’s no need to upload or import anything into it. 
+The next step would be to connect this repository to our Databricks environment. This means using the <code class="language-plaintext highlighter-rouge">lakefs-databricks</code> command line tool to <a href="/cli-reference.html#catalog-create">create a new catalog</a> in Unity that is wired to our new repository.</p>
+
+<p>Let’s go ahead and do that - using a special <a href="/cli-reference.html#lakefs-databricks-cli-reference"><code class="language-plaintext highlighter-rouge">--sample-catalog</code></a> flag: this would result in sample data added to the lakeFS repository and registered to our newly created Unity catalog:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks catalog create <span class="nt">--sample-catalog</span> lakefs_databricks_tutorial lakefs-databricks-repo
+</code></pre></div></div>
+
+<p>We should see output similar to this:</p>
+
+<p>
+    <img src="/assets/img/getstarted/try-02-create-cmd.png" />
+</p>
+<h3 id="step-2-interacting-with-data">
+  
+  
+    <a href="#step-2-interacting-with-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 2: Interacting with data
+  
+  
+</h3>
+    
+
+<p>So by now, we have a repository set up, and we’ve run the command to create a corresponding Unity Catalog with some sample data.</p>
+
+<p>First, let’s look at the repository itself, it’s no longer empty!</p>
+
+<p>
+    <img src="/assets/img/getstarted/try-03-repo-sample.png" />
+</p>
+
+<p>It now contains the sample data which is tracked and versioned. Let’s see the catalog in our Databricks workspace:</p>
+
+<p>
+    <img src="/assets/img/getstarted/try-04-catalog-sample.png" />
+</p>
+
+<p>Let’s dive in and see the data itself. Head over to the query editor and make sure you have a warehouse or cluster available for use:</p>
+
+<p>
+    <img src="/assets/img/getstarted/try-05-interact.png" />
+</p>
+
+<p>As you can see, inside our catalog, there’s a <code class="language-plaintext highlighter-rouge">main</code> schema - it corresponds exactly to the <code class="language-plaintext highlighter-rouge">main</code> branch in our lakeFS repository. 
+Soon, we’ll use this convention to query and compare different branches by simply changing the currently selected schema.</p>
+<h3 id="step-3-branching-out">
+  
+  
+    <a href="#step-3-branching-out" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 3: Branching out
+  
+  
+</h3>
+    
+
+<p>Now, let’s imagine we want to modify this table. 
+Before actually making changes to production data, we want to be able to test this modification in isolation, without exposing the results of that change to downstream consumers.</p>
+
+<p>With lakeFS, this is done using <a href="https://docs.lakefs.io/understand/glossary.html#branch">branching</a>: a new branch would be created in our lakeFS repository, along with a corresponding Unity Catalog schema in the catalog we just created. 
+Any modification made on that branch is local only to the branch - it will not appear on our <code class="language-plaintext highlighter-rouge">main</code> branch that we just looked at!</p>
+
+<p>This is commonly referred to as the <a href="https://lakefs.io/blog/data-engineering-patterns-write-audit-publish/">write-audit-publish</a> pattern: 
+Easily separating data producers from data consumers, implementing an audit phase in-between to ensure data quality and adherence to governance and regulation constraints.</p>
+
+<p>Fortunately for us, lakeFS makes it super easy (and cheap) to create these branches. Back to the command line:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks branch create lakefs-databricks-repo dev main
+</code></pre></div></div>
+
+<p>We should then see something like this:</p>
+
+<p>
+    <img src="/assets/img/getstarted/try-07-branch-create.png" />
+</p>
+<h4 id="lets-examine-our-branch-in-unity">
+  
+  
+    <a href="#lets-examine-our-branch-in-unity" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Let’s examine our branch in Unity
+  
+  
+</h4>
+    
+
+<p>Great - so we have a branch! But what if instead of one small table, we had a lot of big ones? Wouldn’t that end up being expensive?</p>
+
+<p>Luckily, the answer is no: While it appears this is a separate branch, lakeFS implements <a href="https://docs.lakefs.io/understand/model.html#zero-copy-branching">zero-copy branching</a>, meaning that as long as data isn’t modified, 
+these new tables are actually pointing back to the same objects used by the <code class="language-plaintext highlighter-rouge">main</code> branch. 
+Only modifications are being stored, so no extra storage needs to be used!</p>
+
+<p>But don’t take my word for it - let’s prove this. Let’s take a look at our table history on the <code class="language-plaintext highlighter-rouge">dev</code> branch:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">USE</span> <span class="n">dev</span><span class="p">;</span>
+<span class="k">SHOW</span> <span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">nyctaxi_trips</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Which would show us the location of the table on the dev branch:</p>
+
+<p>
+    <img src="/assets/img/getstarted/try-08-table-location.png" />
+</p>
+
+<p>And as you can see, there are no data files here, only a delta log that refers to the original data files that weren’t modified:</p>
+
+<p>
+    <img src="/assets/img/getstarted/try-09-log-only.png" />
+</p>
+<h3 id="step-4-making-changes-in-isolation">
+  
+  
+    <a href="#step-4-making-changes-in-isolation" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 4: Making changes in isolation
+  
+  
+</h3>
+    
+
+<p>Cool, so now we have an isolated branch, no data was copied. Let’s mess up some of the data and see what happens!</p>
+
+<p>We’ll start by selectively deleting a big portion of data, and updating another part of it:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">USE</span> <span class="n">dev</span><span class="p">;</span>
+
+<span class="c1">-- rounding up all short trips</span>
+<span class="k">UPDATE</span> <span class="n">nyctaxi_trips</span> <span class="k">SET</span> <span class="n">trip_distance</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">WHERE</span> <span class="n">trip_distance</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">;</span>
+
+<span class="c1">-- we don't want to store any trips to Brooklyn, for some reason</span>
+<span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">nyctaxi_trips</span> <span class="k">WHERE</span> <span class="n">dropoff_zip</span> <span class="k">BETWEEN</span> <span class="mi">11200</span> <span class="k">AND</span> <span class="mi">11299</span><span class="p">;</span> 
+</code></pre></div></div>
+<h3 id="step-5-committing-changes">
+  
+  
+    <a href="#step-5-committing-changes" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 5: Committing changes
+  
+  
+</h3>
+    
+
+<p>Let’s pretend we’re happy with this change. 
+The first thing we should do is to <a href="/cli-reference.html#command-reference">commit our changes</a>. Don’t worry - this only affects our <code class="language-plaintext highlighter-rouge">dev</code> branch!</p>
+
+<p>Committing will instruct lakeFS to record a snapshot of the state of all tables on our branch, which will allow us later to examine changes over time, merge changes to other branches, and even undo entire sets of changes across tables.</p>
+
+<p>Let’s commit using the command line:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks commit <span class="nt">-m</span> <span class="s2">"nyc taxis: removed Brooklyn, rounded up short trips"</span> lakefs-databricks-repo dev
+</code></pre></div></div>
+
+<p>Which should result in a commit ID we could later examine:</p>
+
+<p>
+    <img src="/assets/img/getstarted/try-11-commit-dev.png" />
+</p>
+
+<p>Looking at that commit in the lakeFS UI would show us that we indeed modified the <code class="language-plaintext highlighter-rouge">nyctaxi_trips</code> table:</p>
+
+<p>
+    <img src="/assets/img/getstarted/try-12-lakefs-diff.png" />
+</p>
+<h3 id="step-6-comparing-branches">
+  
+  
+    <a href="#step-6-comparing-branches" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 6: Comparing branches
+  
+  
+</h3>
+    
+
+<p>Looking at the side effects of a modification is nice - we now know which underlying objects were modified. 
+But perhaps, what we really care about is understanding <em>how</em> these tables were modified.</p>
+
+<p>Since we know which tables changed (just <code class="language-plaintext highlighter-rouge">nyctaxi_trips</code> in our case), let’s use SQL to see those differences:</p>
+
+<p>
+    <img src="/assets/img/getstarted/try-13-diff-rows.png" />
+</p>
+
+<p>As you can see, there are less rows on our branch because we deleted rows in our update above.
+We can also look at the distribution by column:</p>
+
+<p>
+    <img src="/assets/img/getstarted/try-14-diff-zips.png" />
+</p>
+
+<p>Looking at the amount of dropoff zipcodes, we also see there are less of those, because this was our predicate to delete rows by.</p>
+<h2 id="importing-real-data-into-lakefs-for-databricks">
+  
+  
+    <a href="#importing-real-data-into-lakefs-for-databricks" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Importing real data into lakeFS for Databricks
   
   
 </h2>
     
 
 <p class="note"><strong>Note</strong><br />
-Before using lakeFS for Databricks with your data, please review the <a href="/limitations.html">Product Limitations</a> page and ensure you follow the 
+Before using lakeFS for Databricks with your data, please review the <a href="/limitations.html">Product Limitations</a> page and ensure you follow the
 provided guidelines.</p>
+
+<p>If you’ve made it this far - great! You should now understand how to operate lakeFS and use it alongside Unity Catalog and your Databricks workspace.</p>
+
+<p>Now that you’re more comfortable with the system, let’s try it out by importing our existing data into lakeFS.</p>
+
+<p><em>This is safe to do</em>: lakeFS would never modify or change imported data in any way. Importing works similarly to how we created a branch before: lakeFS would simply create Delta tables whose data resides in its original location - no data is copied or moved, and is never modified.</p>
+
+<p>Once imported, any changes made to the resulting table are isolated to it: the imported source is never modified.
+Let’s see this in action:</p>
+<h3 id="step-1-importing-existing-data">
+  
+  
+    <a href="#step-1-importing-existing-data" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 1: Importing existing data
+  
+  
+</h3>
+    
+
+<p>Let’s import data from our production catalog into our sample catalog we created earlier:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks import <span class="se">\</span>
+  <span class="nt">--from</span> <span class="s2">"production_catalog.default.tpch_customer"</span> <span class="se">\</span>
+  <span class="nt">--to</span> <span class="s2">"lakefs_databricks_tutorial.dev.tpch_customer"</span>
+</code></pre></div></div>
+
+<p>We should now see that table appear in our <code class="language-plaintext highlighter-rouge">dev</code> schema!</p>
+
+<p>Let’s commit this change:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks commit lakefs-databricks-repo dev
+</code></pre></div></div>
+<h3 id="step-2-interacting-with-data-1">
+  
+  
+    <a href="#step-2-interacting-with-data-1" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 2: Interacting with data
+  
+  
+</h3>
+    
+
+<p>Let’s query the data from its import destination branch:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">USE</span> <span class="n">dev</span><span class="p">;</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">tpch_customer</span> <span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Should return the data that we just imported:</p>
+
+<p>
+    <img src="/assets/img/getstarted/try-15-query-imported.png" />
+</p>
+<h3 id="step-3-branching-out-1">
+  
+  
+    <a href="#step-3-branching-out-1" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 3: Branching out
+  
+  
+</h3>
+    
+
+<p>Now, just like with our sample data, we can branch out and modify this table in isolation.
+Our source branch should not be affected by any modification made to our new branch, with the same zero-copy branching approach:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks branch create lakefs-databricks-repo ozk_test dev
+</code></pre></div></div>
+
+<p>Which should look something like this:</p>
+
+<p>
+    <img src="/assets/img/getstarted/try-16-branch-again.png" />
+</p>
+<h3 id="step-4-modify-table">
+  
+  
+    <a href="#step-4-modify-table" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 4: Modify table
+  
+  
+</h3>
+    
+
+<p>To wrap things up, let’s modify both tables (sample data and the one we just imported) to show how our source branch remains unmodified:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">USE</span> <span class="n">ozk_test</span><span class="p">;</span>
+    
+<span class="c1">-- delete some arbitrary data</span>
+<span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">tpch_customer</span> <span class="k">WHERE</span> <span class="n">c_nationkey</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>
+    <img src="/assets/img/getstarted/try-17-modify-imported.png" />
+</p>
+
+<p>Again, we can use SQL to look a the difference between our branched table and our source, to ensure isolation:</p>
+
+<p>
+    <img src="/assets/img/getstarted/try-18-diff-imported.png" />
+</p>
+<h3 id="step-5-creating-new-table">
+  
+  
+    <a href="#step-5-creating-new-table" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 5: Creating new table
+  
+  
+</h3>
+    
+
+<p>In some cases, we want to not only modify existing data and tables, but to add new tables as well.
+To do so, we’ll need to create a table which is located within the storage namespace of the repository we’re using to version our data.</p>
+
+<p>This allows lakeFS to properly access and version this table as part of the repository.</p>
+
+<p>To do so, first copy the storage namespace location from your lakeFS repository’s settings:</p>
+
+<p>
+    <img src="/assets/img/getstarted/try-19-storage-ns.png" />
+</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">EXTERNAL</span> <span class="k">TABLE</span> <span class="n">my_additional_table</span> <span class="p">(</span>
+    <span class="n">id</span> <span class="nb">INT</span><span class="p">,</span>
+    <span class="n">value</span> <span class="nb">TEXT</span><span class="p">,</span>
+<span class="p">)</span> <span class="k">LOCATION</span> <span class="s1">'s3://&lt;REPOSITORY_STORAGE_NAMESPACE&gt;/my_additional_table'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Replacing <code class="language-plaintext highlighter-rouge">&lt;REPOSITORY_STORAGE_NAMESPACE&gt;</code> with the value we took from the repository settings (<code class="language-plaintext highlighter-rouge">s3://my-bucket-name/repositories/lakefs-databricks-repo/</code> in my case).</p>
+<h2 id="summary">
+  
+  
+    <a href="#summary" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Summary
+  
+  
+</h2>
+    
+
+<p>Congratulations! If you’ve made it this far, you should now be familiar with all the building blocks to achieve:</p>
+
+<ol>
+  <li>Zero-copy environments for your data lakehouse, allowing you to test and modify your tables with full isolation without having to create and maintain copies of data</li>
+  <li>Be able to implement the <a href="https://lakefs.io/blog/data-engineering-patterns-write-audit-publish/">write-audit-publish</a> pattern in production, allowing you to safely test and validate data before releasing it to consumers.</li>
+  <li>Be able to see how your data changes over time by looking at a detailed commit log of transformations, covering the who, what and how of changes to datasets</li>
+</ol>
 
                 
 
