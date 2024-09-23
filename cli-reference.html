@@ -588,6 +588,31 @@ LAKEFS_DATABRICKS_DATABRICKS_STORAGE_AZURE_TENANT_ID=&lt;tenant_id&gt;
 <p>Commit the changes on branch “my-branch” and repo “my-repo”, with commit message “Changes”:</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks commit <span class="nt">-m</span> <span class="s2">"Changes"</span> my-repo my-branch
 </code></pre></div></div>
+<h4 id="import">
+  
+  
+    <a href="#import" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> import
+  
+  
+</h4>
+    
+<p>Import table from an existing Unity catalog</p>
+
+<p><strong>Options</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-f, --from &lt;FROM_TABLE_PATH&gt;  Unity table to import: &lt;CATALOG&gt;.&lt;SCHEMA&gt;.&lt;TABLE&gt;
+-t, --to &lt;TO_TABLE_PATH&gt;      lakeFS Databricks Unity table to generate: &lt;CATALOG&gt;.&lt;SCHEMA&gt;.&lt;TABLE&gt;
+-h, --help                    Print help
+</code></pre></div></div>
+
+<p><strong>Usage</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks import <span class="nt">--from</span> &lt;FROM_TABLE_PATH&gt; <span class="nt">--to</span> &lt;TO_TABLE_PATH&gt;
+</code></pre></div></div>
+
+<p><strong>Examples</strong></p>
+
+<p>Import table “my-table” from catalog and schema “src-catalog” and “src-schema” to catalog and schema “dst-catalog” and “main”:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks import <span class="nt">--from</span> src-catalog.src-schema.my-table <span class="nt">--to</span> dst-catalog.main.my-table 
+</code></pre></div></div>
 
                 
 

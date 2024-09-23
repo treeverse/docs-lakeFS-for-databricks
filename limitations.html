@@ -358,12 +358,6 @@ in integrating lakeFS with some Delta Lake and Unity Catalog functionalities.</p
 Please review the information carefully and ensure you adhere to the instructions below to avoid potential issues.</p>
 
 <ol>
-  <li>Partial Azure support. The following operations are not currently supported when using lakeFS for Databricks on Azure:
-    <ul>
-      <li>Table Deletion (<code class="language-plaintext highlighter-rouge">DROP TABLE</code>)</li>
-      <li>lakefs-databricks Import</li>
-    </ul>
-  </li>
   <li>No support for <a href="https://docs.databricks.com/en/tables/managed.html">Managed Tables</a>. lakeFS for Databricks currently requires 
 the use of <a href="https://docs.databricks.com/en/tables/external.html">External tables</a>. Support for Managed tables is a high priority on our roadmap.</li>
   <li>No support for following Unity Catalog functionalities:
