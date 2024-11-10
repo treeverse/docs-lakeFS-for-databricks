@@ -127,7 +127,7 @@
   },"18": {
     "doc": "CLI Reference",
     "title": "Installing lakefs-databricks locally",
-    "content": "lakefs-databricks is available for Linux, macOS, and Windows. | lakefs-databricks-aarch64-apple-darwin-0.5.0.tar.gz (recommended for MacOS) | lakefs-databricks-x86_64-apple-darwin-0.5.0.tar.gz | lakefs-databricks-x86_64-pc-windows-msvc-0.5.0.zip (recommended for Windows) | lakefs-databricks-x86_64-unknown-linux-gnu-0.5.0.tar.gz (recommended for Linux) | lakefs-databricks-x86_64-unknown-linux-musl-0.5.0.tar.gz | . ",
+    "content": "Download the lakefs-databricks binary from one of the links below: . Recommended installations . | Operating System | Architecture | Binary | . | macOS | ARM64 (M-series) | lakefs-databricks-aarch64-apple-darwin-0.5.0.tar.gz | . | Windows | x86_64 | lakefs-databricks-x86_64-pc-windows-msvc-0.5.0.zip | . | GNU/Linux | x86_64 | lakefs-databricks-x86_64-unknown-linux-gnu-0.5.0.tar.gz | . Other installations . | Operating System | Architecture | Binary | . | macOS | x86_64 | lakefs-databricks-x86_64-apple-darwin-0.5.0.tar.gz | . | Linux (musl) | x86_64 | lakefs-databricks-x86_64-unknown-linux-musl-0.5.0.tar.gz | . ",
     "url": "/cli-reference.html#installing-lakefs-databricks-locally",
     
     "relUrl": "/cli-reference.html#installing-lakefs-databricks-locally"
