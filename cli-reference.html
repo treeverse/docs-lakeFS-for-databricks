@@ -598,11 +598,11 @@ LAKEFS_DATABRICKS_DATABRICKS_STORAGE_AZURE_TENANT_ID=&lt;tenant_id&gt;
 
 <p><strong>Examples</strong></p>
 
-<p>Create a catalog named “my-catalog” mapped to the LakeFS repository “my-repo”:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks catalog create my-catalog my-repo
+<p>Create a catalog named “my_catalog” mapped to the LakeFS repository “my-repo”:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks catalog create my_catalog my-repo
 </code></pre></div></div>
 <p>Force-create the same catalog, with sample data:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks catalog create <span class="nt">--force</span> <span class="nt">--sample-catalog</span> my-catalog my-repo
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks catalog create <span class="nt">--force</span> <span class="nt">--sample-catalog</span> my_catalog my-repo
 </code></pre></div></div>
 <h4 id="branch-create">
   
@@ -615,12 +615,12 @@ LAKEFS_DATABRICKS_DATABRICKS_STORAGE_AZURE_TENANT_ID=&lt;tenant_id&gt;
 <p>Create a branch</p>
 
 <p><strong>Usage</strong></p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks branch create &lt;LAKEFS_REPO_NAME&gt; &lt;BRANCH_NAME&gt; &lt;SOURCE_BRANCH_NAME&gt;
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks branch create &lt;CATALOG_NAME&gt; &lt;BRANCH_NAME&gt; &lt;SOURCE_BRANCH_NAME&gt;
 </code></pre></div></div>
 <p><strong>Examples</strong></p>
 
-<p>Create a branch called “my-branch” from the source branch “main”, on the LakeFS repository “my-repo”:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks branch create my-repo my-branch main
+<p>Create a branch called “my-branch” from the source branch “main”, on the catalog “my_catalog”:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks branch create my_catalog my-branch main
 </code></pre></div></div>
 <h4 id="commit">
   

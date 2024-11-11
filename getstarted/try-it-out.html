@@ -497,7 +497,7 @@ Easily separating data producers from data consumers, implementing an audit phas
 
 <p>Fortunately for us, lakeFS makes it super easy (and cheap) to create these branches. Back to the command line:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks branch create lakefs-databricks-repo dev main
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks branch create lakefs_databricks_tutorial dev main
 </code></pre></div></div>
 
 <p>We should then see something like this:</p>
@@ -689,7 +689,7 @@ Let’s see this in action:</p>
 <p>Now, just like with our sample data, we can branch out and modify this table in isolation.
 Our source branch should not be affected by any modification made to our new branch, with the same zero-copy branching approach:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks branch create lakefs-databricks-repo ozk_test dev
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks branch create lakefs_databricks_tutorial ozk_test dev
 </code></pre></div></div>
 
 <p>Which should look something like this:</p>
