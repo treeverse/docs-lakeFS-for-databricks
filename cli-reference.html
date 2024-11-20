@@ -547,6 +547,28 @@ LAKEFS_DATABRICKS_DATABRICKS_STORAGE_AZURE_TENANT_ID=&lt;tenant_id&gt;
 </code></pre></div>    </div>
   </div>
 </div>
+<h4 id="databricks-environment-variables">
+  
+  
+    <a href="#databricks-environment-variables" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Databricks Environment variables
+  
+  
+</h4>
+    
+
+<p>lakefs-databricks supports standard Databricks environment variables to simplify setup by reusing existing configurations. If these variables are already set for Databricks, lakefs-databricks will automatically use them, reducing redundant configuration.</p>
+<h5 id="supported-variables">
+  
+  
+    <a href="#supported-variables" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Supported Variables
+  
+  
+</h5>
+    
+<ul>
+  <li>DATABRICKS_HOST: Your Databricks workspace URL (e.g., https://dbc-<workspace-id>.cloud.databricks.com). Can be overridden by: LAKEFS_DATABRICKS_UNITY_URL or unity.url in the config file.</workspace-id></li>
+  <li>DATABRICKS_TOKEN: Your Databricks Personal Access Token (PAT). Can be overridden by: LAKEFS_DATABRICKS_UNITY_TOKEN or unity.token in the config file.</li>
+</ul>
 <h2 id="command-reference">
   
   
