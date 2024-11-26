@@ -373,7 +373,8 @@
 <ol id="markdown-toc">
   <li><a href="#prerequisites" id="markdown-toc-prerequisites">Prerequisites</a></li>
   <li><a href="#trying-lakefs-for-databricks-with-sample-data" id="markdown-toc-trying-lakefs-for-databricks-with-sample-data">Trying lakeFS for Databricks with Sample Data</a></li>
-  <li><a href="#importing-real-data-into-lakefs-for-databricks" id="markdown-toc-importing-real-data-into-lakefs-for-databricks">Importing real data into lakeFS for Databricks</a></li>
+  <li><a href="#importing-your-data-into-lakefs-for-databricks" id="markdown-toc-importing-your-data-into-lakefs-for-databricks">Importing your data into lakeFS for Databricks</a></li>
+  <li><a href="#importing-data-from-an-existing-lakefs-repository" id="markdown-toc-importing-data-from-an-existing-lakefs-repository">Importing data from an existing lakeFS repository</a></li>
   <li><a href="#summary" id="markdown-toc-summary">Summary</a></li>
 </ol>
 
@@ -614,10 +615,10 @@ We can also look at the distribution by column:</p>
 </p>
 
 <p>Looking at the amount of dropoff zipcodes, we also see there are less of those, because this was our predicate to delete rows by.</p>
-<h2 id="importing-real-data-into-lakefs-for-databricks">
+<h2 id="importing-your-data-into-lakefs-for-databricks">
   
   
-    <a href="#importing-real-data-into-lakefs-for-databricks" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Importing real data into lakeFS for Databricks
+    <a href="#importing-your-data-into-lakefs-for-databricks" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Importing your data into lakeFS for Databricks
   
   
 </h2>
@@ -629,12 +630,16 @@ provided guidelines.</p>
 
 <p>If you’ve made it this far - great! You should now understand how to operate lakeFS and use it alongside Unity Catalog and your Databricks workspace.</p>
 
-<p>Now that you’re more comfortable with the system, let’s try it out by importing our existing data into lakeFS.</p>
+<p>Now that you’re more comfortable with the system, let’s try it out by importing our existing data into lakeFS for Databricks.</p>
 
 <p><em>This is safe to do</em>: lakeFS would never modify or change imported data in any way. Importing works similarly to how we created a branch before: lakeFS would simply create Delta tables whose data resides in its original location - no data is copied or moved, and is never modified.</p>
 
-<p>Once imported, any changes made to the resulting table are isolated to it: the imported source is never modified.
-Let’s see this in action:</p>
+<p>Once imported, any changes made to the resulting table are isolated to it: the imported source is never modified.</p>
+
+<p>With lakeFS for Databricks you can import existing data from other catalogs within the workspace <a href="https://docs.databricks.com/en/data-governance/unity-catalog/index.html#metastores">Metastore</a>.
+Alternatively, if you are already using lakeFS, you can <a href="#importing-data-from-existing-lakefs-repositories">import data directly from your existing lakeFS repositories</a>.</p>
+
+<p>Our example imports data from another catalog within the workspace. Let’s see it in action:</p>
 <h3 id="step-1-importing-existing-data">
   
   
@@ -653,10 +658,8 @@ Let’s see this in action:</p>
 
 <p>We should now see that table appear in our <code class="language-plaintext highlighter-rouge">dev</code> schema!</p>
 
-<p>Let’s commit this change:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks commit lakefs_databricks_tutorial dev
-</code></pre></div></div>
+<p>In the lakeFS UI, you’ll see a new commit that reflects the imported table. This commit is automatically created at the
+end of the import operation.</p>
 <h3 id="step-2-interacting-with-data-1">
   
   
@@ -750,6 +753,37 @@ To do so, we’ll need to create a table which is located within the storage nam
 </code></pre></div></div>
 
 <p>Replacing <code class="language-plaintext highlighter-rouge">&lt;REPOSITORY_STORAGE_NAMESPACE&gt;</code> with the value we took from the repository settings (<code class="language-plaintext highlighter-rouge">s3://my-bucket-name/repositories/lakefs-databricks-repo/</code> in my case).</p>
+<h2 id="importing-data-from-an-existing-lakefs-repository">
+  
+  
+    <a href="#importing-data-from-an-existing-lakefs-repository" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Importing data from an existing lakeFS repository
+  
+  
+</h2>
+    
+
+<p>If you’re already using lakeFS Cloud to manage Delta Lake tables, you can seamlessly import those tables into lakeFS for 
+Databricks. By doing so, the tables become part of the versioned catalog, enabling enhanced dataset management.</p>
+
+<p>Run the following command to import a table from lakeFS into lakeFS for Databricks:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lakefs-databricks import <span class="se">\</span>
+  <span class="nt">--from</span> <span class="s2">"lakefs://my-lakefs-repo/main/famous-people"</span> <span class="se">\</span>
+  <span class="nt">--to</span> <span class="s2">"lakefs_databricks_tutorial.dev.famous-people"</span>
+</code></pre></div></div>
+
+<p>After running this command, the table will appear in the <code class="language-plaintext highlighter-rouge">dev</code> schema!</p>
+
+<p>In the lakeFS UI, you’ll see a new commit that reflects the imported table. This commit is automatically created at the
+end of the import operation:</p>
+<p>
+    <img src="/assets/img/getstarted/try-20-import-commit-imported-from-lakefs.png" />
+</p>
+
+<p>Once imported, you can interact with the table directly through Unity Catalog:</p>
+<p>
+    <img src="/assets/img/getstarted/try-21-query-imported-from-lakefs.png" />
+</p>
 <h2 id="summary">
   
   
