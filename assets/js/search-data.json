@@ -120,207 +120,200 @@
   },"17": {
     "doc": "CLI Reference",
     "title": "Table of contents",
-    "content": ". | Installing lakefs-databricks locally | CLI Configuration | Command Reference | . ",
+    "content": ". | CLI Configuration | Command Reference | . ",
     "url": "/cli-reference.html#table-of-contents",
     
     "relUrl": "/cli-reference.html#table-of-contents"
   },"18": {
-    "doc": "CLI Reference",
-    "title": "Installing lakefs-databricks locally",
-    "content": "Download the lakefs-databricks binary from one of the links below: . Recommended installations . | Operating System | Architecture | Binary | . | macOS | ARM64 (M-series) | lakefs-databricks-aarch64-apple-darwin-0.6.0.tar.gz | . | Windows | x86_64 | lakefs-databricks-x86_64-pc-windows-msvc-0.6.0.zip | . | GNU/Linux | x86_64 | lakefs-databricks-x86_64-unknown-linux-gnu-0.6.0.tar.gz | . Other installations . | Operating System | Architecture | Binary | . | macOS | x86_64 | lakefs-databricks-x86_64-apple-darwin-0.6.0.tar.gz | . | Linux (musl) | x86_64 | lakefs-databricks-x86_64-unknown-linux-musl-0.6.0.tar.gz | . ",
-    "url": "/cli-reference.html#installing-lakefs-databricks-locally",
-    
-    "relUrl": "/cli-reference.html#installing-lakefs-databricks-locally"
-  },"19": {
     "doc": "CLI Reference",
     "title": "CLI Configuration",
     "content": "lakefs-databricks can be configured using either a YAML file or environment variables. Configuration file . By default, lakefs-databricks will look for a file named .lakefs-databricks.yaml in your home directory, but the configuration file can be specified by passing the -c (or --config) argument to lakefs-databricks (see below). | AWS | Azure | . unity: url: &lt;unity_url&gt; # Your Databricks workspace URL. e.g. https://dbc-&lt;workspace-id&gt;.cloud.databricks.com token: &lt;unity_token&gt; # The Personal access token you created during the Databricks Workspace preparation lakefs: secret_access_key: &lt;lakefs_secret_access_key&gt; # The secret_access_key you created during lakeFS Cloud setup access_key_id: &lt;lakefs_access_key_id&gt; # The access_key_id you created during lakeFS Cloud setup url: &lt;lakefs_endpoint_url&gt;/api/v1 # The Url of your lakeFS Cloud instance e.g. https://example-org.us-east-1.lakefscloud.io databricks_storage: type: s3 s3: access_key_id: &lt;aws_access_key_id&gt; # the access_key you created on the previous step secret_access_key: &lt;aws_secret_access_key&gt; # the secret_access_key you created on the previous step region: &lt;aws_region&gt; . unity: url: &lt;unity_url&gt; # Your Databricks workspace URL. e.g. https://dbc-&lt;workspace-id&gt;.cloud.databricks.com token: &lt;unity_token&gt; # The Personal access token you created during the Databricks Workspace preparation lakefs: secret_access_key: &lt;lakefs_secret_access_key&gt; # The secret_access_key you created during lakeFS Cloud setup access_key_id: &lt;lakefs_access_key_id&gt; # The access_key_id you created during lakeFS Cloud setup url: &lt;lakefs_endpoint_url&gt;/api/v1 # The Url of your lakeFS Cloud instance e.g. https://example-org.us-east-1.lakefscloud.io databricks_storage: type: azure azure: client_id: &lt;client_id&gt; # The client_id from the lakeFS Cloud Terraform output client_secret: &lt;client_secret&gt; # The client_secret from the lakeFS Cloud Terraform output tenant_id: &lt;tenant_id&gt; # The tenant_id from the lakeFS Cloud Terraform output . Environment variables . | AWS | Azure | . LAKEFS_DATABRICKS_UNITY_URL=&lt;unity_url&gt; LAKEFS_DATABRICKS_UNITY_TOKEN=&lt;unity_token&gt; LAKEFS_DATABRICKS_LAKEFS_URL=&lt;lakefs_installation_url&gt;/api/v1 LAKEFS_DATABRICKS_LAKEFS_ACCESS_KEY_ID=&lt;lakefs_access_key_id&gt; LAKEFS_DATABRICKS_LAKEFS_SECRET_ACCESS_KEY=&lt;lakefs_secret_access_key&gt; LAKEFS_DATABRICKS_DATABRICKS_STORAGE_TYPE=s3 LAKEFS_DATABRICKS_DATABRICKS_STORAGE_S3_ACCESS_KEY_ID=&lt;aws_access_key_id&gt; LAKEFS_DATABRICKS_DATABRICKS_STORAGE_S3_SECRET_ACCESS_KEY=&lt;aws_secret_access_key&gt; LAKEFS_DATABRICKS_DATABRICKS_STORAGE_S3_REGION=&lt;aws_region&gt; . LAKEFS_DATABRICKS_UNITY_URL=&lt;unity_url&gt; LAKEFS_DATABRICKS_UNITY_TOKEN=&lt;unity_token&gt; LAKEFS_DATABRICKS_LAKEFS_URL=&lt;lakefs_installation_url&gt;/api/v1 LAKEFS_DATABRICKS_LAKEFS_ACCESS_KEY_ID=&lt;lakefs_access_key_id&gt; LAKEFS_DATABRICKS_LAKEFS_SECRET_ACCESS_KEY=&lt;lakefs_secret_access_key&gt; LAKEFS_DATABRICKS_DATABRICKS_STORAGE_TYPE=azure LAKEFS_DATABRICKS_DATABRICKS_STORAGE_AZURE_CLIENT_ID=&lt;client_id&gt; LAKEFS_DATABRICKS_DATABRICKS_STORAGE_AZURE_CLIENT_SECRET=&lt;client_secret&gt; LAKEFS_DATABRICKS_DATABRICKS_STORAGE_AZURE_TENANT_ID=&lt;tenant_id&gt; . Databricks Environment variables . lakefs-databricks supports standard Databricks environment variables to simplify setup by reusing existing configurations. If these variables are already set for Databricks, lakefs-databricks will automatically use them, reducing redundant configuration. Supported Variables . | DATABRICKS_HOST: Your Databricks workspace URL (e.g., https://dbc-.cloud.databricks.com). Can be overridden by: LAKEFS_DATABRICKS_UNITY_URL or unity.url in the config file. | DATABRICKS_TOKEN: Your Databricks Personal Access Token (PAT). Can be overridden by: LAKEFS_DATABRICKS_UNITY_TOKEN or unity.token in the config file. | . ",
     "url": "/cli-reference.html#cli-configuration",
     
     "relUrl": "/cli-reference.html#cli-configuration"
-  },"20": {
+  },"19": {
     "doc": "CLI Reference",
     "title": "Command Reference",
     "content": "Options . -c, --config &lt;FILE&gt; Config file to use -h, --help Print help -V, --version Print version . Usage . lakefs-databricks [OPTIONS] &lt;COMMAND&gt; . Commands . catalog create . Create a versioned catalog . Options . --force Force creation of the catalog even if it already exists. If specified, the lakeFS repository will be re-associated with the provided Unity catalog. This may have undesired effects. --sample-catalog Add sample data to the created catalog . Usage . lakefs-databricks catalog create [OPTIONS] &lt;CATALOG_NAME&gt; &lt;LAKEFS_REPO_NAME&gt; . Examples . Create a catalog named “my_catalog” mapped to the LakeFS repository “my-repo”: . lakefs-databricks catalog create my_catalog my-repo . Force-create the same catalog, with sample data: . lakefs-databricks catalog create --force --sample-catalog my_catalog my-repo . branch create . Create a branch . Usage . lakefs-databricks branch create &lt;CATALOG_NAME&gt; &lt;BRANCH_NAME&gt; &lt;SOURCE_BRANCH_NAME&gt; . Examples . Create a branch called “my-branch” from the source branch “main”, on the catalog “my_catalog”: . lakefs-databricks branch create my_catalog my-branch main . commit . Record catalog changes . Options . -m, --message &lt;MESSAGE&gt; Commit message . Usage . lakefs-databricks commit [OPTIONS] &lt;CATALOG_NAME&gt; &lt;BRANCH_ID&gt; . Examples . Commit the changes on branch “my-branch” and catalog “my_catalog”, with commit message “Changes”: . lakefs-databricks commit -m \"Changes\" my_catalog my-branch . import . Import table from an existing Unity catalog or from a lakeFS Delta table . Options . -f, --from &lt;FROM_TABLE_PATH&gt; Unity table to import: &lt;CATALOG&gt;.&lt;SCHEMA&gt;.&lt;TABLE&gt; Or lakeFS table to import: lakefs://&lt;REPO&gt;/&lt;BRANCH&gt;/&lt;PATH_TO_TABLE&gt; -t, --to &lt;TO_TABLE_PATH&gt; lakeFS Databricks Unity table to generate: &lt;CATALOG&gt;.&lt;SCHEMA&gt;.&lt;TABLE&gt; -h, --help Print help . Usage . lakefs-databricks import --from &lt;FROM_TABLE_PATH&gt; --to &lt;TO_TABLE_PATH&gt; . Examples . Import table “my_table” from catalog and schema “src_catalog” and “src_schema” to catalog and schema “dst-catalog” and “main”: . lakefs-databricks import --from src_catalog.src_schema.my_table --to dst_catalog.main.my_table . Import table “my_lakefs_table” from lakeFS repository and branch “existing_repo” and “main” to a table named “my_table” in catalog and schema “dst_catalog” and “main”: . lakefs-databricks import --from lakefs://existing_repo/main/_tables/my_lakefs_table --to dst_catalog.main.my_table . ",
     "url": "/cli-reference.html#command-reference",
     
     "relUrl": "/cli-reference.html#command-reference"
-  },"21": {
+  },"20": {
     "doc": "CLI Reference",
     "title": "CLI Reference",
     "content": " ",
     "url": "/cli-reference.html",
     
     "relUrl": "/cli-reference.html"
-  },"22": {
+  },"21": {
     "doc": "Setup",
     "title": "Setup",
     "content": " ",
     "url": "/getstarted/setup/",
     
     "relUrl": "/getstarted/setup/"
-  },"23": {
+  },"22": {
     "doc": "Setup",
     "title": "AWS",
     "content": "On AWS . ",
     "url": "/getstarted/setup/#aws",
     
     "relUrl": "/getstarted/setup/#aws"
-  },"24": {
+  },"23": {
     "doc": "Setup",
     "title": "Azure",
     "content": "On Azure . ",
     "url": "/getstarted/setup/#azure",
     
     "relUrl": "/getstarted/setup/#azure"
-  },"25": {
+  },"24": {
     "doc": "Get Started",
     "title": "Get Started with lakeFS for Databricks",
     "content": " ",
     "url": "/getstarted/#get-started-with-lakefs-for-databricks",
     
     "relUrl": "/getstarted/#get-started-with-lakefs-for-databricks"
-  },"26": {
+  },"25": {
     "doc": "Get Started",
     "title": "Install",
     "content": "Install lakeFS for Databricks . ",
     "url": "/getstarted/#install",
     
     "relUrl": "/getstarted/#install"
-  },"27": {
+  },"26": {
     "doc": "Get Started",
     "title": "Setup",
     "content": "Setup lakeFS for Databricks . ",
     "url": "/getstarted/#setup",
     
     "relUrl": "/getstarted/#setup"
-  },"28": {
+  },"27": {
     "doc": "Get Started",
     "title": "Try it Out",
     "content": "Start using lakeFS for Databricks . ",
     "url": "/getstarted/#try-it-out",
     
     "relUrl": "/getstarted/#try-it-out"
-  },"29": {
+  },"28": {
     "doc": "Get Started",
     "title": "Get Started",
     "content": " ",
     "url": "/getstarted/",
     
     "relUrl": "/getstarted/"
-  },"30": {
+  },"29": {
     "doc": "lakeFS for Databricks",
     "title": "Welcome to lakeFS for Databricks!",
     "content": ". ",
     "url": "/#welcome-to-lakefs-for-databricks",
     
     "relUrl": "/#welcome-to-lakefs-for-databricks"
-  },"31": {
+  },"30": {
     "doc": "lakeFS for Databricks",
     "title": "What is lakeFS for Databricks?",
     "content": "lakeFS for Databricks is a dataset versioning solution designed for Unity Catalog. It provides the ability to efficiently manage updates and collaborate on production data with ease and confidence. Working at the catalog level, lakeFS for Databricks provides versioning across multiple Delta Lake tables using Git-like semantics. lakeFS for Databricks boosts data teams productivity and reduces time to delivery. It enables them to easily track and manage changes, experiment with data, collaborate effectively, and maintain data integrity and reproducibility. ",
     "url": "/#what-is-lakefs-for-databricks",
     
     "relUrl": "/#what-is-lakefs-for-databricks"
-  },"32": {
+  },"31": {
     "doc": "lakeFS for Databricks",
     "title": "How does lakeFS for Databricks work?",
     "content": "lakeFS for Databricks transforms your Unity Catalog into a versioned catalog by integrating with lakeFS, the robust data versioning engine that powers its capabilities. You continue to work on your Delta Lake tables directly via Unity Catalog using either serverless or standard Databricks compute, while using the lakeFS for Databricks CLI tool for versioning operations such as branching or commiting changes. lakeFS for Databricks leverages Unity schemas to represent lakeFS branches, visible in the Unity Catalog UI. Data reads and writes occur directly through Unity Catalog, with lakeFS for Databricks observing changes rather than interfering in the data path. ",
     "url": "/#how-does-lakefs-for-databricks-work",
     
     "relUrl": "/#how-does-lakefs-for-databricks-work"
-  },"33": {
+  },"32": {
     "doc": "lakeFS for Databricks",
     "title": "Why lakeFS for Databricks?",
     "content": "Test before Run . With lakeFS for Databricks, you can create branches from your production catalogs, allowing you to work on real production data in isolation without duplicating large datasets or relying on partial samples. This lets you modify data pipelines, test outputs, and apply changes confidently. Collaborate . Easily collaborate on shared datasets by creating branches for individual work. Commit your changes and share specific data versions with your team. Reproduce Results . Transform your Unity Catalog into a versioned catalog with lakeFS for Databricks. Each commit captures changes across all Delta Lake tables, allowing you to consistently reproduce results by referencing specific commits. Instant Error Recovery . With lakeFS for Databricks, perform a catalog-level rollback to quickly restore your environment to a previous, healthy state. This multi-table time travel capability ensures quick recovery from errors. ",
     "url": "/#why-lakefs-for-databricks",
     
     "relUrl": "/#why-lakefs-for-databricks"
-  },"34": {
+  },"33": {
     "doc": "lakeFS for Databricks",
     "title": "lakeFS for Databricks",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"35": {
+  },"34": {
     "doc": "Install",
     "title": "Install",
     "content": "Installing lakeFS for Databricks is a two-step process. First, create a lakeFS Cloud account. Then, download the lakefs-databricks CLI tool. ",
     "url": "/getstarted/install.html",
     
     "relUrl": "/getstarted/install.html"
-  },"36": {
+  },"35": {
     "doc": "Install",
     "title": "Create a lakeFS Cloud Account",
     "content": ". | Register to lakeFS Cloud | Verify your email | . Note To use lakeFS for Databricks, you must verify your lakeFS Cloud account. Account verification enables you to use lakeFS Cloud with your data, which is a required by lakeFS for Databricks. ",
     "url": "/getstarted/install.html#create-a-lakefs-cloud-account",
     
     "relUrl": "/getstarted/install.html#create-a-lakefs-cloud-account"
-  },"37": {
+  },"36": {
     "doc": "Install",
     "title": "Download the lakefs-databricks CLI",
     "content": "Follow this link to download lakefs-databricks, the lakeFS for Databricks CLI tool. ",
     "url": "/getstarted/install.html#download-the-lakefs-databricks-cli",
     
     "relUrl": "/getstarted/install.html#download-the-lakefs-databricks-cli"
-  },"38": {
+  },"37": {
     "doc": "Limitations",
     "title": "Product Limitations",
     "content": "lakeFS for Databricks is designed to support Delta Lake tables within Unity Catalog, and we are continuously releasing incremental updates to enhance compatibility with the features of both products. This page outlines the current limitations in integrating lakeFS with some Delta Lake and Unity Catalog functionalities. Note Please review the information carefully and ensure you adhere to the instructions below to avoid potential issues. | No support for Managed Tables. lakeFS for Databricks currently requires the use of External tables. Support for Managed tables is a high priority on our roadmap. | No support for following Unity Catalog functionalities: . | Views | Volumes | Functions | Models | . | No support for Delta Lake VACUUM. Vacuum support is on the roadmap. Until full support is implemented, do not run VACUUM on tables managed by lakeFS for Databricks. Running VACUUM on these tables may delete reference tables and compromise data versioning. | No support for Deletion Vectors. If you’re using Delta Lake version 2.3.0 or above, deletion vectors are likely enabled by default. However, lakeFS for Databricks does not support deletion vectors. To avoid potential issues, ensure deletion vectors are disabled. To check whether deletion vectors are enabled, use the following command: SHOW TBLPROPERTIES &lt;table_name&gt;; . To disable deletion vectors, run: . ALTER TABLE &lt;table_name&gt; SET TBLPROPERTIES ('delta.enableDeletionVectors' = false); . Using deletion vectors may result in unexpected table behavior. | No support for operations done directly in lakeFS Cloud. Table CRUD operations or versioning operations, i.e. commits or branch creation performed directly on lakeFS Cloud are not reflected in Unity Catalog. Use Unity Catalog for table CRUD operations, use lakefs-databricks CLI for versioning operations. | . ",
     "url": "/limitations.html#product-limitations",
     
     "relUrl": "/limitations.html#product-limitations"
-  },"39": {
+  },"38": {
     "doc": "Limitations",
     "title": "Limitations",
     "content": " ",
     "url": "/limitations.html",
     
     "relUrl": "/limitations.html"
-  },"40": {
+  },"39": {
     "doc": "Try it Out",
     "title": "Try it Out",
     "content": " ",
     "url": "/getstarted/try-it-out.html",
     
     "relUrl": "/getstarted/try-it-out.html"
-  },"41": {
+  },"40": {
     "doc": "Try it Out",
     "title": "Table of contents",
     "content": ". | Prerequisites | Trying lakeFS for Databricks with Sample Data | Importing your data into lakeFS for Databricks | Importing data from an existing lakeFS repository | Summary | . ",
     "url": "/getstarted/try-it-out.html#table-of-contents",
     
     "relUrl": "/getstarted/try-it-out.html#table-of-contents"
-  },"42": {
+  },"41": {
     "doc": "Try it Out",
     "title": "Prerequisites",
     "content": "In order to successfully complete this guide, please make sure you’ve: . | Created a lakeFS Cloud account and downloaded the lakeFS for Databricks CLI tool | Configured the integration on Databricks and lakeFS, following the setup guide for either Azure or AWS | . ",
     "url": "/getstarted/try-it-out.html#prerequisites",
     
     "relUrl": "/getstarted/try-it-out.html#prerequisites"
-  },"43": {
+  },"42": {
     "doc": "Try it Out",
     "title": "Trying lakeFS for Databricks with Sample Data",
     "content": "So now that we have lakeFS for Databricks configured, we can start trying it out! 🤩 . To keep things simple, lakeFS for Databricks allows creating an environment that comes with some sample data baked in - this will allow us to get a feel of the capabilities and use cases enabled by lakeFS for Databricks, without having to do so on our own existing data. For this tutorial, we’ll create a sample versioned catalog that would allow us to branch and commit changes to this sample data, demonstrating the isolation and versioning capabilities provided by lakeFS. Step 1: Let’s create a sample catalog . Let’s start by creating a sample catalog in Unity Catalog. This catalog will be wired to our lakeFS repository, reflecting changes that occur to the data managed in that catalog inside lakeFS. To do so, we’ll first have to create a lakeFS repository: a versioned storage location backed by our cloud storage, tracking changes to objects such as files and tables. Let’s create our repository through the lakeFS UI: . Once created, we should be greeted by our new, shiny (yet empty) repository! . For now, there’s no need to upload or import anything into it. The next step would be to connect this repository to our Databricks environment. This means using the lakefs-databricks command line tool to create a new catalog in Unity that is wired to our new repository. Let’s go ahead and do that - using a special --sample-catalog flag: this would result in sample data added to the lakeFS repository and registered to our newly created Unity catalog: . lakefs-databricks catalog create --sample-catalog lakefs_databricks_tutorial lakefs-databricks-repo . We should see output similar to this: . Step 2: Interacting with data . So by now, we have a repository set up, and we’ve run the command to create a corresponding Unity Catalog with some sample data. First, let’s look at the repository itself, it’s no longer empty! . It now contains the sample data which is tracked and versioned. Let’s see the catalog in our Databricks workspace: . Let’s dive in and see the data itself. Head over to the query editor and make sure you have a warehouse or cluster available for use: . As you can see, inside our catalog, there’s a main schema - it corresponds exactly to the main branch in our lakeFS repository. Soon, we’ll use this convention to query and compare different branches by simply changing the currently selected schema. Step 3: Branching out . Now, let’s imagine we want to modify this table. Before actually making changes to production data, we want to be able to test this modification in isolation, without exposing the results of that change to downstream consumers. With lakeFS, this is done using branching: a new branch would be created in our lakeFS repository, along with a corresponding Unity Catalog schema in the catalog we just created. Any modification made on that branch is local only to the branch - it will not appear on our main branch that we just looked at! . This is commonly referred to as the write-audit-publish pattern: Easily separating data producers from data consumers, implementing an audit phase in-between to ensure data quality and adherence to governance and regulation constraints. Fortunately for us, lakeFS makes it super easy (and cheap) to create these branches. Back to the command line: . lakefs-databricks branch create lakefs_databricks_tutorial dev main . We should then see something like this: . Let’s examine our branch in Unity . Great - so we have a branch! But what if instead of one small table, we had a lot of big ones? Wouldn’t that end up being expensive? . Luckily, the answer is no: While it appears this is a separate branch, lakeFS implements zero-copy branching, meaning that as long as data isn’t modified, these new tables are actually pointing back to the same objects used by the main branch. Only modifications are being stored, so no extra storage needs to be used! . But don’t take my word for it - let’s prove this. Let’s take a look at our table history on the dev branch: . USE dev; SHOW CREATE TABLE nyctaxi_trips; . Which would show us the location of the table on the dev branch: . And as you can see, there are no data files here, only a delta log that refers to the original data files that weren’t modified: . Step 4: Making changes in isolation . Cool, so now we have an isolated branch, no data was copied. Let’s mess up some of the data and see what happens! . We’ll start by selectively deleting a big portion of data, and updating another part of it: . USE dev; -- rounding up all short trips UPDATE nyctaxi_trips SET trip_distance = 1 WHERE trip_distance &lt; 1; -- we don't want to store any trips to Brooklyn, for some reason DELETE FROM nyctaxi_trips WHERE dropoff_zip BETWEEN 11200 AND 11299; . Step 5: Committing changes . Let’s pretend we’re happy with this change. The first thing we should do is to commit our changes. Don’t worry - this only affects our dev branch! . Committing will instruct lakeFS to record a snapshot of the state of all tables on our branch, which will allow us later to examine changes over time, merge changes to other branches, and even undo entire sets of changes across tables. Let’s commit using the command line: . lakefs-databricks commit -m \"nyc taxis: removed Brooklyn, rounded up short trips\" lakefs_databricks_tutorial dev . Which should result in a commit ID we could later examine: . Looking at that commit in the lakeFS UI would show us that we indeed modified the nyctaxi_trips table: . Step 6: Comparing branches . Looking at the side effects of a modification is nice - we now know which underlying objects were modified. But perhaps, what we really care about is understanding how these tables were modified. Since we know which tables changed (just nyctaxi_trips in our case), let’s use SQL to see those differences: . As you can see, there are less rows on our branch because we deleted rows in our update above. We can also look at the distribution by column: . Looking at the amount of dropoff zipcodes, we also see there are less of those, because this was our predicate to delete rows by. ",
     "url": "/getstarted/try-it-out.html#trying-lakefs-for-databricks-with-sample-data",
     
     "relUrl": "/getstarted/try-it-out.html#trying-lakefs-for-databricks-with-sample-data"
-  },"44": {
+  },"43": {
     "doc": "Try it Out",
     "title": "Importing your data into lakeFS for Databricks",
     "content": "Note Before using lakeFS for Databricks with your data, please review the Product Limitations page and ensure you follow the provided guidelines. If you’ve made it this far - great! You should now understand how to operate lakeFS and use it alongside Unity Catalog and your Databricks workspace. Now that you’re more comfortable with the system, let’s try it out by importing our existing data into lakeFS for Databricks. This is safe to do: lakeFS would never modify or change imported data in any way. Importing works similarly to how we created a branch before: lakeFS would simply create Delta tables whose data resides in its original location - no data is copied or moved, and is never modified. Once imported, any changes made to the resulting table are isolated to it: the imported source is never modified. With lakeFS for Databricks you can import existing data from other catalogs within the workspace Metastore. Alternatively, if you are already using lakeFS, you can import data directly from your existing lakeFS repositories. Our example imports data from another catalog within the workspace. Let’s see it in action: . Step 1: Importing existing data . Let’s import data from our production catalog into our sample catalog we created earlier: . lakefs-databricks import \\ --from \"production_catalog.default.tpch_customer\" \\ --to \"lakefs_databricks_tutorial.dev.tpch_customer\" . We should now see that table appear in our dev schema! . In the lakeFS UI, you’ll see a new commit that reflects the imported table. This commit is automatically created at the end of the import operation. Step 2: Interacting with data . Let’s query the data from its import destination branch: . USE dev; SELECT * FROM tpch_customer LIMIT 10; . Should return the data that we just imported: . Step 3: Branching out . Now, just like with our sample data, we can branch out and modify this table in isolation. Our source branch should not be affected by any modification made to our new branch, with the same zero-copy branching approach: . lakefs-databricks branch create lakefs_databricks_tutorial ozk_test dev . Which should look something like this: . Step 4: Modify table . To wrap things up, let’s modify both tables (sample data and the one we just imported) to show how our source branch remains unmodified: . USE ozk_test; -- delete some arbitrary data DELETE FROM tpch_customer WHERE c_nationkey = 9; . Again, we can use SQL to look a the difference between our branched table and our source, to ensure isolation: . Step 5: Creating new table . In some cases, we want to not only modify existing data and tables, but to add new tables as well. To do so, we’ll need to create a table which is located within the storage namespace of the repository we’re using to version our data. This allows lakeFS to properly access and version this table as part of the repository. To do so, first copy the storage namespace location from your lakeFS repository’s settings: . CREATE EXTERNAL TABLE my_additional_table ( id INT, value TEXT, ) LOCATION 's3://&lt;REPOSITORY_STORAGE_NAMESPACE&gt;/my_additional_table'; . Replacing &lt;REPOSITORY_STORAGE_NAMESPACE&gt; with the value we took from the repository settings (s3://my-bucket-name/repositories/lakefs-databricks-repo/ in my case). ",
     "url": "/getstarted/try-it-out.html#importing-your-data-into-lakefs-for-databricks",
     
     "relUrl": "/getstarted/try-it-out.html#importing-your-data-into-lakefs-for-databricks"
-  },"45": {
+  },"44": {
     "doc": "Try it Out",
     "title": "Importing data from an existing lakeFS repository",
     "content": "If you’re already using lakeFS Cloud to manage Delta Lake tables, you can seamlessly import those tables into lakeFS for Databricks. By doing so, the tables become part of the versioned catalog, enabling enhanced dataset management. Run the following command to import a table from lakeFS into lakeFS for Databricks: . lakefs-databricks import \\ --from \"lakefs://my-lakefs-repo/main/famous-people\" \\ --to \"lakefs_databricks_tutorial.dev.famous-people\" . After running this command, the table will appear in the dev schema! . In the lakeFS UI, you’ll see a new commit that reflects the imported table. This commit is automatically created at the end of the import operation: . Once imported, you can interact with the table directly through Unity Catalog: . ",
     "url": "/getstarted/try-it-out.html#importing-data-from-an-existing-lakefs-repository",
     
     "relUrl": "/getstarted/try-it-out.html#importing-data-from-an-existing-lakefs-repository"
-  },"46": {
+  },"45": {
     "doc": "Try it Out",
     "title": "Summary",
     "content": "Congratulations! If you’ve made it this far, you should now be familiar with all the building blocks to achieve: . | Zero-copy environments for your data lakehouse, allowing you to test and modify your tables with full isolation without having to create and maintain copies of data | Be able to implement the write-audit-publish pattern in production, allowing you to safely test and validate data before releasing it to consumers. | Be able to see how your data changes over time by looking at a detailed commit log of transformations, covering the who, what and how of changes to datasets | . ",
